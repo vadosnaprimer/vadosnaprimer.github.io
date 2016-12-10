@@ -1,0 +1,1695 @@
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: cpuexec.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: cpuexec.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: cpuintrf.h
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emu.h" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emu.h"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emu.h"	2010-07-05 03:34:36.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emu.h"	2011-10-20 16:06:11.078125000 +0300
+@@ -125,4 +125,6 @@
+ #include "machine/generic.h"
+ #include "video/generic.h"
+ 
++#include "luaengine.h"
++
+ #endif	/* __EMU_H__ */
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emu.mak" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emu.mak"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emu.mak"	2010-07-15 04:15:36.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emu.mak"	2011-10-20 16:06:59.781250000 +0300
+@@ -71,6 +71,9 @@
+ 	$(EMUOBJ)/inputseq.o \
+ 	$(EMUOBJ)/inptport.o \
+ 	$(EMUOBJ)/ioprocs.o \
++	$(EMUOBJ)/luaengine.o \
++	$(EMUOBJ)/luaconsole.o \
++	$(EMUOBJ)/luasav.o \
+ 	$(EMUOBJ)/mame.o \
+ 	$(EMUOBJ)/machine.o \
+ 	$(EMUOBJ)/mconfig.o \
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emuopts.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emuopts.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emuopts.c"	2010-06-29 20:46:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emuopts.c"	2011-10-20 16:06:10.734375000 +0300
+@@ -105,7 +105,7 @@
+ 	{ "brightness(0.1-2.0)",         "1.0",       0,                 "default game screen brightness correction" },
+ 	{ "contrast(0.1-2.0)",           "1.0",       0,                 "default game screen contrast correction" },
+ 	{ "gamma(0.1-3.0)",              "1.0",       0,                 "default game screen gamma correction" },
+-	{ "pause_brightness(0.0-1.0)",   "0.65",      0,                 "amount to scale the screen brightness when paused" },
++	{ "pause_brightness(0.0-1.0)",   "0.9",       0,                 "amount to scale the screen brightness when paused" },
+ 
+ 	/* vector options */
+ 	{ NULL,                          NULL,        OPTION_HEADER,     "CORE VECTOR OPTIONS" },
+@@ -153,7 +153,7 @@
+ 	{ NULL,                          NULL,        OPTION_HEADER,     "CORE DEBUGGING OPTIONS" },
+ 	{ "log",                         "0",         OPTION_BOOLEAN,    "generate an error.log file" },
+ 	{ "verbose;v",                   "0",         OPTION_BOOLEAN,    "display additional diagnostic information" },
+-	{ "update_in_pause",             "0",         OPTION_BOOLEAN,    "keep calling video updates while in pause" },
++	{ "update_in_pause",             "1",         OPTION_BOOLEAN,    "keep calling video updates while in pause" },
+ 	{ "debug;d",                     "0",         OPTION_BOOLEAN,    "enable/disable debugger" },
+ 	{ "debugscript",                 NULL,        0,                 "script for debugger" },
+ 	{ "debug_internal;di",           "0",         OPTION_BOOLEAN,    "use the internal debugger for debugging" },
+@@ -162,7 +162,8 @@
+ 	{ NULL,                          NULL,        OPTION_HEADER,     "CORE MISC OPTIONS" },
+ 	{ "bios",                        NULL,        0,                 "select the system BIOS to use" },
+ 	{ "cheat;c",                     "0",         OPTION_BOOLEAN,    "enable cheat subsystem" },
+-	{ "skip_gameinfo",               "0",         OPTION_BOOLEAN,    "skip displaying the information screen at startup" },
++	{ "skip_gameinfo",               "1",         OPTION_BOOLEAN,    "skip displaying the information screen at startup" },
++	{ "lua",                         NULL,        0,                 "run a lua script file" },
+ 
+ 	/* image device options */
+ 	{ OPTION_ADDED_DEVICE_OPTIONS,	 "0",		  OPTION_BOOLEAN | OPTION_INTERNAL,	"image device-specific options have been added" },
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emuopts.h" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emuopts.h"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/emuopts.h"	2010-06-18 12:30:00.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/emuopts.h"	2011-10-20 16:06:10.796875000 +0300
+@@ -153,6 +153,7 @@
+ #define OPTION_BIOS					"bios"
+ #define OPTION_CHEAT				"cheat"
+ #define OPTION_SKIP_GAMEINFO		"skip_gameinfo"
++#define OPTION_LUA					"lua"
+ 
+ /* image device options */
+ #define OPTION_ADDED_DEVICE_OPTIONS	"added_device_options"
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inptport.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inptport.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inptport.c"	2010-06-29 20:46:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inptport.c"	2011-10-20 16:06:10.906250000 +0300
+@@ -263,12 +263,25 @@
+ 	attoseconds_t				last_delta_nsec;	/* nanoseconds that passed since the previous callback */
+ 
+ 	/* playback/record information */
+-	mame_file *					record_file;		/* recording file (NULL if not recording) */
+-	mame_file *					playback_file;		/* playback file (NULL if not recording) */
+-	UINT64						playback_accumulated_speed;/* accumulated speed during playback */
+-	UINT32						playback_accumulated_frames;/* accumulated frames during playback */
++	FILE *						record_file;		/* recording file (NULL if not recording) */
++	FILE *						playback_file;		/* playback file (NULL if not recording) */
++	UINT32						current_frame;
++	UINT32						total_frames; /* accumulated frames during playback or recording */
++	UINT32						rerecord_count;
++	UINT32						bytes_per_frame;
++	UINT8						movie_header[INP_HEADER_SIZE];
++	char						movie_filename[_MAX_PATH];
+ };
+ 
++struct movie_type {
++	UINT8* buffer;    // full movie input buffer
++	UINT32 size;      // movie input buffer size
++	UINT8* pointer;   // pointer to the full movie input buffer
++};
++static struct movie_type movie;
++static char scheduled_record_file[_MAX_PATH];
++static char scheduled_playback_file[_MAX_PATH];
++
+ 
+ typedef struct _inputx_code inputx_code;
+ struct _inputx_code
+@@ -814,7 +827,7 @@
+ static void save_game_inputs(running_machine *machine, xml_data_node *parentnode);
+ 
+ /* input playback */
+-static time_t playback_init(running_machine *machine);
++static void playback_init(running_machine *machine);
+ static void playback_end(running_machine *machine, const char *message);
+ static void playback_frame(running_machine *machine, attotime curtime);
+ static void playback_port(const input_port_config *port);
+@@ -973,13 +986,12 @@
+ 
+ time_t input_port_init(running_machine *machine, const input_port_token *tokens)
+ {
+-	//input_port_private *portdata;
++	input_port_private *portdata;
+ 	char errorbuf[1024];
+-	time_t basetime;
+ 
+ 	/* allocate memory for our data structure */
+ 	machine->input_port_data = auto_alloc_clear(machine, input_port_private);
+-	//portdata = machine->input_port_data;
++	portdata = machine->input_port_data;
+ 
+ 	/* add an exit callback and a frame callback */
+ 	machine->add_notifier(MACHINE_NOTIFY_EXIT, input_port_exit);
+@@ -1001,10 +1013,20 @@
+ 	config_register(machine, "input", load_config_callback, save_config_callback);
+ 
+ 	/* open playback and record files if specified */
+-	basetime = playback_init(machine);
++	playback_init(machine);
+ 	record_init(machine);
+ 
+-	return basetime;
++	// movie rerecording
++	state_save_register_memory(machine, "inptport", NULL, 0, "movie_header",
++	                           &portdata->movie_header,
++	                           sizeof(portdata->movie_header[0]),
++	                           sizeof(portdata->movie_header), __FILE__, __LINE__);
++	state_save_register_memory(machine, "inptport", NULL, 0, "current_frame",
++	                           &portdata->current_frame,
++	                           sizeof(portdata->current_frame),
++	                           1, __FILE__, __LINE__);
++
++	return 0;
+ }
+ 
+ 
+@@ -2470,10 +2492,15 @@
+ 
+ profiler_mark_start(PROFILER_INPUT);
+ 
++	if ((portdata->playback_file != NULL) && (portdata->current_frame >= portdata->total_frames))
++		playback_end(machine, "movie end");
++
+ 	/* record/playback information about the current frame */
+ 	playback_frame(machine, curtime);
+ 	record_frame(machine, curtime);
+ 
++	portdata->current_frame++;
++
+ 	/* track the duration of the previous frame */
+ 	portdata->last_delta_nsec = attotime_to_attoseconds(attotime_sub(curtime, portdata->last_frame_time)) / ATTOSECONDS_PER_NANOSECOND;
+ 	portdata->last_frame_time = curtime;
+@@ -2527,6 +2554,8 @@
+ 
+ 		/* handle playback/record */
+ 		playback_port(port);
++		CallRegisteredLuaFunctions(LUACALL_BEFOREEMULATION);
++		MAME_LuaReadJoypad();
+ 		record_port(port);
+ 
+ 		/* call device line changed handlers */
+@@ -4304,54 +4333,79 @@
+     INPUT PLAYBACK
+ ***************************************************************************/
+ 
+-/*-------------------------------------------------
+-    playback_read_uint8 - read an 8-bit value
+-    from the playback file
+--------------------------------------------------*/
+-
+-static UINT8 playback_read_uint8(running_machine *machine)
++static void set_bytes_per_frame(running_machine *machine)
+ {
+ 	input_port_private *portdata = machine->input_port_data;
+-	UINT8 result;
++	const input_port_config *port;
++	analog_field_state *analog;
+ 
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->playback_file == NULL)
+-		return 0;
++	portdata->bytes_per_frame = 12; // frame data
++
++	for (port = machine->m_portlist.first(); port != NULL; port = port->next()) {
++		portdata->bytes_per_frame += 8; // digital
++
++		// loop over analog ports
++		for (analog = port->state->analoglist; analog != NULL; analog = analog->next)
++			portdata->bytes_per_frame += 13;
++	}
++}
++
++#undef realloc
++#define BUFFER_GROWTH_SIZE (4096)
+ 
+-	/* read the value; if we fail, end playback */
+-	if (mame_fread(portdata->playback_file, &result, sizeof(result)) != sizeof(result))
++static void reserve_movie_buffer_space(UINT32 space_needed)
+ 	{
+-		playback_end(machine, "End of file");
+-		return 0;
++	UINT32 total_space_needed = (UINT32)movie.pointer+space_needed-(UINT32)movie.buffer;
++
++	if (total_space_needed > movie.size) {
++		UINT32 ptr_offset   = movie.pointer - movie.buffer;
++		UINT32 alloc_chunks = total_space_needed / BUFFER_GROWTH_SIZE;
++
++		movie.size    = BUFFER_GROWTH_SIZE * (alloc_chunks+1);
++		movie.buffer  = (UINT8*)realloc(movie.buffer, movie.size);
++		movie.pointer = movie.buffer + ptr_offset;
++	}
+ 	}
+ 
+-	/* return the appropriate value */
+-	return result;
++void movie_postsave(running_machine *machine, mame_file *file)
++{
++	mame_fwrite(file, movie.buffer, machine->input_port_data->bytes_per_frame*(machine->input_port_data->current_frame+1));
+ }
+ 
++void movie_postload(running_machine *machine, mame_file *file)
++{
++	input_port_private *portdata = machine->input_port_data;
++
++	reserve_movie_buffer_space((portdata->bytes_per_frame*(portdata->current_frame+1)) - (movie.pointer - movie.buffer));
++	mame_fread(file, movie.buffer, portdata->bytes_per_frame*(portdata->current_frame+1));
++	if (!MAME_LuaRerecordCountSkip())
++		portdata->rerecord_count++;
++	movie.pointer = movie.buffer+(portdata->bytes_per_frame * portdata->current_frame);
++}
+ 
+ /*-------------------------------------------------
+-    playback_read_uint32 - read a 32-bit value
++    playback_read_uint8 - read an 8-bit value
+     from the playback file
+ -------------------------------------------------*/
+ 
+-static UINT32 playback_read_uint32(running_machine *machine)
++static UINT8 playback_read_uint8()
+ {
+-	input_port_private *portdata = machine->input_port_data;
+-	UINT32 result;
++	UINT8 result = movie.pointer[0];
++	movie.pointer += 1;
++	return result;
++}
+ 
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->playback_file == NULL)
+-		return 0;
+ 
+-	/* read the value; if we fail, end playback */
+-	if (mame_fread(portdata->playback_file, &result, sizeof(result)) != sizeof(result))
+-	{
+-		playback_end(machine, "End of file");
+-		return 0;
+-	}
++/*-------------------------------------------------
++    playback_read_uint32 - read a 32-bit value
++    from the playback file
++-------------------------------------------------*/
+ 
+-	/* return the appropriate value */
++static UINT32 playback_read_uint32()
++{
++	UINT32 result=( (UINT32)movie.pointer[0]      | ((UINT32)movie.pointer[1]<< 8) |
++	               ((UINT32)movie.pointer[2]<<16) | ((UINT32)movie.pointer[3]<<24));
++	movie.pointer += 4;
+ 	return LITTLE_ENDIANIZE_INT32(result);
+ }
+ 
+@@ -4361,71 +4415,88 @@
+     from the playback file
+ -------------------------------------------------*/
+ 
+-static UINT64 playback_read_uint64(running_machine *machine)
+-{
+-	input_port_private *portdata = machine->input_port_data;
+-	UINT64 result;
+-
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->playback_file == NULL)
+-		return 0;
+-
+-	/* read the value; if we fail, end playback */
+-	if (mame_fread(portdata->playback_file, &result, sizeof(result)) != sizeof(result))
++static UINT64 playback_read_uint64()
+ 	{
+-		playback_end(machine, "End of file");
+-		return 0;
+-	}
+-
+-	/* return the appropriate value */
++	UINT64 result=( (UINT64)movie.pointer[0]      | ((UINT64)movie.pointer[1]<< 8) |
++	               ((UINT64)movie.pointer[2]<<16) | ((UINT64)movie.pointer[3]<<24) |
++	               ((UINT64)movie.pointer[4]<<32) | ((UINT64)movie.pointer[5]<<40) |
++	               ((UINT64)movie.pointer[6]<<48) | ((UINT64)movie.pointer[7]<<56));
++	movie.pointer += 8;
+ 	return LITTLE_ENDIANIZE_INT64(result);
+ }
+ 
+ 
+ /*-------------------------------------------------
+-    playback_init - initialize INP playback
++    playback_open_file - open INP playback
+ -------------------------------------------------*/
+ 
+-static time_t playback_init(running_machine *machine)
++static void playback_open_file(running_machine *machine,const char* filename)
+ {
+-	const char *filename = options_get_string(machine->options(), OPTION_PLAYBACK);
+ 	input_port_private *portdata = machine->input_port_data;
+-	UINT8 header[INP_HEADER_SIZE];
+-	file_error filerr;
+-	time_t basetime;
++	UINT32 bytes_to_read;
+ 
+-	/* if no file, nothing to do */
+-	if (filename[0] == 0)
+-		return 0;
++	set_bytes_per_frame(machine);
+ 
+ 	/* open the playback file */
+-	filerr = mame_fopen(SEARCHPATH_INPUTLOG, filename, OPEN_FLAG_READ, &portdata->playback_file);
+-	assert_always(filerr == FILERR_NONE, "Failed to open file for playback");
++	portdata->playback_file = fopen(filename, "r+b");
++	if (!portdata->playback_file) {
++		mame_printf_info("Failed to open file %s for playback.\n", filename);
++		return;
++	}
+ 
+ 	/* read the header and verify that it is a modern version; if not, print an error */
+-	if (mame_fread(portdata->playback_file, header, sizeof(header)) != sizeof(header))
++	if (fread(portdata->movie_header, 1, sizeof(portdata->movie_header), portdata->playback_file) != sizeof(portdata->movie_header))
+ 		fatalerror("Input file is corrupt or invalid (missing header)");
+-	if (memcmp(header, "MAMEINP\0", 8) != 0)
++	if (memcmp(portdata->movie_header, "MAMETAS\0", 8) != 0)
+ 		fatalerror("Input file invalid or in an older, unsupported format");
+-	if (header[0x10] != INP_HEADER_MAJVERSION)
++	if (portdata->movie_header[0x08] != INP_HEADER_MAJVERSION)
+ 		fatalerror("Input file format version mismatch");
+ 
++	// read movie lenght and rerecord count
++	fread(&portdata->total_frames, 1, sizeof(portdata->total_frames), portdata->playback_file);
++	fread(&portdata->rerecord_count, 1, sizeof(portdata->rerecord_count), portdata->playback_file);
++
+ 	/* output info to console */
+ 	mame_printf_info("Input file: %s\n", filename);
+-	mame_printf_info("INP version %d.%d\n", header[0x10], header[0x11]);
+-	basetime = header[0x08] | (header[0x09] << 8) | (header[0x0a] << 16) | (header[0x0b] << 24) |
+-				((UINT64)header[0x0c] << 32) | ((UINT64)header[0x0d] << 40) | ((UINT64)header[0x0e] << 48) | ((UINT64)header[0x0f] << 56);
+-	mame_printf_info("Created %s", ctime(&basetime));
+-	mame_printf_info("Recorded using %s\n", header + 0x20);
++	mame_printf_info("INP version %d.%d\n", portdata->movie_header[0x08], portdata->movie_header[0x09]);
++	mame_printf_info("Recorded using %s\n", portdata->movie_header + 0x18);
++	mame_printf_info("Total frames: %d\n", (UINT32)portdata->total_frames);
++	mame_printf_info("Rerecord count: %d\n", (UINT32)portdata->rerecord_count);
+ 
+ 	/* verify the header against the current game */
+-	if (memcmp(machine->gamedrv->name, header + 0x14, strlen(machine->gamedrv->name) + 1) != 0)
+-		fatalerror("Input file is for " GAMENOUN " '%s', not for current " GAMENOUN " '%s'\n", header + 0x14, machine->gamedrv->name);
++	if (memcmp(machine->gamedrv->name, portdata->movie_header + 0x0c, strlen(machine->gamedrv->name) + 1) != 0)
++		fatalerror("Input file is for " GAMENOUN " '%s', not for current " GAMENOUN " '%s'.\n", portdata->movie_header + 0x0c, machine->gamedrv->name);
++
++	// initialize movie
++	movie.pointer = movie.buffer;
++	movie.size = 0;
++
++	// fill buffer
++	bytes_to_read = portdata->bytes_per_frame*(portdata->total_frames+1);
++	reserve_movie_buffer_space(bytes_to_read);
++	fread(movie.buffer, 1, bytes_to_read, portdata->playback_file);
++}
++
++
++/*-------------------------------------------------
++    playback_init - initialize INP playback
++-------------------------------------------------*/
+ 
+-	/* enable compression */
+-	mame_fcompress(portdata->playback_file, FCOMPRESS_MEDIUM);
++static void playback_init(running_machine *machine)
++{
++	char filename[_MAX_PATH];
++
++	strncpy(filename,options_get_string(machine->options(), OPTION_PLAYBACK),_MAX_PATH);
++	if (scheduled_playback_file[0] != 0) {
++		strncpy(filename,scheduled_playback_file,_MAX_PATH);
++		scheduled_playback_file[0] = 0;
++	}
+ 
+-	return basetime;
++	/* if file, open */
++	if (filename[0] != 0) {
++		strncpy(machine->input_port_data->movie_filename,filename,_MAX_PATH);
++		playback_open_file(machine, filename);
++	}
+ }
+ 
+ 
+@@ -4441,17 +4512,12 @@
+ 	if (portdata->playback_file != NULL)
+ 	{
+ 		/* close the file */
+-		mame_fclose(portdata->playback_file);
++		fclose(portdata->playback_file);
+ 		portdata->playback_file = NULL;
+ 
+ 		/* pop a message */
+ 		if (message != NULL)
+ 			popmessage("Playback Ended\nReason: %s", message);
+-
+-		/* display speed stats */
+-		portdata->playback_accumulated_speed /= portdata->playback_accumulated_frames;
+-		mame_printf_info("Total playback frames: %d\n", (UINT32)portdata->playback_accumulated_frames);
+-		mame_printf_info("Average recorded speed: %d%%\n", (UINT32)((portdata->playback_accumulated_speed * 200 + 1) >> 21));
+ 	}
+ }
+ 
+@@ -4470,15 +4536,11 @@
+ 	{
+ 		attotime readtime;
+ 
+-		/* first the absolute time */
+-		readtime.seconds = playback_read_uint32(machine);
+-		readtime.attoseconds = playback_read_uint64(machine);
++		/* just the absolute time */
++		readtime.seconds = playback_read_uint32();
++		readtime.attoseconds = playback_read_uint64();
+ 		if (attotime_compare(readtime, curtime) != 0)
+ 			playback_end(machine, "Out of sync");
+-
+-		/* then the speed */
+-		portdata->playback_accumulated_speed += playback_read_uint32(machine);
+-		portdata->playback_accumulated_frames++;
+ 	}
+ }
+ 
+@@ -4497,19 +4559,19 @@
+ 		analog_field_state *analog;
+ 
+ 		/* read the default value and the digital state */
+-		port->state->defvalue = playback_read_uint32(port->machine);
+-		port->state->digital = playback_read_uint32(port->machine);
++		port->state->defvalue = playback_read_uint32();
++		port->state->digital = playback_read_uint32();
+ 
+ 		/* loop over analog ports and save their data */
+ 		for (analog = port->state->analoglist; analog != NULL; analog = analog->next)
+ 		{
+ 			/* read current and previous values */
+-			analog->accum = playback_read_uint32(port->machine);
+-			analog->previous = playback_read_uint32(port->machine);
++			analog->accum = playback_read_uint32();
++			analog->previous = playback_read_uint32();
+ 
+ 			/* read configuration information */
+-			analog->sensitivity = playback_read_uint32(port->machine);
+-			analog->reverse = playback_read_uint8(port->machine);
++			analog->sensitivity = playback_read_uint32();
++			analog->reverse = playback_read_uint8();
+ 		}
+ 	}
+ }
+@@ -4525,18 +4587,10 @@
+     to the record file
+ -------------------------------------------------*/
+ 
+-static void record_write_uint8(running_machine *machine, UINT8 data)
++static void record_write_uint8(UINT8 data)
+ {
+-	input_port_private *portdata = machine->input_port_data;
+-	UINT8 result = data;
+-
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->record_file == NULL)
+-		return;
+-
+-	/* read the value; if we fail, end playback */
+-	if (mame_fwrite(portdata->record_file, &result, sizeof(result)) != sizeof(result))
+-		record_end(machine, "Out of space");
++	movie.pointer[0]=(UINT8)data;
++	movie.pointer += 1;
+ }
+ 
+ 
+@@ -4545,18 +4599,14 @@
+     to the record file
+ -------------------------------------------------*/
+ 
+-static void record_write_uint32(running_machine *machine, UINT32 data)
++static void record_write_uint32(UINT32 data)
+ {
+-	input_port_private *portdata = machine->input_port_data;
+ 	UINT32 result = LITTLE_ENDIANIZE_INT32(data);
+-
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->record_file == NULL)
+-		return;
+-
+-	/* read the value; if we fail, end playback */
+-	if (mame_fwrite(portdata->record_file, &result, sizeof(result)) != sizeof(result))
+-		record_end(machine, "Out of space");
++	movie.pointer[0]=(UINT8)result;
++	movie.pointer[1]=(UINT8)(result>>8);
++	movie.pointer[2]=(UINT8)(result>>16);
++	movie.pointer[3]=(UINT8)(result>>24);
++	movie.pointer += 4;
+ }
+ 
+ 
+@@ -4565,65 +4615,71 @@
+     to the record file
+ -------------------------------------------------*/
+ 
+-static void record_write_uint64(running_machine *machine, UINT64 data)
++static void record_write_uint64(UINT64 data)
+ {
+-	input_port_private *portdata = machine->input_port_data;
+ 	UINT64 result = LITTLE_ENDIANIZE_INT64(data);
+-
+-	/* protect against NULL handles if previous reads fail */
+-	if (portdata->record_file == NULL)
+-		return;
+-
+-	/* read the value; if we fail, end playback */
+-	if (mame_fwrite(portdata->record_file, &result, sizeof(result)) != sizeof(result))
+-		record_end(machine, "Out of space");
++	movie.pointer[0]=(UINT8)result;
++	movie.pointer[1]=(UINT8)(result>>8);
++	movie.pointer[2]=(UINT8)(result>>16);
++	movie.pointer[3]=(UINT8)(result>>24);
++	movie.pointer[4]=(UINT8)(result>>32);
++	movie.pointer[5]=(UINT8)(result>>40);
++	movie.pointer[6]=(UINT8)(result>>48);
++	movie.pointer[7]=(UINT8)(result>>56);
++	movie.pointer += 8;
+ }
+ 
+ 
+ /*-------------------------------------------------
+-    record_init - initialize INP recording
++    record_open_file - open INP recording
+ -------------------------------------------------*/
+ 
+-static void record_init(running_machine *machine)
++static void record_open_file(running_machine *machine,const char* filename)
+ {
+-	const char *filename = options_get_string(machine->options(), OPTION_RECORD);
+ 	input_port_private *portdata = machine->input_port_data;
+-	UINT8 header[INP_HEADER_SIZE];
+-	system_time systime;
+-	file_error filerr;
+ 
+-	/* if no file, nothing to do */
+-	if (filename[0] == 0)
+-		return;
++	set_bytes_per_frame(machine);
+ 
+ 	/* open the record file  */
+-	filerr = mame_fopen(SEARCHPATH_INPUTLOG, filename, OPEN_FLAG_WRITE | OPEN_FLAG_CREATE | OPEN_FLAG_CREATE_PATHS, &portdata->record_file);
+-	assert_always(filerr == FILERR_NONE, "Failed to open file for recording");
+-
+-	/* get the base time */
+-	machine->base_datetime(systime);
++	portdata->record_file = fopen(filename, "w+b");
++	if (!portdata->record_file) {
++		mame_printf_info("Failed to open file %s for recording.\n", filename);
++		return;
++	}
+ 
+ 	/* fill in the header */
+-	memset(header, 0, sizeof(header));
+-	memcpy(header, "MAMEINP\0", 8);
+-	header[0x08] = systime.time >> 0;
+-	header[0x09] = systime.time >> 8;
+-	header[0x0a] = systime.time >> 16;
+-	header[0x0b] = systime.time >> 24;
+-	header[0x0c] = systime.time >> 32;
+-	header[0x0d] = systime.time >> 40;
+-	header[0x0e] = systime.time >> 48;
+-	header[0x0f] = systime.time >> 56;
+-	header[0x10] = INP_HEADER_MAJVERSION;
+-	header[0x11] = INP_HEADER_MINVERSION;
+-	strcpy((char *)header + 0x14, machine->gamedrv->name);
+-	sprintf((char *)header + 0x20, APPNAME " %s", build_version);
++	memset(portdata->movie_header, 0, sizeof(portdata->movie_header));
++	memcpy(portdata->movie_header, "MAMETAS\0", 8);
++	portdata->movie_header[0x08] = INP_HEADER_MAJVERSION;
++	portdata->movie_header[0x09] = INP_HEADER_MINVERSION;
++	strcpy((char *)portdata->movie_header + 0x0c, machine->gamedrv->name);
++	sprintf((char *)portdata->movie_header + 0x18, APPNAME " %s", build_version);
++
++	// initialize movie
++	movie.pointer = movie.buffer;
++	movie.size = 0;
++}
++
++
++/*-------------------------------------------------
++    record_init - initialize INP recording
++-------------------------------------------------*/
++
++static void record_init(running_machine *machine)
++{
++	char filename[_MAX_PATH];
+ 
+-	/* write it */
+-	mame_fwrite(portdata->record_file, header, sizeof(header));
++	strncpy(filename,options_get_string(machine->options(), OPTION_RECORD),_MAX_PATH);
++	if (scheduled_record_file[0] != 0) {
++		strncpy(filename,scheduled_record_file,_MAX_PATH);
++		scheduled_record_file[0] = 0;
++	}
+ 
+-	/* enable compression */
+-	mame_fcompress(portdata->record_file, FCOMPRESS_MEDIUM);
++	/* if file, open */
++	if (filename[0] != 0) {
++		strncpy(machine->input_port_data->movie_filename,filename,_MAX_PATH);
++		record_open_file(machine, filename);
++	}
+ }
+ 
+ 
+@@ -4638,8 +4694,13 @@
+ 	/* only applies if we have a live file */
+ 	if (portdata->record_file != NULL)
+ 	{
++		fwrite(portdata->movie_header, 1, sizeof(portdata->movie_header), portdata->record_file);
++		fwrite(&portdata->current_frame, 1, sizeof(portdata->current_frame), portdata->record_file);
++		fwrite(&portdata->rerecord_count, 1, sizeof(portdata->rerecord_count), portdata->record_file);
++		fwrite(movie.buffer, 1, portdata->bytes_per_frame*(portdata->current_frame+1), portdata->record_file);
++
+ 		/* close the file */
+-		mame_fclose(portdata->record_file);
++		fclose(portdata->record_file);
+ 		portdata->record_file = NULL;
+ 
+ 		/* pop a message */
+@@ -4661,12 +4722,10 @@
+ 	/* if recording, record information about the current frame */
+ 	if (portdata->record_file != NULL)
+ 	{
+-		/* first the absolute time */
+-		record_write_uint32(machine, curtime.seconds);
+-		record_write_uint64(machine, curtime.attoseconds);
+-
+-		/* then the current speed */
+-		record_write_uint32(machine, video_get_speed_percent(machine) * (double)(1 << 20));
++		reserve_movie_buffer_space(12);
++		/* just the absolute time */
++		record_write_uint32(curtime.seconds);
++		record_write_uint64(curtime.attoseconds);
+ 	}
+ }
+ 
+@@ -4684,20 +4743,22 @@
+ 	{
+ 		analog_field_state *analog;
+ 
++		reserve_movie_buffer_space(8);
+ 		/* store the default value and digital state */
+-		record_write_uint32(port->machine, port->state->defvalue);
+-		record_write_uint32(port->machine, port->state->digital);
++		record_write_uint32(port->state->defvalue);
++		record_write_uint32(port->state->digital);
+ 
+ 		/* loop over analog ports and save their data */
+ 		for (analog = port->state->analoglist; analog != NULL; analog = analog->next)
+ 		{
++			reserve_movie_buffer_space(13);
+ 			/* store current and previous values */
+-			record_write_uint32(port->machine, analog->accum);
+-			record_write_uint32(port->machine, analog->previous);
++			record_write_uint32(analog->accum);
++			record_write_uint32(analog->previous);
+ 
+ 			/* store configuration information */
+-			record_write_uint32(port->machine, analog->sensitivity);
+-			record_write_uint8(port->machine, analog->reverse);
++			record_write_uint32(analog->sensitivity);
++			record_write_uint8(analog->reverse);
+ 		}
+ 	}
+ }
+@@ -5575,3 +5636,57 @@
+ 		fclose(file);
+ 
+ }
++
++/* INP file handle helper functions */
++FILE* get_record_file(running_machine* machine)
++{
++	return machine->input_port_data->record_file;
++}
++
++FILE* get_playback_file(running_machine* machine)
++{
++	return machine->input_port_data->playback_file;
++}
++
++UINT32 get_current_frame(running_machine* machine)
++{
++	return machine->input_port_data->current_frame;
++}
++
++UINT32 get_port_digital(const input_port_config *port)
++{
++	if (port->machine->input_port_data->safe_to_read)
++		return port->state->digital;
++	else
++		return 0;
++}
++
++void set_port_digital(const input_port_config *port, UINT32 new_digital)
++{
++	port->state->digital = new_digital;
++}
++
++void schedule_record(char * choice) {
++	strcpy(scheduled_record_file, choice);
++}
++
++void schedule_playback(char * choice) {
++	strcpy(scheduled_playback_file, choice);
++}
++
++void stop_movie(running_machine *machine, const char *message) {
++	if (get_record_file(machine))
++		record_end(machine, message);
++	if (get_playback_file(machine))
++		playback_end(machine, message);
++}
++
++void replay_movie(running_machine *machine) {
++	schedule_playback(machine->input_port_data->movie_filename);
++	machine->schedule_hard_reset();
++}
++
++bool is_movie_pending(running_machine *machine){
++	return (get_record_file(machine) || get_playback_file(machine) ||
++	        (scheduled_playback_file[0] != 0) || (scheduled_record_file[0] != 0));
++}
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inptport.h" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inptport.h"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inptport.h"	2010-06-16 23:55:56.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inptport.h"	2011-10-20 16:06:10.968750000 +0300
+@@ -44,8 +44,8 @@
+ 
+ 
+ /* INP file information */
+-#define INP_HEADER_SIZE			64
+-#define INP_HEADER_MAJVERSION	3
++#define INP_HEADER_SIZE			56
++#define INP_HEADER_MAJVERSION	1
+ #define INP_HEADER_MINVERSION	0
+ 
+ 
+@@ -338,10 +338,55 @@
+ 	IPT_UI_ROTATE,
+ 	IPT_UI_SHOW_PROFILER,
+ 	IPT_UI_TOGGLE_UI,
+-	IPT_UI_TOGGLE_DEBUG,
+ 	IPT_UI_PASTE,
+-	IPT_UI_SAVE_STATE,
++	IPT_UI_TOGGLE_DEBUG,
++	IPT_UI_FRAME_ADVANCE,
++
++	IPT_UI_LUA_OPEN,
++	IPT_UI_LUA_STOP,
++	IPT_UI_LUA_RELOAD,
++	IPT_UI_LUA_HOTKEY_1,
++	IPT_UI_LUA_HOTKEY_2,
++	IPT_UI_LUA_HOTKEY_3,
++	IPT_UI_LUA_HOTKEY_4,
++	IPT_UI_LUA_HOTKEY_5,
++
+ 	IPT_UI_LOAD_STATE,
++	IPT_UI_SAVE_STATE,
++	IPT_UI_LOAD_STATE_1,
++	IPT_UI_LOAD_STATE_2,
++	IPT_UI_LOAD_STATE_3,
++	IPT_UI_LOAD_STATE_4,
++	IPT_UI_LOAD_STATE_5,
++	IPT_UI_LOAD_STATE_6,
++	IPT_UI_LOAD_STATE_7,
++	IPT_UI_LOAD_STATE_8,
++	IPT_UI_LOAD_STATE_9,
++	IPT_UI_SAVE_STATE_1,
++	IPT_UI_SAVE_STATE_2,
++	IPT_UI_SAVE_STATE_3,
++	IPT_UI_SAVE_STATE_4,
++	IPT_UI_SAVE_STATE_5,
++	IPT_UI_SAVE_STATE_6,
++	IPT_UI_SAVE_STATE_7,
++	IPT_UI_SAVE_STATE_8,
++	IPT_UI_SAVE_STATE_9,
++	IPT_UI_SELECT_STATE_1,
++	IPT_UI_SELECT_STATE_2,
++	IPT_UI_SELECT_STATE_3,
++	IPT_UI_SELECT_STATE_4,
++	IPT_UI_SELECT_STATE_5,
++	IPT_UI_SELECT_STATE_6,
++	IPT_UI_SELECT_STATE_7,
++	IPT_UI_SELECT_STATE_8,
++	IPT_UI_SELECT_STATE_9,
++	IPT_UI_SELECT_PREV_STATE,
++	IPT_UI_SELECT_NEXT_STATE,
++	IPT_UI_LOAD_CUR_STATE,
++	IPT_UI_SAVE_CUR_STATE,
++
++	IPT_UI_PLAY_MOVIE_BEGIN,
++	IPT_UI_STOP_MOVIE,
+ 
+ 	/* additional OSD-specified UI port types (up to 16) */
+ 	IPT_OSD_1,
+@@ -1199,4 +1244,18 @@
+ int input_count_players(running_machine *machine);
+ int input_category_active(running_machine *machine, int category);
+ 
++// MAME-RR functions
++FILE* get_record_file(running_machine* machine);
++FILE* get_playback_file(running_machine* machine);
++UINT32 get_current_frame(running_machine* machine);
++UINT32 get_port_digital(const input_port_config *port);
++void set_port_digital(const input_port_config *port, UINT32 new_digital);
++void movie_postsave(running_machine *machine, mame_file *file);
++void movie_postload(running_machine *machine, mame_file *file);
++void schedule_record(char * choice);
++void schedule_playback(char * choice);
++void stop_movie(running_machine *machine, const char *message);
++void replay_movie(running_machine *machine);
++bool is_movie_pending(running_machine *machine);
++
+ #endif	/* __INPTPORT_H__ */
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inpttype.h" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inpttype.h"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/inpttype.h"	2010-06-16 23:55:56.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/inpttype.h"	2011-10-20 16:06:10.921875000 +0300
+@@ -580,21 +580,21 @@
+ 	INPUT_PORT_DIGITAL_TYPE( 0, OTHER,   KEYPAD,              "Keypad",                 SEQ_DEF_0 )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, OTHER,   KEYBOARD,            "Keyboard",               SEQ_DEF_0 )
+ 
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_ON_SCREEN_DISPLAY,"On Screen Display",      SEQ_DEF_1(KEYCODE_TILDE) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_DEBUG_BREAK,      "Break in Debugger",      SEQ_DEF_1(KEYCODE_TILDE) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_ON_SCREEN_DISPLAY,"On Screen Display",      SEQ_DEF_1(KEYCODE_ASTERISK) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_DEBUG_BREAK,      "Break in Debugger",      SEQ_DEF_0 )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_CONFIGURE,        "Config Menu",            SEQ_DEF_1(KEYCODE_TAB) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_PAUSE,            "Pause",                  SEQ_DEF_1(KEYCODE_P) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_RESET_MACHINE,    "Reset Game",             SEQ_DEF_2(KEYCODE_F3, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SOFT_RESET,       "Soft Reset",             SEQ_DEF_3(KEYCODE_F3, SEQCODE_NOT, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_GFX,         "Show Gfx",               SEQ_DEF_1(KEYCODE_F4) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FRAMESKIP_DEC,    "Frameskip Dec",          SEQ_DEF_1(KEYCODE_F8) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FRAMESKIP_INC,    "Frameskip Inc",          SEQ_DEF_1(KEYCODE_F9) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_THROTTLE,         "Throttle",               SEQ_DEF_1(KEYCODE_F10) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_RESET_MACHINE,    "Reset Game",             SEQ_DEF_2(KEYCODE_F3, KEYCODE_LALT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SOFT_RESET,       "Soft Reset",             SEQ_DEF_2(KEYCODE_F3, KEYCODE_LCONTROL) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_GFX,         "Show Gfx",               SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FRAMESKIP_DEC,    "Frameskip Dec",          SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FRAMESKIP_INC,    "Frameskip Inc",          SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_THROTTLE,         "Throttle",               SEQ_DEF_1(KEYCODE_DEL_PAD) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FAST_FORWARD,     "Fast Forward",           SEQ_DEF_1(KEYCODE_INSERT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_FPS,         "Show FPS",               SEQ_DEF_5(KEYCODE_F11, SEQCODE_NOT, KEYCODE_LCONTROL, SEQCODE_NOT, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SNAPSHOT,         "Save Snapshot",          SEQ_DEF_3(KEYCODE_F12, SEQCODE_NOT, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_RECORD_MOVIE,     "Record Movie",           SEQ_DEF_2(KEYCODE_F12, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_TOGGLE_CHEAT,     "Toggle Cheat",           SEQ_DEF_1(KEYCODE_F6) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_FPS,         "Show FPS",               SEQ_DEF_1(KEYCODE_STOP) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SNAPSHOT,         "Save Snapshot",          SEQ_DEF_1(KEYCODE_F12) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_RECORD_MOVIE,     "Record Movie",           SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_TOGGLE_CHEAT,     "Toggle Cheat",           SEQ_DEF_0 )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_UP,               "UI Up",                  SEQ_DEF_3(KEYCODE_UP, SEQCODE_OR, INDEXED(JOYCODE_Y_UP_SWITCH, 0)) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_DOWN,             "UI Down",                SEQ_DEF_3(KEYCODE_DOWN, SEQCODE_OR, INDEXED(JOYCODE_Y_DOWN_SWITCH, 0)) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LEFT,             "UI Left",                SEQ_DEF_3(KEYCODE_LEFT, SEQCODE_OR, INDEXED(JOYCODE_X_LEFT_SWITCH, 0)) )
+@@ -612,12 +612,57 @@
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_PREV_GROUP,       "UI Previous Group",      SEQ_DEF_1(KEYCODE_OPENBRACE) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_NEXT_GROUP,       "UI Next Group",          SEQ_DEF_1(KEYCODE_CLOSEBRACE) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_ROTATE,           "UI Rotate",              SEQ_DEF_1(KEYCODE_R) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_PROFILER,    "Show Profiler",          SEQ_DEF_2(KEYCODE_F11, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SHOW_PROFILER,    "Show Profiler",          SEQ_DEF_0 )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_TOGGLE_UI,        "UI Toggle",              SEQ_DEF_3(KEYCODE_SCRLOCK, SEQCODE_NOT, KEYCODE_LSHIFT) )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_PASTE,            "UI Paste Text",          SEQ_DEF_2(KEYCODE_SCRLOCK, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_TOGGLE_DEBUG,     "Toggle Debugger",        SEQ_DEF_1(KEYCODE_F5) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE,       "Save State",             SEQ_DEF_2(KEYCODE_F7, KEYCODE_LSHIFT) )
+-	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE,       "Load State",             SEQ_DEF_3(KEYCODE_F7, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_TOGGLE_DEBUG,     "Toggle Debugger",        SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_FRAME_ADVANCE,    "Frame Advance",          SEQ_DEF_1(KEYCODE_TILDE) )
++
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_OPEN,         "Lua Script Window",      SEQ_DEF_2(KEYCODE_L, KEYCODE_LCONTROL) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_STOP,         "Lua Script Stop",        SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_RELOAD,       "Lua Script Reload",      SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_HOTKEY_1,     "Lua Custom Hotkey 1",    SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_HOTKEY_2,     "Lua Custom Hotkey 2",    SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_HOTKEY_3,     "Lua Custom Hotkey 3",    SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_HOTKEY_4,     "Lua Custom Hotkey 4",    SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LUA_HOTKEY_5,     "Lua Custom Hotkey 5",    SEQ_DEF_0 )
++
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE,       "Load State Dialog",      SEQ_DEF_2(KEYCODE_F7, KEYCODE_LCONTROL) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE,       "Save State Dialog",      SEQ_DEF_2(KEYCODE_F5, KEYCODE_LCONTROL) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_1,     "Load State 1",           SEQ_DEF_3(KEYCODE_F1, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_2,     "Load State 2",           SEQ_DEF_3(KEYCODE_F2, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_3,     "Load State 3",           SEQ_DEF_7(KEYCODE_F3, SEQCODE_NOT, KEYCODE_LSHIFT, SEQCODE_NOT, KEYCODE_LALT, SEQCODE_NOT, KEYCODE_LCONTROL) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_4,     "Load State 4",           SEQ_DEF_3(KEYCODE_F4, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_5,     "Load State 5",           SEQ_DEF_3(KEYCODE_F5, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_6,     "Load State 6",           SEQ_DEF_3(KEYCODE_F6, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_7,     "Load State 7",           SEQ_DEF_3(KEYCODE_F7, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_8,     "Load State 8",           SEQ_DEF_3(KEYCODE_F8, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_STATE_9,     "Load State 9",           SEQ_DEF_3(KEYCODE_F9, SEQCODE_NOT, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_1,     "Save State 1",           SEQ_DEF_2(KEYCODE_F1, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_2,     "Save State 2",           SEQ_DEF_2(KEYCODE_F2, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_3,     "Save State 3",           SEQ_DEF_2(KEYCODE_F3, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_4,     "Save State 4",           SEQ_DEF_2(KEYCODE_F4, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_5,     "Save State 5",           SEQ_DEF_2(KEYCODE_F5, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_6,     "Save State 6",           SEQ_DEF_2(KEYCODE_F6, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_7,     "Save State 7",           SEQ_DEF_2(KEYCODE_F7, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_8,     "Save State 8",           SEQ_DEF_2(KEYCODE_F8, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_STATE_9,     "Save State 9",           SEQ_DEF_2(KEYCODE_F9, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_1,   "Select State 1",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_2,   "Select State 2",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_3,   "Select State 3",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_4,   "Select State 4",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_5,   "Select State 5",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_6,   "Select State 6",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_7,   "Select State 7",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_8,   "Select State 8",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_STATE_9,   "Select State 9",         SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_PREV_STATE,"Select Previous State",  SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SELECT_NEXT_STATE,"Select Next State",      SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_LOAD_CUR_STATE,   "Load Current State",     SEQ_DEF_0 )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_SAVE_CUR_STATE,   "Save Current State",     SEQ_DEF_0 )
++
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_PLAY_MOVIE_BEGIN, "Play Movie From Beginning", SEQ_DEF_2(KEYCODE_R, KEYCODE_LSHIFT) )
++	INPUT_PORT_DIGITAL_TYPE( 0, UI,      UI_STOP_MOVIE,       "Stop Movie",             SEQ_DEF_2(KEYCODE_T, KEYCODE_LCONTROL) )
+ 
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      OSD_1,               NULL,                     SEQ_DEF_0 )
+ 	INPUT_PORT_DIGITAL_TYPE( 0, UI,      OSD_2,               NULL,                     SEQ_DEF_0 )
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lapi.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lauxlib.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lcode.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: ldebug.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: ldo.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lfunc.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lgc.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: llex.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: llimits.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lmem.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lobject.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lopcodes.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lparser.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lstate.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lstring.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: ltable.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: ltm.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lua.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luaconf.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luaconsole.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luaengine.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luaengine.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lualib.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luasav.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: luasav.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lundump.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lvm.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu: lzio.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu/machine: i2cmemdev.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/emu/machine: i2cmemdev.h
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/machine.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/machine.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/machine.c"	2010-07-21 09:23:28.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/machine.c"	2011-10-20 16:06:11.578125000 +0300
+@@ -128,6 +128,7 @@
+ // a giant string buffer for temporary strings
+ static char giant_string_buffer[65536] = { 0 };
+ 
++bool start_paused = false;
+ 
+ 
+ //**************************************************************************
+@@ -358,6 +359,10 @@
+ 	if (options_get_bool(&m_options, OPTION_CHEAT))
+ 		cheat_init(this);
+ 
++	lua_init(this);
++	extern void Update_RAM_Search(running_machine &machine);
++	add_notifier(MACHINE_NOTIFY_FRAME, Update_RAM_Search);
++
+ 	// disallow save state registrations starting here
+ 	state_save_allow_registration(this, false);
+ }
+@@ -390,7 +395,9 @@
+ 
+ 		// load the configuration settings and NVRAM
+ 		bool settingsloaded = config_load_settings(this);
++		if (!is_movie_pending(this)) {
+ 		nvram_load(this);
++		}
+ 		sound_mute(this, FALSE);
+ 
+ 		// display the startup screens
+@@ -399,6 +406,11 @@
+ 		// perform a soft reset -- this takes us to the running phase
+ 		soft_reset();
+ 
++		if (start_paused) {
++			pause();
++			start_paused = false;
++		}
++
+ 		// run the CPUs until a reset or exit
+ 		m_hard_reset_pending = false;
+ 		while ((!m_hard_reset_pending && !m_exit_pending) || m_saveload_schedule != SLS_NONE)
+@@ -491,6 +503,9 @@
+ {
+ 	m_hard_reset_pending = true;
+ 
++	if (m_paused)
++		start_paused = true;
++
+ 	// if we're executing, abort out immediately
+ 	m_scheduler.eat_all_cycles();
+ }
+@@ -506,7 +521,7 @@
+ 	timer_adjust_oneshot(m_soft_reset_timer, attotime_zero, 0);
+ 
+ 	// we can't be paused since the timer needs to fire
+-	resume();
++//	resume();
+ 
+ 	// if we're executing, abort out immediately
+ 	m_scheduler.eat_all_cycles();
+@@ -564,7 +579,7 @@
+ 	m_saveload_schedule_time = timer_get_time(this);
+ 
+ 	// we can't be paused since we need to clear out anonymous timers
+-	resume();
++//	resume();
+ }
+ 
+ 
+@@ -583,7 +598,7 @@
+ 	m_saveload_schedule_time = timer_get_time(this);
+ 
+ 	// we can't be paused since we need to clear out anonymous timers
+-	resume();
++//	resume();
+ }
+ 
+ 
+@@ -846,6 +861,16 @@
+ 				break;
+ 		}
+ 
++		if (staterr == STATERR_NONE) {
++			if (m_saveload_schedule == SLS_SAVE)
++				movie_postsave(this, file);
++			if (m_saveload_schedule == SLS_LOAD)
++				movie_postload(this, file);
++			if (m_saveload_schedule == SLS_SAVE)
++				luasav_save(fullname);
++			if (m_saveload_schedule == SLS_LOAD)
++				luasav_load(fullname);
++		}
+ 		// close and perhaps delete the file
+ 		mame_fclose(file);
+ 		if (staterr != STATERR_NONE && m_saveload_schedule == SLS_SAVE)
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/mame.h" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/mame.h"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/mame.h"	2010-06-29 20:46:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/mame.h"	2011-10-20 16:07:09.578125000 +0300
+@@ -44,10 +44,10 @@
+ 
+ // MESS vs. MAME abstractions
+ #ifndef MESS
+-#define APPNAME					"MAME"
+-#define APPNAME_LOWER			"mame"
+-#define CONFIGNAME				"mame"
+-#define APPLONGNAME				"M.A.M.E."
++#define APPNAME					"MAME-RR"
++#define APPNAME_LOWER			"mame-rr"
++#define CONFIGNAME				"mame-rr"
++#define APPLONGNAME				"M.A.M.E. Rerecording"
+ #define CAPGAMENOUN				"GAME"
+ #define CAPSTARTGAMENOUN		"Game"
+ #define GAMENOUN				"game"
+@@ -55,10 +55,10 @@
+ #define HISTORYNAME				"History"
+ #define COPYRIGHT				"Copyright Nicola Salmoria\nand the MAME team\nhttp://mamedev.org"
+ #else
+-#define APPNAME					"MESS"
+-#define APPNAME_LOWER			"mess"
+-#define CONFIGNAME				"mess"
+-#define APPLONGNAME				"M.E.S.S."
++#define APPNAME					"MESS-RR"
++#define APPNAME_LOWER			"mess-rr"
++#define CONFIGNAME				"mess-rr"
++#define APPLONGNAME				"M.E.S.S. Rerecording"
+ #define CAPGAMENOUN				"SYSTEM"
+ #define CAPSTARTGAMENOUN		"System"
+ #define GAMENOUN				"system"
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/ui.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/ui.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/ui.c"	2010-07-07 21:48:26.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/ui.c"	2011-10-20 16:06:18.640625000 +0300
+@@ -100,7 +100,7 @@
+ static int single_step;
+ 
+ /* FPS counter display */
+-static int showfps;
++static int showfps = 1;
+ static osd_ticks_t showfps_end;
+ 
+ /* profiler display */
+@@ -121,6 +121,10 @@
+ static int ui_use_natural_keyboard;
+ static UINT8 non_char_keys_down[(ARRAY_LENGTH(non_char_keys) + 7) / 8];
+ 
++/* save state stuff */
++static char savestate_filename[20];
++static int current_savestate=1;
++
+ 
+ /***************************************************************************
+     FUNCTION PROTOTYPES
+@@ -1390,39 +1394,10 @@
+ 		return ui_set_handler(ui_gfx_ui_handler, is_paused);
+ 	}
+ 
+-	/* handle a save state request */
+-	if (ui_input_pressed(machine, IPT_UI_SAVE_STATE))
+-	{
+-		machine->pause();
+-		return ui_set_handler(handler_load_save, LOADSAVE_SAVE);
+-	}
+-
+-	/* handle a load state request */
+-	if (ui_input_pressed(machine, IPT_UI_LOAD_STATE))
+-	{
+-		machine->pause();
+-		return ui_set_handler(handler_load_save, LOADSAVE_LOAD);
+-	}
+-
+ 	/* handle a save snapshot request */
+ 	if (ui_input_pressed(machine, IPT_UI_SNAPSHOT))
+ 		video_save_active_screen_snapshots(machine);
+ 
+-	/* toggle pause */
+-	if (ui_input_pressed(machine, IPT_UI_PAUSE))
+-	{
+-		/* with a shift key, it is single step */
+-		if (is_paused && (input_code_pressed(machine, KEYCODE_LSHIFT) || input_code_pressed(machine, KEYCODE_RSHIFT)))
+-		{
+-			single_step = TRUE;
+-			machine->resume();
+-		}
+-		else if (machine->paused())
+-			machine->resume();
+-		else
+-			machine->pause();
+-	}
+-
+ 	/* handle a toggle cheats request */
+ 	if (ui_input_pressed(machine, IPT_UI_TOGGLE_CHEAT))
+ 		cheat_set_global_enable(machine, !cheat_get_global_enable(machine));
+@@ -1489,6 +1464,108 @@
+ 	else
+ 		video_set_fastforward(FALSE);
+ 
++	/* toggle pause */
++	if (ui_input_pressed(machine, IPT_UI_PAUSE))
++	{
++		if (machine->paused())
++			machine->resume();
++		else
++			machine->pause();
++	}
++
++	/* frame advance */
++	if (ui_input_pressed_repeat(machine, IPT_UI_FRAME_ADVANCE,6))
++	{
++		if (machine->paused()) {
++			single_step = TRUE;
++			machine->resume();
++		}
++		else
++			machine->pause();
++	}
++
++	/* movies */
++	if (ui_input_pressed(machine, IPT_UI_PLAY_MOVIE_BEGIN))
++		replay_movie(machine);
++	if (ui_input_pressed(machine, IPT_UI_STOP_MOVIE))
++		stop_movie(machine, "stopped by user");
++
++	/* Lua scripting */
++	if (ui_input_pressed(machine, IPT_UI_LUA_OPEN))
++		MAME_OpenLuaConsole();
++	if (ui_input_pressed(machine, IPT_UI_LUA_STOP))
++		MAME_LuaStop();
++	if (ui_input_pressed(machine, IPT_UI_LUA_RELOAD))
++		MAME_ReloadLuaCode();
++
++	if (ui_input_pressed(machine, IPT_UI_LUA_HOTKEY_1))
++		CallRegisteredLuaFunctions(LUACALL_HOTKEY_1);
++	if (ui_input_pressed(machine, IPT_UI_LUA_HOTKEY_2))
++		CallRegisteredLuaFunctions(LUACALL_HOTKEY_2);
++	if (ui_input_pressed(machine, IPT_UI_LUA_HOTKEY_3))
++		CallRegisteredLuaFunctions(LUACALL_HOTKEY_3);
++	if (ui_input_pressed(machine, IPT_UI_LUA_HOTKEY_4))
++		CallRegisteredLuaFunctions(LUACALL_HOTKEY_4);
++	if (ui_input_pressed(machine, IPT_UI_LUA_HOTKEY_5))
++		CallRegisteredLuaFunctions(LUACALL_HOTKEY_5);
++
++	/* save states */
++	if (ui_input_pressed(machine, IPT_UI_SAVE_STATE))
++		return ui_set_handler(handler_load_save, LOADSAVE_SAVE);
++	if (ui_input_pressed(machine, IPT_UI_LOAD_STATE))
++		return ui_set_handler(handler_load_save, LOADSAVE_LOAD);
++	for (int i = IPT_UI_LOAD_STATE_1; i <= IPT_UI_LOAD_STATE_9; i++) {
++		if (ui_input_pressed(machine, i)) {
++			current_savestate=i-IPT_UI_LOAD_STATE_1+1;
++			sprintf(savestate_filename, "%d", current_savestate);
++			popmessage("Load from position %d", current_savestate);
++			machine->schedule_load(savestate_filename);
++			return 0;
++		}
++	}
++	for (int i = IPT_UI_SAVE_STATE_1; i <= IPT_UI_SAVE_STATE_9; i++) {
++		if (ui_input_pressed(machine, i)) {
++			current_savestate=i-IPT_UI_SAVE_STATE_1+1;
++			sprintf(savestate_filename, "%d", current_savestate);
++			popmessage("Save to position %d", current_savestate);
++			machine->schedule_save(savestate_filename);
++			return 0;
++		}
++	}
++	for (int i = IPT_UI_SELECT_STATE_1; i <= IPT_UI_SELECT_STATE_9; i++) {
++		if (ui_input_pressed(machine, i)) {
++			current_savestate=i-IPT_UI_SELECT_STATE_1+1;
++			popmessage("State %d selected", current_savestate);
++			return 0;
++		}
++	}
++	if (ui_input_pressed(machine, IPT_UI_SELECT_PREV_STATE)) {
++		current_savestate--;
++		if (current_savestate < 1)
++			current_savestate = 1;
++		popmessage("State %d selected", current_savestate);
++		return 0;
++	}
++	if (ui_input_pressed(machine, IPT_UI_SELECT_NEXT_STATE)) {
++		current_savestate++;
++		if (current_savestate > 9)
++			current_savestate = 9;
++		popmessage("State %d selected", current_savestate);
++		return 0;
++	}
++	if (ui_input_pressed(machine, IPT_UI_LOAD_CUR_STATE)) {
++		sprintf(savestate_filename, "%d", current_savestate);
++		popmessage("Load from position %d", current_savestate);
++		machine->schedule_load(savestate_filename);
++		return 0;
++	}
++	if (ui_input_pressed(machine, IPT_UI_SAVE_CUR_STATE)) {
++		sprintf(savestate_filename, "%d", current_savestate);
++		popmessage("Save to position %d", current_savestate);
++		machine->schedule_save(savestate_filename);
++		return 0;
++	}
++
+ 	return 0;
+ }
+ 
+@@ -1524,7 +1601,7 @@
+ 			popmessage("Load cancelled");
+ 
+ 		/* reset the state */
+-		machine->resume();
++//		machine->resume();
+ 		return UI_HANDLER_CANCEL;
+ 	}
+ 
+@@ -1557,7 +1634,7 @@
+ 	}
+ 
+ 	/* remove the pause and reset the state */
+-	machine->resume();
++//	machine->resume();
+ 	return UI_HANDLER_CANCEL;
+ }
+ 
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/video.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/video.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/emu/video.c"	2010-07-26 04:55:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/emu/video.c"	2011-10-20 16:06:10.875000000 +0300
+@@ -528,6 +528,9 @@
+ 	for (screen_device *screen = screen_first(*machine); screen != NULL; screen = screen_next(screen))
+ 		crosshair_render(*screen);
+ 
++	// draw Lua GUI
++	MAME_LuaGui();
++
+ 	return anything_changed;
+ }
+ 
+@@ -584,6 +587,9 @@
+ 	/* validate */
+ 	assert(machine != NULL);
+ 
++	/* show frame counter */
++	dest += sprintf(dest, "[%i] : ",get_current_frame(machine));
++
+ 	/* if we're paused, just display Paused */
+ 	if (paused)
+ 		dest += sprintf(dest, "paused");
+Only in D:\SVN\mame-rr-feos\mame-rr\src/mame/drivers: janshi.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/mame/drivers: mirderby.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/mame/machine: daikaiju.c
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/mame/tiny.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/mame/tiny.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/mame/tiny.c"	2010-01-10 11:00:44.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/mame/tiny.c"	2011-10-20 15:53:27.281250000 +0300
+@@ -55,5 +55,9 @@
+ 	DRIVER( fireone )	/* (c) 1979 Exidy */
+ 	DRIVER( starfir2 )	/* (c) 1979 Exidy */
+ 	DRIVER( wrally )	/* (c) 1993 - Ref 930705 */
++	DRIVER( cninja )	/* (c) 1993 - Ref 930705 */
++	DRIVER( cninjau )	/* (c) 1993 - Ref 930705 */
++	DRIVER( cninja1 )	/* (c) 1993 - Ref 930705 */
++	DRIVER( mutantf )	/* (c) 1993 - Ref 930705 */
+ 
+ #endif	/* DRIVER_RECURSIVE */
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/mame/tiny.mak" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/mame/tiny.mak"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/mame/tiny.mak"	2010-06-11 13:37:52.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/mame/tiny.mak"	2011-10-20 15:55:51.328125000 +0300
+@@ -40,6 +40,8 @@
+ CPUS += M6800
+ CPUS += M6809
+ CPUS += M680X0
++CPUS += M68000
++CPUS += H6280
+ 
+ 
+ 
+@@ -60,6 +62,10 @@
+ SOUNDS += HC55516
+ SOUNDS += YM3812
+ SOUNDS += CEM3394
++SOUNDS += YM2203
++SOUNDS += YM2608
++SOUNDS += YM2610
++SOUNDS += YM2610B
+ 
+ 
+ 
+@@ -85,6 +91,11 @@
+ 	$(AUDIO)/wow.o \
+ 	$(DRIVERS)/gaelco.o $(VIDEO)/gaelco.o $(MACHINE)/gaelcrpt.o \
+ 	$(DRIVERS)/wrally.o $(MACHINE)/wrally.o $(VIDEO)/wrally.o \
++	$(DRIVERS)/cninja.o $(VIDEO)/cninja.o \
++	$(MACHINE)/deco102.o \
++	$(MACHINE)/decocrpt.o \
++	$(MACHINE)/decoprot.o \
++	$(VIDEO)/deco16ic.o \
+ 
+ 
+ 
+Only in D:\SVN\mame-rr-feos\mame0139s\src: mame.diff
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/input.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/input.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/input.c"	2010-06-29 20:46:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/input.c"	2011-10-20 16:03:42.718750000 +0300
+@@ -789,6 +789,29 @@
+ 				}
+ 				break;
+ 
++			// movies
++			case IPT_OSD_3:
++				typedesc->token = "MOVIE_RECORD";
++				typedesc->name = "Start Movie Recording";
++				input_seq_set_2(&typedesc->seq[SEQ_TYPE_STANDARD], KEYCODE_N, KEYCODE_LCONTROL);
++				break;
++			case IPT_OSD_4:
++				typedesc->token = "MOVIE_PLAYBACK";
++				typedesc->name = "Start Movie Playback";
++				input_seq_set_2(&typedesc->seq[SEQ_TYPE_STANDARD], KEYCODE_R, KEYCODE_LCONTROL);
++				break;
++			// RAM tools
++			case IPT_OSD_5:
++				typedesc->token = "RAM_SEARCH";
++				typedesc->name = "RAM Search";
++				input_seq_set_2(&typedesc->seq[SEQ_TYPE_STANDARD], KEYCODE_F, KEYCODE_LCONTROL);
++				break;
++			case IPT_OSD_6:
++				typedesc->token = "RAM_WATCH";
++				typedesc->name = "RAM Watch";
++				input_seq_set_2(&typedesc->seq[SEQ_TYPE_STANDARD], KEYCODE_W, KEYCODE_LCONTROL);
++				break;
++
+ #ifdef MESS
+ 			case IPT_UI_THROTTLE:
+ 				input_seq_set_0(&typedesc->seq[SEQ_TYPE_STANDARD]);
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: luaconsole.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: luaconsole.h
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/mame.rc" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/mame.rc"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/mame.rc"	2009-10-11 22:56:48.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/mame.rc"	2011-10-20 16:03:42.734375000 +0300
+@@ -39,9 +39,195 @@
+ //
+ //============================================================
+ 
+-#define NOWINRES
++//#define NOWINRES
+ #include "windows.h"
+ #include "commctrl.h"
++#include "resource.h"
+ #include "mamevers.rc"
+ 
+ 1                       24      MOVEABLE PURE   "mame.man"
++
++IDD_LUA DIALOGEX 0, 0, 270, 150
++STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
++CAPTION "Lua Script"
++MENU LUAWINDOW_MENU
++FONT 8, "MS Shell Dlg", 400, 0, 0x1
++BEGIN
++    PUSHBUTTON      "Browse...",IDC_BUTTON_LUABROWSE,7,31,48,16
++    PUSHBUTTON      "Run",IDC_BUTTON_LUARUN,213,31,50,16
++    PUSHBUTTON      "Stop",IDC_BUTTON_LUASTOP,160,31,50,16
++    EDITTEXT        IDC_EDIT_LUAPATH,7,16,256,14,ES_AUTOHSCROLL
++    EDITTEXT        IDC_LUACONSOLE,7,61,256,81,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
++    LTEXT           "Output Console",IDC_STATIC,7,51,51,8
++    LTEXT           "Script File",IDC_STATIC,7,7,32,8
++    PUSHBUTTON      "Edit",IDC_BUTTON_LUAEDIT,58,31,46,16
++END
++
++IDD_RAMSEARCH DIALOGEX 0, 0, 287, 292
++STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION " RAM Search"
++FONT 8, "MS Shell Dlg", 400, 0, 0x1
++BEGIN
++    CONTROL         "",IDC_RAMLIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,9,9,214,151,WS_EX_CLIENTEDGE
++    PUSHBUTTON      "&Search",IDC_C_SEARCH,226,9,52,16
++    PUSHBUTTON      "&Watch",IDC_C_WATCH,226,127,52,16
++    PUSHBUTTON      "&Reset",IDC_C_RESET,226,27,52,16
++    PUSHBUTTON      "&Eliminate",IDC_C_ELIMINATE,226,109,52,16
++    GROUPBOX        "Comparison Operator",IDC_STATIC,10,166,102,118,0,WS_EX_TRANSPARENT
++    CONTROL         "Less Than",IDC_LESSTHAN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,178,95,11
++    CONTROL         "Greater Than",IDC_MORETHAN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,191,95,11
++    CONTROL         "Less Than or Equal To",IDC_NOMORETHAN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,204,95,11
++    CONTROL         "Greater Than or Equal To",IDC_NOLESSTHAN,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,217,95,11
++    CONTROL         "Equal To",IDC_EQUALTO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,230,95,11
++    CONTROL         "Not Equal To",IDC_DIFFERENTFROM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,243,95,11
++    CONTROL         "Different By:",IDC_DIFFERENTBY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,256,52,11
++    CONTROL         "Modulo",IDC_MODULO,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,269,35,11
++    EDITTEXT        IDC_EDIT_DIFFBY,69,255,38,12,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
++    EDITTEXT        IDC_EDIT_MODBY,51,267,38,12,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
++    GROUPBOX        "Compare To / By",IDC_STATIC,118,166,153,58,0,WS_EX_TRANSPARENT
++    CONTROL         "Previous Value",IDC_PREVIOUSVALUE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,121,176,67,10
++    CONTROL         "Specific Value:",IDC_SPECIFICVALUE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,187,67,10
++    CONTROL         "Specific Address:",IDC_SPECIFICADDRESS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,198,67,10
++    CONTROL         "Number of Changes:",IDC_NUMBEROFCHANGES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,209,76,10
++    EDITTEXT        IDC_EDIT_COMPAREVALUE,203,183,63,12,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
++    EDITTEXT        IDC_EDIT_COMPAREADDRESS,203,195,63,12,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
++    EDITTEXT        IDC_EDIT_COMPARECHANGES,203,207,63,12,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
++    GROUPBOX        "Data Type / Display",IDC_STATIC,196,227,75,44,0,WS_EX_TRANSPARENT
++    CONTROL         "Signed",IDC_SIGNED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,200,237,67,9
++    CONTROL         "Unsigned",IDC_UNSIGNED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,200,248,67,9
++    CONTROL         "Hexadecimal",IDC_HEX,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,200,259,67,9
++    CONTROL         "Autosearch",IDC_C_AUTOSEARCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,273,52,11
++    GROUPBOX        "Data Size",IDC_STATIC,117,227,73,57,0,WS_EX_TRANSPARENT
++    CONTROL         "1 byte",IDC_1_BYTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,121,237,61,11
++    CONTROL         "2 bytes",IDC_2_BYTES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,248,61,11
++    CONTROL         "4 bytes",IDC_4_BYTES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,259,61,11
++    CONTROL         "Check Misaligned",IDC_MISALIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,272,65,8
++    PUSHBUTTON      "&Clear Change Counts",IDC_C_RESET_CHANGES,226,46,52,20,BS_MULTILINE
++    PUSHBUTTON      "&Undo",IDC_C_UNDO,226,69,52,16,WS_DISABLED
++    LTEXT           "Is",IDC_STATIC,92,270,12,8
++END
++
++IDD_RAMWATCH DIALOGEX 0, 0, 269, 298
++STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION " RAM Watch"
++MENU RAMWATCH_MENU
++FONT 8, "MS Shell Dlg", 400, 0, 0x1
++BEGIN   CONTROL         "",IDC_WATCHLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,9,9,210,279,WS_EX_CLIENTEDGE
++    PUSHBUTTON      "Edit",IDC_C_WATCH_EDIT,226,66,34,14
++    PUSHBUTTON      "Remove",IDC_C_WATCH_REMOVE,226,83,34,14
++    PUSHBUTTON      "New",IDC_C_WATCH,226,100,34,14
++    PUSHBUTTON      "Duplicate",IDC_C_WATCH_DUPLICATE,226,117,34,14
++    GROUPBOX        "Watches",IDC_STATIC,222,11,42,125
++    CONTROL         "",ID_WATCHES_UPDOWN,"msctls_updown32",WS_TABSTOP,232,23,19,36
++END
++
++IDD_EDITWATCH DIALOGEX 0, 0, 181, 95
++STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
++CAPTION " Edit Watch"
++FONT 8, "MS Shell Dlg", 400, 0, 0x1
++BEGIN
++    CTEXT           "Address:",IDC_SPECIFICADDRESS,18,12,35,10
++    EDITTEXT        IDC_EDIT_COMPAREADDRESS,55,10,65,12,ES_UPPERCASE | ES_AUTOHSCROLL
++    CTEXT           "Notes:",IDC_PROMPT_TEXT,18,24,45,10
++    EDITTEXT        IDC_PROMPT_EDIT,55,22,65,12,ES_AUTOHSCROLL
++    GROUPBOX        "Data Type",IDC_STATIC,14,37,75,42,0,WS_EX_TRANSPARENT
++    CONTROL         "&Signed",IDC_SIGNED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,47,67,9
++    CONTROL         "&Unsigned",IDC_UNSIGNED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,57,67,9
++    CONTROL         "&Hexadecimal",IDC_HEX,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,18,67,67,9
++    GROUPBOX        "Data Size",IDC_STATIC,94,37,73,42,0,WS_EX_TRANSPARENT
++    CONTROL         "&1 byte",IDC_1_BYTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,98,47,61,11
++    CONTROL         "&2 bytes",IDC_2_BYTES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,98,57,61,11
++    CONTROL         "&4 bytes",IDC_4_BYTES,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,98,67,61,11
++    DEFPUSHBUTTON   "&OK",IDOK,66,80,50,14
++    PUSHBUTTON      "&Cancel",IDCANCEL,120,80,50,14
++END
++
++IDD_PROMPT DIALOG  0, 0, 186, 68
++STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
++CAPTION "Input Prompt"
++FONT 8, "Ms Shell Dlg 2"
++BEGIN
++    DEFPUSHBUTTON   "OK",IDOK,100,43,50,14
++    PUSHBUTTON      "Cancel",IDCANCEL,37,42,50,14
++    EDITTEXT        IDC_PROMPT_EDIT,10,15,167,14,ES_AUTOHSCROLL
++END
++
++LUAWINDOW_MENU MENU
++BEGIN
++	POPUP "Console"
++	BEGIN
++		MENUITEM "&Font...",                    IDC_LUACONSOLE_CHOOSEFONT
++		MENUITEM "Clear",                       IDC_LUACONSOLE_CLEAR
++	END
++END
++
++RAMWATCH_MENU MENU 
++BEGIN
++    POPUP "File"
++    BEGIN
++        MENUITEM "&New list",           RAMMENU_FILE_NEW
++        MENUITEM "&Open...",            RAMMENU_FILE_OPEN
++        MENUITEM "&Save",               RAMMENU_FILE_SAVE
++        MENUITEM "Sa&ve As...",   RAMMENU_FILE_SAVEAS
++        MENUITEM "&Append file...",             RAMMENU_FILE_APPEND
++        MENUITEM "Recent",                      RAMMENU_FILE_RECENT
++        MENUITEM SEPARATOR
++        MENUITEM "Auto-&load",                  RAMMENU_FILE_AUTOLOAD
++        MENUITEM "Save Window Position",        RAMMENU_FILE_SAVEWINDOW
++        MENUITEM SEPARATOR
++        MENUITEM "&Close",              IDCANCEL
++    END
++    POPUP "Watches"
++    BEGIN
++        MENUITEM "&New Watch",               IDC_C_WATCH
++        MENUITEM "&Edit Watch",              IDC_C_WATCH_EDIT
++        MENUITEM "&Remove Watch",            IDC_C_WATCH_REMOVE
++        MENUITEM "Duplicate Watch",          IDC_C_WATCH_DUPLICATE
++        MENUITEM SEPARATOR
++        MENUITEM "Move Up",                  IDC_C_WATCH_UP
++        MENUITEM "Move Down",                IDC_C_WATCH_DOWN
++    END
++END
++
++IDD_REPLAYINP DIALOG DISCARDABLE  0, 0, 276, 137
++STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
++    WS_SYSMENU
++CAPTION "Replay input"
++FONT 8, "MS Shell Dlg"
++BEGIN
++    DEFPUSHBUTTON   "OK",IDOK,219,120,50,14
++    GROUPBOX        "",IDC_STATIC,3,0,269,115
++    RTEXT           "File:",IDC_STATIC,8,11,24,10,SS_CENTERIMAGE
++    COMBOBOX        IDC_CHOOSE_LIST,35,10,231,128,CBS_DROPDOWNLIST | 
++                    WS_VSCROLL | WS_TABSTOP
++    PUSHBUTTON      "Cancel",IDCANCEL,165,120,50,14
++    RTEXT           "Length:",IDC_STATIC,10,44,59,8
++    RTEXT           "Frames:",IDC_STATIC,10,53,59,8
++    RTEXT           "Undo Count:",IDC_STATIC,10,62,59,8
++//    RTEXT           "Author Info:",IDC_STATIC,10,71,59,8
++//    RTEXT           "Recorded From:",IDC_STATIC,10,80,59,8
++    LTEXT           "00:00:00",IDC_LENGTH,76,44,59,8
++    LTEXT           "0",IDC_FRAMES,76,53,59,8
++    LTEXT           "0",IDC_UNDO,76,62,59,8
++//    LTEXT           "",IDC_METADATA,76,71,190,37
++//    LTEXT           "",IDC_REPLAYRESET,76,80,190,37
++    CONTROL         "Open Read-Only",IDC_READONLY,"Button",BS_AUTOCHECKBOX | 
++                    WS_TABSTOP,35,25,69,10
++END
++
++IDD_RECORDINP DIALOG DISCARDABLE  0, 0, 276, 98
++STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
++    WS_SYSMENU
++CAPTION "Record input"
++FONT 8, "MS Shell Dlg"
++BEGIN
++    DEFPUSHBUTTON   "OK",IDOK,219,79,50,14
++    GROUPBOX        "",-1,3,0,269,73
++    RTEXT           "File:",-1,26,11,24,10,SS_CENTERIMAGE
++    PUSHBUTTON      "Cancel",IDCANCEL,165,79,50,14
++//    RTEXT           "Author Info:",-1,10,30,40,8
++    EDITTEXT        IDC_FILENAME,55,10,189,14,ES_AUTOHSCROLL
++    PUSHBUTTON      "...",IDC_BROWSE,249,10,18,14
++//    EDITTEXT        IDC_METADATA,55,30,189,37,ES_AUTOHSCROLL
++//    CONTROL         "Record From Power-On",IDC_REPLAYRESET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,79,106,14
++END
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: movie.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: ram_search.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: ram_search.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: ramwatch.c
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: ramwatch.h
+Only in D:\SVN\mame-rr-feos\mame-rr\src/osd/windows: resource.h
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/video.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/video.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/video.c"	2010-06-29 20:46:22.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/video.c"	2011-10-20 16:03:42.906250000 +0300
+@@ -375,6 +375,10 @@
+ //  check_osd_inputs
+ //============================================================
+ 
++void RamWatchOpen(running_machine *machine);
++void RamSearchOpen(running_machine *machine);
++void start_record_dialog(running_machine *machine);
++void start_playback_dialog(running_machine *machine);
+ static void check_osd_inputs(running_machine *machine)
+ {
+ 	// check for toggling fullscreen mode
+@@ -386,6 +390,18 @@
+ 	if (ui_input_pressed(machine, IPT_OSD_2))
+ 		win_toggle_menubar();
+ #endif
++
++	// movie dialogs
++	if (ui_input_pressed(machine, IPT_OSD_3))
++		start_record_dialog(machine);
++	if (ui_input_pressed(machine, IPT_OSD_4))
++		start_playback_dialog(machine);
++
++	// RAM tools
++	if (ui_input_pressed(machine, IPT_OSD_5))
++		RamSearchOpen(machine);
++	if (ui_input_pressed(machine, IPT_OSD_6))
++		RamWatchOpen(machine);
+ }
+ 
+ 
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/windows.mak" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/windows.mak"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/windows.mak"	2010-06-30 13:23:50.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/windows.mak"	2011-10-20 16:03:42.546875000 +0300
+@@ -232,7 +232,7 @@
+ LDFLAGS += -static-libgcc
+ 
+ # add the windows libraries
+-LIBS += -luser32 -lgdi32 -lddraw -ldsound -ldxguid -lwinmm -ladvapi32 -lcomctl32 -lshlwapi -ldinput8
++LIBS += -luser32 -lgdi32 -lddraw -ldsound -ldxguid -lwinmm -ladvapi32 -lcomctl32 -lshlwapi -ldinput8 -lcomdlg32 -llua51
+ 
+ ifeq ($(DIRECTINPUT),8)
+ LIBS += -ldinput8
+@@ -278,7 +278,11 @@
+ 	$(WINOBJ)/sound.o \
+ 	$(WINOBJ)/video.o \
+ 	$(WINOBJ)/window.o \
+-	$(WINOBJ)/winmain.o
++	$(WINOBJ)/winmain.o \
++	$(WINOBJ)/luaconsole.o \
++	$(WINOBJ)/movie.o \
++	$(WINOBJ)/ram_search.o \
++	$(WINOBJ)/ramwatch.o
+ 
+ ifeq ($(DIRECT3D),9)
+ CCOMFLAGS += -DDIRECT3D_VERSION=0x0900
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/winmain.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/winmain.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/osd/windows/winmain.c"	2010-07-29 06:59:42.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/osd/windows/winmain.c"	2011-10-20 16:03:42.765625000 +0300
+@@ -309,8 +309,8 @@
+ 	{ NULL,                       NULL,       OPTION_HEADER,     "WINDOWS VIDEO OPTIONS" },
+ 	{ "video",                    "d3d",      0,                 "video output method: none, gdi, ddraw, or d3d" },
+ 	{ "numscreens(1-4)",          "1",        0,                 "number of screens to create; usually, you want just one" },
+-	{ "window;w",                 "0",        OPTION_BOOLEAN,    "enable window mode; otherwise, full screen mode is assumed" },
+-	{ "maximize;max",             "1",        OPTION_BOOLEAN,    "default to maximized windows; otherwise, windows will be minimized" },
++	{ "window;w",                 "1",        OPTION_BOOLEAN,    "enable window mode; otherwise, full screen mode is assumed" },
++	{ "maximize;max",             "0",        OPTION_BOOLEAN,    "default to maximized windows; otherwise, windows will be minimized" },
+ 	{ "keepaspect;ka",            "1",        OPTION_BOOLEAN,    "constrain to the proper aspect ratio" },
+ 	{ "prescale",                 "1",        0,                 "scale screen rendering by this amount in software" },
+ 	{ "effect",                   "none",     0,                 "name of a PNG file to use for visual effects, or 'none'" },
+diff -Ewbru "D:\\SVN\\mame-rr-feos\\mame0139s\\src/version.c" "D:\\SVN\\mame-rr-feos\\mame-rr\\src/version.c"
+--- "D:\\SVN\\mame-rr-feos\\mame0139s\\src/version.c"	2010-07-29 06:59:42.000000000 +0300
++++ "D:\\SVN\\mame-rr-feos\\mame-rr\\src/version.c"	2011-10-20 16:03:50.093750000 +0300
+@@ -10,4 +10,4 @@
+ ***************************************************************************/
+ 
+ extern const char build_version[];
+-const char build_version[] = "0.139 ("__DATE__")";
++const char build_version[] = "0.139[RR] ("__DATE__")";
