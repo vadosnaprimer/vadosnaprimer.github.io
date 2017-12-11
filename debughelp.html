@@ -1,6 +1,19 @@
-<a name="contents">Contents</a><br>
-<a href="#"></a><br>
-<a href="#general">general</a><br>
+<a name="Top"></a>
+</pre>MAME Debugger Help<pre>
+  help [&lt;topic>] -- get help on a particular topic
+</pre><pre>
+</pre>Topics:<pre>
+  General
+  Memory
+  Execution
+  Breakpoints
+  Watchpoints
+  Registerpoints
+  Expressions
+  Comments
+  Cheats
+  Image
+</pre><pre><br></pre><a href="#general">general</a><br>
 <a href="#memory">memory</a><br>
 <a href="#execution">execution</a><br>
 <a href="#breakpoints">breakpoints</a><br>
@@ -79,26 +92,12 @@
 <a href="#images">images</a><br>
 <a href="#mount">mount</a><br>
 <a href="#unmount">unmount</a><br>
-<a href="#contents">Up</a> <a name=""><h3></h3></a><pre>
-</pre>MAME Debugger Help<pre>
-  help [&lt;topic>] -- get help on a particular topic
-</pre><pre>
-</pre>Topics:<pre>
-  General
-  Memory
-  Execution
-  Breakpoints
-  Watchpoints
-  Registerpoints
-  Expressions
-  Comments
-  Cheats
-  Image
-</pre><br><a href="#contents">Up</a> <a name="general"><h3>general</h3></a><pre>
+<br><a href="#Top">Up</a> <a name="general"><h3>general</h3></a><pre>
 </pre>General Debugger Help<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
   help [&lt;topic>] -- get help on a particular topic
+  html -- print all debugger help to an html file
   do &lt;expression> -- evaluates the given expression
   symlist [&lt;cpu>] -- lists registered symbols
   softreset -- executes a soft reset
@@ -121,7 +120,7 @@
   snap [&lt;filename>] -- save a screen snapshot.
   source &lt;filename> -- reads commands from &lt;filename> and executes them one by one
   quit -- exits MAME and the debugger
-</pre><br><a href="#contents">Up</a> <a name="memory"><h3>memory</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="memory"><h3>memory</h3></a><pre>
 </pre>Memory Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -142,7 +141,7 @@
   mapd &lt;address> -- map logical data address to physical address and bank
   mapi &lt;address> -- map logical I/O address to physical address and bank
   memdump [&lt;filename>] -- dump the current memory map to &lt;filename>
-</pre><br><a href="#contents">Up</a> <a name="execution"><h3>execution</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="execution"><h3>execution</h3></a><pre>
 </pre>Execution Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -160,7 +159,7 @@
   trace {&lt;filename>|OFF}[,&lt;cpu>[,&lt;detectloops>[,&lt;action>]]] -- trace the given CPU to a file (defaults to active CPU)
   traceover {&lt;filename>|OFF}[,&lt;cpu>[,&lt;detectloops>[,&lt;action>]]] -- trace the given CPU to a file, but skip subroutines (defaults to active CPU)
   traceflush -- flushes all open trace files
-</pre><br><a href="#contents">Up</a> <a name="breakpoints"><h3>breakpoints</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="breakpoints"><h3>breakpoints</h3></a><pre>
 </pre>Breakpoint Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -169,7 +168,7 @@
   bpdisable [&lt;bpnum>] -- disables a given breakpoint or all if no &lt;bpnum> specified
   bpenable [&lt;bpnum>] -- enables a given breakpoint or all if no &lt;bpnum> specified
   bplist -- lists all the breakpoints
-</pre><br><a href="#contents">Up</a> <a name="watchpoints"><h3>watchpoints</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="watchpoints"><h3>watchpoints</h3></a><pre>
 </pre>Watchpoint Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -181,7 +180,7 @@
   wpenable [&lt;wpnum>] -- enables a given watchpoint or all if no &lt;wpnum> specified
   wplist -- lists all the watchpoints
   hotspot [&lt;cpu>,[&lt;depth>[,&lt;hits>]]] -- attempt to find hotspots
-</pre><br><a href="#contents">Up</a> <a name="registerpoints"><h3>registerpoints</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="registerpoints"><h3>registerpoints</h3></a><pre>
 </pre>Registerpoint Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -190,7 +189,7 @@
   rpdisable [&lt;rpnum>] -- disabled a given registerpoint or all if no &lt;rpnum> specified
   rpenable [&lt;rpnum>]  -- enables a given registerpoint or all if no &lt;rpnum> specified
   rplist -- lists all the registerpoints
-</pre><br><a href="#contents">Up</a> <a name="expressions"><h3>expressions</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="expressions"><h3>expressions</h3></a><pre>
 </pre>Expressions can be used anywhere a numeric parameter is expected. The syntax for expressions is very close to standard C-style syntax with full operator ordering and parentheses. There are a few operators missing (notably the trinary ? : operator), and a few new ones (memory accessors). The table below lists all the operators in their order, highest precedence operators first.<pre>
 </pre><pre>
   ( ) : standard parentheses
@@ -210,7 +209,7 @@
   , : separate terms, function parameters
 </pre><pre>
 </pre>These are the differences from C behaviors. First, All math is performed on full 64-bit unsigned values, so things like a &lt; 0 won't work as expected. Second, the logical operators && and || do not have short-circuit properties -- both halves are always evaluated. Finally, the new memory operators work like this: b@&lt;addr> refers to the byte read from &lt;addr>. Similarly, w@ refers to a word in memory, d@ refers to a dword in memory, and q@ refers to a qword in memory. The memory operators can be used as both lvalues and rvalues, so you can write b@100 = ff to store a byte in memory. By default these operators read from the program memory space, but you can override that by prefixing them with a 'd' or an 'i'. So dw@300 refers to data memory word at address 300 and id@400 refers to an I/O memory dword at address 400.<pre>
-</pre><br><a href="#contents">Up</a> <a name="comments"><h3>comments</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="comments"><h3>comments</h3></a><pre>
 </pre>Code annotation commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -220,7 +219,7 @@
   comlist -- print currently available comments from file
   commit[/*] &lt;address>,&lt;comment> -- gives a bulk comadd then comsave command
 </pre><pre>
-</pre><br><a href="#contents">Up</a> <a name="cheats"><h3>cheats</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheats"><h3>cheats</h3></a><pre>
 </pre>Cheat Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
@@ -230,14 +229,14 @@
   cheatnextf &lt;condition>[,&lt;comparisonvalue>] -- continue cheat search comparing with the first value
   cheatlist [&lt;filename>] -- show the list of cheat search matches or save them to &lt;filename>
   cheatundo -- undo the last cheat search (state only)
-</pre><br><a href="#contents">Up</a> <a name="image"><h3>image</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="image"><h3>image</h3></a><pre>
 </pre>Image Commands<pre>
 </pre>Type help &lt;command> for further details on each command<pre>
 </pre><pre>
   images -- lists all image devices and mounted files
   mount &lt;device>,&lt;filename> -- mounts file to named device
   unmount &lt;device> -- unmounts file from named device
-</pre><br><a href="#contents">Up</a> <a name="do"><h3>do</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="do"><h3>do</h3></a><pre>
   do &lt;expression>
 </pre><pre>
 </pre>The do command simply evaluates the given &lt;expression>. This is typically used to set or modify variables.<pre>
@@ -246,7 +245,7 @@
 </pre><pre>
   do pc = 0
 </pre>Sets the register 'pc' to 0.<pre>
-</pre><br><a href="#contents">Up</a> <a name="symlist"><h3>symlist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="symlist"><h3>symlist</h3></a><pre>
   symlist [&lt;cpu>]
 </pre><pre>
 </pre>Lists registered symbols. If &lt;cpu> is not specified, then symbols in the global symbol table are displayed; otherwise, the symbols for &lt;cpu>'s specific CPU are displayed. Symbols are listed alphabetically. Read-only symbols are flagged with an asterisk.<pre>
@@ -258,7 +257,7 @@
 </pre><pre>
   symlist 2
 </pre>Displays the symbols specific to CPU #2.<pre>
-</pre><br><a href="#contents">Up</a> <a name="softreset"><h3>softreset</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="softreset"><h3>softreset</h3></a><pre>
   softreset
 </pre><pre>
 </pre>Executes a soft reset.<pre>
@@ -267,7 +266,7 @@
 </pre><pre>
   softreset
 </pre>Executes a soft reset.<pre>
-</pre><br><a href="#contents">Up</a> <a name="hardreset"><h3>hardreset</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="hardreset"><h3>hardreset</h3></a><pre>
   hardreset
 </pre><pre>
 </pre>Executes a hard reset.<pre>
@@ -276,7 +275,7 @@
 </pre><pre>
   hardreset
 </pre>Executes a hard reset.<pre>
-</pre><br><a href="#contents">Up</a> <a name="print"><h3>print</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="print"><h3>print</h3></a><pre>
   print &lt;item>[,...]
 </pre><pre>
 </pre>The print command prints the results of one or more expressions to the debugger console as hexadecimal values.<pre>
@@ -288,7 +287,7 @@
 </pre><pre>
   print a,b,a+b
 </pre>Prints a, b, and the value of a+b to the console as hex numbers.<pre>
-</pre><br><a href="#contents">Up</a> <a name="printf"><h3>printf</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="printf"><h3>printf</h3></a><pre>
   printf &lt;format>[,&lt;item>[,...]]
 </pre><pre>
 </pre>The printf command performs a C-style printf to the debugger console. Only a very limited set of formatting options are available:<pre>
@@ -305,7 +304,7 @@
 </pre><pre>
   printf "A=%d, B=%d\nC=%d",a,b,a+b
 </pre>Prints A=&lt;aval>, B=&lt;bval> on one line, and C=&lt;a+bval> on a second line.<pre>
-</pre><br><a href="#contents">Up</a> <a name="logerror"><h3>logerror</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="logerror"><h3>logerror</h3></a><pre>
   logerror &lt;format>[,&lt;item>[,...]]
 </pre><pre>
 </pre>The logerror command performs a C-style printf to the error log. Only a very limited set of formatting options are available:<pre>
@@ -322,7 +321,7 @@
 </pre><pre>
   logerror "A=%d, B=%d\nC=%d",a,b,a+b
 </pre>Logs A=&lt;aval>, B=&lt;bval> on one line, and C=&lt;a+bval> on a second line.<pre>
-</pre><br><a href="#contents">Up</a> <a name="tracelog"><h3>tracelog</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="tracelog"><h3>tracelog</h3></a><pre>
   tracelog &lt;format>[,&lt;item>[,...]]
 </pre><pre>
 </pre>The tracelog command performs a C-style printf and routes the output to the currently open trace file (see the 'trace' command for details). If no file is currently open, tracelog does nothing. Only a very limited set of formatting options are available. See the 'printf' help for details.<pre>
@@ -334,7 +333,7 @@
 </pre><pre>
   printf "A=%d, B=%d\nC=%d",a,b,a+b
 </pre>Outputs A=&lt;aval>, B=&lt;bval> on one line, and C=&lt;a+bval> on a second line.<pre>
-</pre><br><a href="#contents">Up</a> <a name="tracesym"><h3>tracesym</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="tracesym"><h3>tracesym</h3></a><pre>
   tracesym &lt;item>[,...]
 </pre><pre>
 </pre>The tracesym command prints the specified symbols and routes the output to the currently open trace file (see the 'trace' command for details). If no file is currently open, tracesym does nothing. <pre>
@@ -345,7 +344,7 @@
 </pre><pre>
   printf a,b
 </pre>Outputs A=&lt;aval>, B=&lt;bval> on one line.<pre>
-</pre><br><a href="#contents">Up</a> <a name="trackpc"><h3>trackpc</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="trackpc"><h3>trackpc</h3></a><pre>
   trackpc [&lt;bool>,&lt;cpu>,&lt;bool>]
 </pre><pre>
 </pre>The trackpc command displays which program counters have already been visited in all disassembler windows. The first boolean argument toggles the process on and off.  The second argument is a cpu selector; if no cpu is specified, the current cpu is automatically selected.  The third argument is a boolean denoting if the existing data should be cleared or not.<pre>
@@ -357,7 +356,7 @@
 </pre><pre>
   trackpc 1, 0, 1
 </pre>Continue tracking pc on cpu 0, but clear existing track info.<pre>
-</pre><br><a href="#contents">Up</a> <a name="trackmem"><h3>trackmem</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="trackmem"><h3>trackmem</h3></a><pre>
   trackmem [&lt;bool>,&lt;cpu>,&lt;bool>]
 </pre><pre>
 </pre>The trackmem command logs the PC at each time a memory address is written to.  The first boolean argument toggles the process on and off.  The second argument is a cpu selector; if no cpu is specified, the current cpu is automatically selected. The third argument  is a boolean denoting if the existing data should be cleared or not.  Please refer to the pcatmem command for information on how to retrieve this data.  Also, right clicking in a memory window will display the logged PC for the given address.<pre>
@@ -369,7 +368,7 @@
 </pre><pre>
   trackmem 1, 0, 1
 </pre>Continue tracking memory writes on cpu 0, but clear existing track info.<pre>
-</pre><br><a href="#contents">Up</a> <a name="pcatmem"><h3>pcatmem</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="pcatmem"><h3>pcatmem</h3></a><pre>
   pcatmem(p/d/i) &lt;address>[,&lt;cpu>]
 </pre><pre>
 </pre>The pcatmem command returns which PC wrote to a given memory address for the current CPU. The first argument is the requested address.  The second argument is a cpu selector; if no cpu is specified, the current cpu is automatically selected.  Right clicking in a memory window will also display the logged PC for the given address.<pre>
@@ -378,10 +377,10 @@
 </pre><pre>
   pcatmem 400000
 </pre>Print which PC wrote this CPU's memory location 0x400000.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rewind[rw]"><h3>rewind[rw]</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rewind[rw]"><h3>rewind[rw]</h3></a><pre>
   rewind[rw]
 </pre>The rewind command loads the most recent RAM-based state.  Rewind states, when enabled, are saved when "step", "over", or "out" command gets executed, storing the machine state as of the moment before actually steping.  Consecutively loading rewind states can work like reverse execution.  Depending on which steps forward were taken previously, the bahavior can be similar to GDB's "reverse-stepi" or "reverse-next".  All output for this command is currently echoed into the running machine window.  Previous memory and PC tracking statistics are cleared, actual reverse execution does not occur.<pre>
-</pre><br><a href="#contents">Up</a> <a name="statesave[ss]"><h3>statesave[ss]</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="statesave[ss]"><h3>statesave[ss]</h3></a><pre>
   statesave[ss] &lt;filename>
 </pre><pre>
 </pre>The statesave command creates a save state at this exact moment in time. The given state file gets written to the standard state directory (sta), and gets .sta to it - no file extension necessary.  All output for this command is currently echoed into the running machine window.<pre>
@@ -390,7 +389,7 @@
 </pre><pre>
   statesave foo
 </pre>Writes file 'foo.sta' in the default state save directory.<pre>
-</pre><br><a href="#contents">Up</a> <a name="stateload[sl]"><h3>stateload[sl]</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="stateload[sl]"><h3>stateload[sl]</h3></a><pre>
   stateload[sl] &lt;filename>
 </pre><pre>
 </pre>The stateload command retrieves a save state from disk. The given state file gets read from the standard state directory (sta), and gets .sta to it - no file extension necessary.  All output for this command is currently echoed into the running machine window.  Previous memory and PC tracking statistics are cleared.<pre>
@@ -399,7 +398,7 @@
 </pre><pre>
   stateload foo
 </pre>Reads file 'foo.sta' from the default state save directory.<pre>
-</pre><br><a href="#contents">Up</a> <a name="snap"><h3>snap</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="snap"><h3>snap</h3></a><pre>
   snap [[&lt;filename>], &lt;scrnum>]
 </pre><pre>
 </pre>The snap command takes a snapshot of the current video display and saves it to the configured snapshot directory. If &lt;filename> is specified explicitly, a single screenshot for &lt;scrnum> is saved under the requested filename. If &lt;filename> is omitted, all screens are saved using the same default rules as the "save snapshot" key in MAME proper.<pre>
@@ -411,7 +410,7 @@
 </pre><pre>
   snap shinobi
 </pre>Takes a snapshot of the current video screen and saves it as 'shinobi.png' in the configured snapshot directory.<pre>
-</pre><br><a href="#contents">Up</a> <a name="source"><h3>source</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="source"><h3>source</h3></a><pre>
   source &lt;filename>
 </pre><pre>
 </pre>The source command reads in a set of debugger commands from a file and executes them one by one, similar to a batch file.<pre>
@@ -420,11 +419,11 @@
 </pre><pre>
   source break_and_trace.cmd
 </pre>Reads in debugger commands from break_and_trace.cmd and executes them.<pre>
-</pre><br><a href="#contents">Up</a> <a name="quit"><h3>quit</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="quit"><h3>quit</h3></a><pre>
   quit
 </pre><pre>
 </pre>The quit command exits MAME immediately.<pre>
-</pre><br><a href="#contents">Up</a> <a name="dasm"><h3>dasm</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="dasm"><h3>dasm</h3></a><pre>
   dasm &lt;filename>,&lt;address>,&lt;length>[,&lt;opcodes>[,&lt;cpu>]]
 </pre><pre>
 </pre>The dasm command disassembles program memory to the file specified in the &lt;filename> parameter. &lt;address> indicates the address of the start of disassembly, and &lt;length> indicates how much memory to disassemble. The range &lt;address> through &lt;address>+&lt;length>-1 inclusive will be output to the file. By default, the raw opcode data is output with each line. The optional &lt;opcodes> parameter can be used to enable (1) or disable(0) this feature. Finally, you can disassemble code from another CPU by specifying the &lt;cpu> parameter.<pre>
@@ -436,7 +435,7 @@
 </pre><pre>
   dasm harddriv.asm,3000,1000,0,2
 </pre>Disassembles addresses 3000-3fff from CPU #2, with no raw opcode data, to the file 'harddriv.asm'.<pre>
-</pre><br><a href="#contents">Up</a> <a name="find"><h3>find</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="find"><h3>find</h3></a><pre>
   f[ind][{d|i}] &lt;address>,&lt;length>[,&lt;data>[,...]]
 </pre><pre>
 </pre>The find/findd/findi commands search through memory for the specified sequence of data. 'find' will search program space memory, while 'findd' will search data space memory and 'findi' will search I/O space memory. &lt;address> indicates the address to begin searching, and &lt;length> indicates how much memory to search. &lt;data> can either be a quoted string or a numeric value or expression or the wildcard character '?'. Strings by default imply a byte-sized search; non-string data is searched by default in the native word size of the CPU. To override the search size for non-strings, you can prefix the value with b. to force byte- sized search, w. for word-sized search, d. for dword-sized, and q. for qword-sized. Overrides are remembered, so if you want to search for a series of words, you need only to prefix the first value with a w. Note also that you can intermix sizes in order to perform more complex searches. The entire range &lt;address> through &lt;address>+&lt;length>-1  inclusive will be searched for the sequence, and all occurrences will be displayed.<pre>
@@ -451,7 +450,7 @@
 </pre><pre>
   find 0,8000,"AAR",d.0,"BEN",w.0
 </pre>Searches the address range 0000-7fff for the string "AAR" followed by a dword-sized 0 followed by the string "BEN", followed by a word-sized 0.<pre>
-</pre><br><a href="#contents">Up</a> <a name="dump"><h3>dump</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="dump"><h3>dump</h3></a><pre>
   dump[{d|i}] &lt;filename>,&lt;address>,&lt;length>[,&lt;size>[,&lt;ascii>[,&lt;cpu>]]]
 </pre><pre>
 </pre>The dump/dumpd/dumpi commands dump memory to the text file specified in the &lt;filename> parameter. 'dump' will dump program space memory, while 'dumpd' will dump data space memory and 'dumpi' will dump I/O space memory. &lt;address> indicates the address of the start of dumping, and &lt;length> indicates how much memory to dump. The range &lt;address> through &lt;address>+&lt;length>-1 inclusive will be output to the file. By default, the data will be output in byte format, unless the underlying address space is word/dword/qword-only. You can override this by specifying the &lt;size> parameter, which can be used to group the data in 1, 2, 4 or 8-byte chunks. The optional &lt;ascii> parameter can be used to enable (1) or disable (0) the output of ASCII characters to the right of each line; by default, this is enabled. Finally, you can dump memory from another CPU by specifying the &lt;cpu> parameter.<pre>
@@ -463,7 +462,7 @@
 </pre><pre>
   dumpd harddriv.dmp,3000,1000,4,0,3
 </pre>Dumps data memory addresses 3000-3fff from CPU #3 in 4-byte chunks, with no ASCII data, to the file 'harddriv.dmp'.<pre>
-</pre><br><a href="#contents">Up</a> <a name="save"><h3>save</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="save"><h3>save</h3></a><pre>
   save[{d|i}] &lt;filename>,&lt;address>,&lt;length>[,&lt;cpu>]
 </pre><pre>
 </pre>The save/saved/savei commands save raw memory to the binary file specified in the &lt;filename> parameter. 'save' will save program space memory, while 'saved' will save data space memory and 'savei' will save I/O space memory. &lt;address> indicates the address of the start of saving, and &lt;length> indicates how much memory to save. The range &lt;address> through &lt;address>+&lt;length>-1 inclusive will be output to the file. You can also save memory from another CPU by specifying the &lt;cpu> parameter.<pre>
@@ -475,7 +474,7 @@
 </pre><pre>
   saved harddriv.bin,3000,1000,3
 </pre>Saves data memory addresses 3000-3fff from CPU #3 to the binary file 'harddriv.bin'.<pre>
-</pre><br><a href="#contents">Up</a> <a name="load"><h3>load</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="load"><h3>load</h3></a><pre>
   load[{d|i}] &lt;filename>,&lt;address>[,&lt;length>,&lt;cpu>]
 </pre><pre>
 </pre>The load/loadd/loadi commands load raw memory from the binary file specified in the &lt;filename> parameter. 'load' will load program space memory, while 'loadd' will load data space memory and 'loadi' will load I/O space memory. &lt;address> indicates the address of the start of saving, and &lt;length> indicates how much memory to load. The range &lt;address> through &lt;address>+&lt;length>-1 inclusive will be read in from the file. If you specify &lt;length> = 0 or a length greater than the total length of the file it will load the entire contents of the file and no more. You can also load memory from another CPU by specifying the &lt;cpu> parameter.<pre>
@@ -488,7 +487,7 @@
 </pre><pre>
   loadd harddriv.bin,3000,1000,3
 </pre>Loads data memory addresses 3000-3fff from CPU #3 from the binary file 'harddriv.bin'.<pre>
-</pre><br><a href="#contents">Up</a> <a name="step"><h3>step</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="step"><h3>step</h3></a><pre>
   s[tep] [&lt;count>=1]
 </pre><pre>
 </pre>The step command single steps one or more instructions in the currently executing CPU. By default, step executes one instruction each time it is issued. You can also tell step to step multiple instructions by including the optional &lt;count> parameter.<pre>
@@ -500,7 +499,7 @@
 </pre><pre>
   step 4
 </pre>Steps forward four instructions on the current CPU.<pre>
-</pre><br><a href="#contents">Up</a> <a name="over"><h3>over</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="over"><h3>over</h3></a><pre>
   o[ver] [&lt;count>=1]
 </pre><pre>
 </pre>The over command single steps "over" one or more instructions in the currently executing CPU, stepping over subroutine calls and exception handler traps and counting them as a single instruction. Note that when stepping over a subroutine call, code may execute on other CPUs before the subroutine call completes. By default, over executes one instruction each time it is issued. You can also tell step to step multiple instructions by including the optional &lt;count> parameter.<pre>
@@ -514,7 +513,7 @@
 </pre><pre>
   over 4
 </pre>Steps forward over four instructions on the current CPU.<pre>
-</pre><br><a href="#contents">Up</a> <a name="out"><h3>out</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="out"><h3>out</h3></a><pre>
   out
 </pre><pre>
 </pre>The out command single steps until it encounters a return from subroutine or return from exception instruction. Note that because it detects return from exception conditions, if you attempt to step out of a subroutine and an interrupt/exception occurs before you hit the end, then you may stop prematurely at the end of the exception handler.<pre>
@@ -525,7 +524,7 @@
 </pre><pre>
   out
 </pre>Steps until the current subroutine or exception handler returns.<pre>
-</pre><br><a href="#contents">Up</a> <a name="go"><h3>go</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="go"><h3>go</h3></a><pre>
   g[o] [&lt;address>]
 </pre><pre>
 </pre>The go command resumes execution of the current code. Control will not be returned to the debugger until a breakpoint or watchpoint is hit, or until you manually break in using the assigned key. The go command takes an optional &lt;address> parameter which is a temporary unconditional breakpoint that is set before executing, and automatically removed when hit. <pre>
@@ -536,7 +535,7 @@
 </pre><pre>
   g 1234
 </pre>Resume execution, stopping at address 1234 unless something else stops us first.<pre>
-</pre><br><a href="#contents">Up</a> <a name="gvblank"><h3>gvblank</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="gvblank"><h3>gvblank</h3></a><pre>
   gv[blank]
 </pre><pre>
 </pre>The gvblank command resumes execution of the current code. Control will not be returned to the debugger until a breakpoint or watchpoint is hit, or until the next VBLANK occurs in the emulator.<pre>
@@ -545,7 +544,7 @@
 </pre><pre>
   gv
 </pre>Resume execution until the next break/watchpoint or until the next VBLANK.<pre>
-</pre><br><a href="#contents">Up</a> <a name="gint"><h3>gint</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="gint"><h3>gint</h3></a><pre>
   gi[nt] [&lt;irqline>]
 </pre><pre>
 </pre>The gint command resumes execution of the current code. Control will not be returned to the debugger until a breakpoint or watchpoint is hit, or until an IRQ is asserted and acknowledged on the current CPU. You can specify &lt;irqline> if you wish to stop execution only on a particular IRQ line being asserted and acknowledged. If &lt;irqline> is omitted, then any IRQ line will stop execution.<pre>
@@ -557,7 +556,7 @@
 </pre><pre>
   gint 4
 </pre>Resume execution until the next break/watchpoint or until IRQ line 4 is asserted and acknowledged on the current CPU.<pre>
-</pre><br><a href="#contents">Up</a> <a name="gtime"><h3>gtime</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="gtime"><h3>gtime</h3></a><pre>
   gt[ime] &lt;milliseconds>
 </pre><pre>
 </pre>The gtime command resumes execution of the current code. Control will not be returned to the debugger until a specified delay has elapsed. The delay is in milliseconds.<pre>
@@ -566,11 +565,11 @@
 </pre><pre>
   gtime #10000
 </pre>Resume execution for ten seconds<pre>
-</pre><br><a href="#contents">Up</a> <a name="next"><h3>next</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="next"><h3>next</h3></a><pre>
   n[ext]
 </pre><pre>
 </pre>The next command resumes execution and continues executing until the next time a different CPU is scheduled. Note that if you have used 'ignore' to ignore certain CPUs, you will not stop until a non-'ignore'd CPU is scheduled.<pre>
-</pre><br><a href="#contents">Up</a> <a name="focus"><h3>focus</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="focus"><h3>focus</h3></a><pre>
   focus &lt;cpu>
 </pre><pre>
 </pre>Sets the debugger focus exclusively to the given &lt;cpu>. This is equivalent to specifying 'ignore' on all other CPUs.<pre>
@@ -579,7 +578,7 @@
 </pre><pre>
   focus 1
 </pre>Focus exclusively CPU #1 while ignoring all other CPUs when using the debugger.<pre>
-</pre><br><a href="#contents">Up</a> <a name="ignore"><h3>ignore</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="ignore"><h3>ignore</h3></a><pre>
   ignore [&lt;cpu>[,&lt;cpu>[,...]]]
 </pre><pre>
 </pre>Ignores the specified &lt;cpu> in the debugger. This means that you won't ever see execution on that CPU, nor will you be able to set breakpoints on that CPU. To undo this change use the 'observe' command. You can specify multiple &lt;cpu>s in a single command. Note also that you are not permitted to ignore all CPUs; at least one must be active at all times.<pre>
@@ -594,7 +593,7 @@
 </pre><pre>
   ignore
 </pre>List the CPUs that are currently ignored.<pre>
-</pre><br><a href="#contents">Up</a> <a name="observe"><h3>observe</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="observe"><h3>observe</h3></a><pre>
   observe [&lt;cpu>[,&lt;cpu>[,...]]]
 </pre><pre>
 </pre>Re-enables interaction with the specified &lt;cpu> in the debugger. This command undoes the effects of the 'ignore' command. You can specify multiple &lt;cpu>s in a single command.<pre>
@@ -609,7 +608,7 @@
 </pre><pre>
   observe
 </pre>List the CPUs that are currently observed.<pre>
-</pre><br><a href="#contents">Up</a> <a name="trace"><h3>trace</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="trace"><h3>trace</h3></a><pre>
   trace {&lt;filename>|OFF}[,&lt;cpu>[,[noloop|logerror][,&lt;action>]]]
 </pre><pre>
 </pre>Starts or stops tracing of the execution of the specified &lt;cpu>. If &lt;cpu> is omitted, the currently active CPU is specified. When enabling tracing, specify the filename in the &lt;filename> parameter. To disable tracing, substitute the keyword 'off' for &lt;filename>. &lt;detectloops> should be either true or false. If 'noloop' is omitted, the trace will have loops detected and condensed to a single line. If 'noloop' is specified, the trace will contain every opcode as it is executed. If 'logerror' is specified, logerror output will augment the trace.  If you wish to log additional information on each trace, you can append an &lt;action> parameter which is a command that is executed before each trace is logged. Generally, this is used to include a 'tracelog' command. Note that you may need to embed the action within braces { } in order to prevent commas and semicolons from being interpreted as applying to the trace command itself.<pre>
@@ -639,7 +638,7 @@
 </pre><pre>
   trace asteroid.tr,0,,{tracelog "A=%02X ",a}
 </pre>Begin tracing the execution of CPU #0, logging output to asteroid.tr. Before each line, output A=&lt;aval> to the tracelog.<pre>
-</pre><br><a href="#contents">Up</a> <a name="traceover"><h3>traceover</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="traceover"><h3>traceover</h3></a><pre>
   traceover {&lt;filename>|OFF}[,&lt;cpu>[,&lt;detectloops>[,&lt;action>]]]
 </pre><pre>
 </pre>Starts or stops tracing of the execution of the specified &lt;cpu>. When tracing reaches a subroutine or call, tracing will skip over the subroutine. The same algorithm is used as is used in the step over command. This means that traceover will not work properly when calls are recusive or the return address is not immediately following the call instruction. If &lt;detectloops> should be either true or false. If &lt;detectloops> is true or omitted, the trace will have loops detected and condensed to a single line. If it is false, the trace will contain every opcode as it is executed. If &lt;cpu> is omitted, the currently active CPU is specified. When enabling tracing, specify the filename in the &lt;filename> parameter. To disable tracing, substitute the keyword 'off' for &lt;filename>. If you wish to log additional information on each trace, you can append an &lt;action> parameter which is a command that is executed before each trace is logged. Generally, this is used to include a 'tracelog' command. Note that you may need to embed the action within braces { } in order to prevent commas and semicolons from being interpreted as applying to the trace command itself.<pre>
@@ -660,11 +659,11 @@
 </pre><pre>
   traceover asteroid.tr,0,true,{tracelog "A=%02X ",a}
 </pre>Begin tracing the execution of CPU #0, logging output to asteroid.tr. Before each line, output A=&lt;aval> to the tracelog.<pre>
-</pre><br><a href="#contents">Up</a> <a name="traceflush"><h3>traceflush</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="traceflush"><h3>traceflush</h3></a><pre>
   traceflush
 </pre><pre>
 </pre>Flushes all open trace files.<pre>
-</pre><br><a href="#contents">Up</a> <a name="bpset"><h3>bpset</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="bpset"><h3>bpset</h3></a><pre>
   bp[set] &lt;address>[,&lt;condition>[,&lt;action>]]
 </pre><pre>
 </pre>Sets a new execution breakpoint at the specified &lt;address>. The optional &lt;condition> parameter lets you specify an expression that will be evaluated each time the breakpoint is hit. If the result of the expression is true (non-zero), the breakpoint will actually halt execution; otherwise, execution will continue with no notification. The optional &lt;action> parameter provides a command that is executed whenever the breakpoint is hit and the &lt;condition> is true. Note that you may need to embed the action within braces { } in order to prevent commas and semicolons from being interpreted as applying to the bpset command itself. Each breakpoint that is set is assigned an index which can be used in other breakpoint commands to reference this breakpoint.<pre>
@@ -685,7 +684,7 @@
 </pre><pre>
   temp0 = 0; bp 567890,++temp0 >= 10
 </pre>Set a breakpoint that will halt execution whenever the PC is equal to 567890 AND the expression (++temp0 >= 10) is true. This effectively breaks only after the breakpoint has been hit 16 times.<pre>
-</pre><br><a href="#contents">Up</a> <a name="bpclear"><h3>bpclear</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="bpclear"><h3>bpclear</h3></a><pre>
   bpclear [&lt;bpnum>]
 </pre><pre>
 </pre>The bpclear command clears a breakpoint. If &lt;bpnum> is specified, only the requested breakpoint is cleared, otherwise all breakpoints are cleared.<pre>
@@ -697,7 +696,7 @@
 </pre><pre>
   bpclear
 </pre>Clear all breakpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="bpdisable"><h3>bpdisable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="bpdisable"><h3>bpdisable</h3></a><pre>
   bpdisable [&lt;bpnum>]
 </pre><pre>
 </pre>The bpdisable command disables a breakpoint. If &lt;bpnum> is specified, only the requested breakpoint is disabled, otherwise all breakpoints are disabled. Note that disabling a breakpoint does not delete it, it just temporarily marks the breakpoint as inactive.<pre>
@@ -709,7 +708,7 @@
 </pre><pre>
   bpdisable
 </pre>Disable all breakpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="bpenable"><h3>bpenable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="bpenable"><h3>bpenable</h3></a><pre>
   bpenable [&lt;bpnum>]
 </pre><pre>
 </pre>The bpenable command enables a breakpoint. If &lt;bpnum> is specified, only the requested breakpoint is enabled, otherwise all breakpoints are enabled.<pre>
@@ -721,11 +720,11 @@
 </pre><pre>
   bpenable
 </pre>Enable all breakpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="bplist"><h3>bplist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="bplist"><h3>bplist</h3></a><pre>
   bplist
 </pre><pre>
 </pre>The bplist command lists all the current breakpoints, along with their index and any conditions or actions attached to them.<pre>
-</pre><br><a href="#contents">Up</a> <a name="wpset"><h3>wpset</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="wpset"><h3>wpset</h3></a><pre>
   wp[{d|i}][set] &lt;address>,&lt;length>,&lt;type>[,&lt;condition>[,&lt;action>]]
 </pre><pre>
 </pre>Sets a new watchpoint starting at the specified &lt;address> and extending for &lt;length>. The inclusive range of the watchpoint is &lt;address> through &lt;address> + &lt;length> - 1. The 'wpset' command sets a watchpoint on program memory; the 'wpdset' command sets a watchpoint on data memory; and the 'wpiset' sets a watchpoint on I/O memory. The &lt;type> parameter specifies which sort of accesses to trap on. It can be one of three values: 'r' for a read watchpoint 'w' for a write watchpoint, and 'rw' for a read/write watchpoint.<pre>
@@ -747,7 +746,7 @@
 </pre><pre>
   temp0 = 0; wp 45678,1,w,wpdata==f0,{temp0++; g}
 </pre>Set a watchpoint that will halt execution whenever a write occurs to the address 45678 AND the value being written is equal to f0. When that happens, increment the variable temp0 and resume execution.<pre>
-</pre><br><a href="#contents">Up</a> <a name="wpclear"><h3>wpclear</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="wpclear"><h3>wpclear</h3></a><pre>
   wpclear [&lt;wpnum>]
 </pre><pre>
 </pre>The wpclear command clears a watchpoint. If &lt;wpnum> is specified, only the requested watchpoint is cleared, otherwise all watchpoints are cleared.<pre>
@@ -759,7 +758,7 @@
 </pre><pre>
   wpclear
 </pre>Clear all watchpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="wpdisable"><h3>wpdisable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="wpdisable"><h3>wpdisable</h3></a><pre>
   wpdisable [&lt;wpnum>]
 </pre><pre>
 </pre>The wpdisable command disables a watchpoint. If &lt;wpnum> is specified, only the requested watchpoint is disabled, otherwise all watchpoints are disabled. Note that disabling a watchpoint does not delete it, it just temporarily marks the watchpoint as inactive.<pre>
@@ -771,7 +770,7 @@
 </pre><pre>
   wpdisable
 </pre>Disable all watchpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="wpenable"><h3>wpenable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="wpenable"><h3>wpenable</h3></a><pre>
   wpenable [&lt;wpnum>]
 </pre><pre>
 </pre>The wpenable command enables a watchpoint. If &lt;wpnum> is specified, only the requested watchpoint is enabled, otherwise all watchpoints are enabled.<pre>
@@ -783,11 +782,11 @@
 </pre><pre>
   wpenable
 </pre>Enable all watchpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="wplist"><h3>wplist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="wplist"><h3>wplist</h3></a><pre>
   wplist
 </pre><pre>
 </pre>The wplist command lists all the current watchpoints, along with their index and any conditions or actions attached to them.<pre>
-</pre><br><a href="#contents">Up</a> <a name="hotspot"><h3>hotspot</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="hotspot"><h3>hotspot</h3></a><pre>
   hotspot [&lt;cpu>,[&lt;depth>[,&lt;hits>]]]
 </pre><pre>
 </pre>The hotspot command attempts to help locate hotspots in the code where speedup opportunities might be present. &lt;cpu>, which defaults to the currently active CPU, specified which processor's memory to track. &lt;depth>, which defaults to 64, controls the depth of the search buffer. The search buffer tracks the last &lt;depth> memory reads from unique PCs. The &lt;hits> parameter, which defaults to 250, specifies the minimum number of hits to report.<pre>
@@ -801,7 +800,7 @@
 </pre><pre>
   hotspot 1,40,#1000
 </pre>Looks for hotspots on CPU 1 using a search buffer of 64 entries, reporting any entries which end up with 1000 or more hits.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rpset"><h3>rpset</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rpset"><h3>rpset</h3></a><pre>
   rp[set] {&lt;condition>}[,&lt;action>]]
 </pre><pre>
 </pre>Sets a new registerpoint which will be triggered when &lt;condition> is met. The condition must be specified between curly braces to prevent the condition from being evaluated as an assignment.<pre>
@@ -818,7 +817,7 @@
 </pre><pre>
   rp {temp0==5}
 </pre>Set a registerpoint that will halt execution whenever the temp0 variable equals 5.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rpclear"><h3>rpclear</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rpclear"><h3>rpclear</h3></a><pre>
   rpclear [&lt;rpnum>]
 </pre><pre>
 </pre>The rpclear command clears a registerpoint. If &lt;rpnum> is specified, only the requested registerpoint is cleared, otherwise all registerpoints are cleared.<pre>
@@ -830,7 +829,7 @@
 </pre><pre>
   rpclear
 </pre>Clear all registerpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rpdisable"><h3>rpdisable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rpdisable"><h3>rpdisable</h3></a><pre>
   rpdisable [&lt;rpnum>]
 </pre><pre>
 </pre>The rpdisable command disables a registerpoint. If &lt;rpnum> is specified, only the requested registerpoint is disabled, otherwise all registerpoints are disabled. Note that disabling a registerpoint does not delete it, it just temporarily marks the registerpoint as inactive.<pre>
@@ -842,7 +841,7 @@
 </pre><pre>
   rpdisable
 </pre>Disable all registerpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rpenable"><h3>rpenable</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rpenable"><h3>rpenable</h3></a><pre>
   rpenable [&lt;rpnum>]
 </pre><pre>
 </pre>The rpenable command enables a registerpoint. If &lt;rpnum> is specified, only the requested registerpoint is enabled, otherwise all registerpoints are enabled.<pre>
@@ -854,11 +853,11 @@
 </pre><pre>
   rpenable
 </pre>Enable all registerpoints.<pre>
-</pre><br><a href="#contents">Up</a> <a name="rplist"><h3>rplist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="rplist"><h3>rplist</h3></a><pre>
   rplist
 </pre><pre>
 </pre>The rplist command lists all the current registerpoints, along with their index and any actions attached to them.<pre>
-</pre><br><a href="#contents">Up</a> <a name="map"><h3>map</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="map"><h3>map</h3></a><pre>
   map[{d|i}] &lt;address>
 </pre><pre>
 </pre>The map/mapd/mapi commands map a logical address in memory to the correct physical address, as well as specifying the bank. 'map' will map program space memory, while 'mapd' will map data space memory and 'mapi' will map I/O space memory.<pre>
@@ -867,7 +866,7 @@
 </pre><pre>
   map 152d0
 </pre>Gives physical address and bank for logical address 152d0 in program memory<pre>
-</pre><br><a href="#contents">Up</a> <a name="memdump"><h3>memdump</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="memdump"><h3>memdump</h3></a><pre>
   memdump [&lt;filename>]
 </pre><pre>
 </pre>Dumps the current memory map to &lt;filename>. If &lt;filename> is omitted, then dumps to memdump.log<pre>
@@ -878,7 +877,7 @@
 </pre><pre>
   memdump
 </pre>Dumps memory to memdump.log.<pre>
-</pre><br><a href="#contents">Up</a> <a name="comlist"><h3>comlist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="comlist"><h3>comlist</h3></a><pre>
   comlist
 </pre><pre>
 </pre>Prints the currently available comment file in human readable form in debugger output window.<pre>
@@ -886,7 +885,7 @@
 </pre><pre>
   comlist
 </pre>Shows currently available comments.<pre>
-</pre><br><a href="#contents">Up</a> <a name="comadd"><h3>comadd</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="comadd"><h3>comadd</h3></a><pre>
   comadd[//] &lt;address>,&lt;comment>
 </pre><pre>
 </pre>Adds a string &lt;comment> to the disassembled code at &lt;address>. The shortcut for this command is simply '//'<pre>
@@ -899,7 +898,7 @@
   // 10, undocumented opcode!
 </pre>Adds the comment 'undocumented opcode!' to the code at address 0x10<pre>
 </pre><pre>
-</pre><br><a href="#contents">Up</a> <a name="commit"><h3>commit</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="commit"><h3>commit</h3></a><pre>
   commit[/*] &lt;address>,&lt;comment>
 </pre><pre>
 </pre>Adds a string &lt;comment> to the disassembled code at &lt;address> then saves to file. Basically same as comadd + comsave via a single line.<pre>
@@ -913,7 +912,7 @@
   /* 10, undocumented opcode!
 </pre>Adds the comment 'undocumented opcode!' to the code at address 0x10<pre>
 </pre><pre>
-</pre><br><a href="#contents">Up</a> <a name="comsave"><h3>comsave</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="comsave"><h3>comsave</h3></a><pre>
   comsave
 </pre><pre>
 </pre>Saves the working comments to the driver's XML comment file.<pre>
@@ -923,7 +922,7 @@
   comsave
 </pre>Saves the comments to the driver's comment file<pre>
 </pre><pre>
-</pre><br><a href="#contents">Up</a> <a name="comdelete"><h3>comdelete</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="comdelete"><h3>comdelete</h3></a><pre>
   comdelete
 </pre><pre>
 </pre>Deletes the comment at the specified memory offset. The comment which is deleted is in the currently active memory bank.<pre>
@@ -933,7 +932,7 @@
   comdelete 10
 </pre>Deletes the comment at code address 0x10 (using the current memory bank settings)<pre>
 </pre><pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatinit"><h3>cheatinit</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatinit"><h3>cheatinit</h3></a><pre>
   cheatinit [&lt;sign>&lt;width>&lt;swap>,[&lt;address>,&lt;length>[,&lt;cpu>]]]
 </pre><pre>
 </pre>The cheatinit command initializes the cheat search to the selected memory area.<pre>
@@ -952,7 +951,7 @@
 </pre><pre>
   cheatinit uds,0x0000,0x1000
 </pre>Initialize the cheat search with width of 4 byte swapped from 0x0000 to 0x1000.<pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatrange"><h3>cheatrange</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatrange"><h3>cheatrange</h3></a><pre>
   cheatrange &lt;address>,&lt;length>
 </pre><pre>
 </pre>The cheatrange command adds the selected memory area to the cheat search.<pre>
@@ -962,7 +961,7 @@
 </pre><pre>
   cheatrange 0x1000,0x10
 </pre>Add the bytes from 0x1000 to 0x1010 to the cheat search.<pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatnext"><h3>cheatnext</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatnext"><h3>cheatnext</h3></a><pre>
   cheatnext &lt;condition>[,&lt;comparisonvalue>]
 </pre><pre>
 </pre>The cheatnext command will make comparisons with the last search matches.<pre>
@@ -1005,7 +1004,7 @@
 </pre><pre>
   cheatnext decrease, 1
 </pre>Search for all bytes that have decreased by 1 since the last search.<pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatnextf"><h3>cheatnextf</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatnextf"><h3>cheatnextf</h3></a><pre>
   cheatnextf &lt;condition>[,&lt;comparisonvalue>]
 </pre><pre>
 </pre>The cheatnextf command will make comparisons with the initial search.<pre>
@@ -1048,7 +1047,7 @@
 </pre><pre>
   cheatnextf decrease, 1
 </pre>Search for all bytes that have decreased by 1 since the initial search.<pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatlist"><h3>cheatlist</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatlist"><h3>cheatlist</h3></a><pre>
   cheatlist [&lt;filename>]
 </pre><pre>
 </pre>Without &lt;filename> show the list of matches in the debug console.<pre>
@@ -1060,7 +1059,7 @@
 </pre>Show the current matches in the debug console.<pre>
   cheatlist cheat.txt
 </pre>Save the current matches to cheat.txt.<pre>
-</pre><br><a href="#contents">Up</a> <a name="cheatundo"><h3>cheatundo</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="cheatundo"><h3>cheatundo</h3></a><pre>
   cheatundo
 </pre><pre>
 </pre>Undo the results of the last search.<pre>
@@ -1070,7 +1069,7 @@
 </pre><pre>
   cheatundo
 </pre>Undo the last search (state only).<pre>
-</pre><br><a href="#contents">Up</a> <a name="images"><h3>images</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="images"><h3>images</h3></a><pre>
   images
 </pre><pre>
 </pre>Used to display list of available image devices.<pre>
@@ -1079,7 +1078,7 @@
 </pre><pre>
   images
 </pre>Show list of devices and mounted files for current driver.<pre>
-</pre><br><a href="#contents">Up</a> <a name="mount"><h3>mount</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="mount"><h3>mount</h3></a><pre>
   mount &lt;device>,&lt;filename>
 </pre><pre>
 </pre>Mount &lt;filename> to image &lt;device>.<pre>
@@ -1089,7 +1088,7 @@
 </pre><pre>
   mount cart,aladdin
 </pre>Mounts softlist item alladin on cart device.<pre>
-</pre><br><a href="#contents">Up</a> <a name="unmount"><h3>unmount</h3></a><pre>
+</pre><br><a href="#Top">Up</a> <a name="unmount"><h3>unmount</h3></a><pre>
   unmount &lt;device>
 </pre><pre>
 </pre>Unmounts file from image &lt;device>.<pre>
