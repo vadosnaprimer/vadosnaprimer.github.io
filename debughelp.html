@@ -108,7 +108,7 @@ General Debugger Help<br>
 Type help &lt;command> for further details on each command<br>
 <br>
 &emsp;<font face="courier new" color=#000080 size=2>  help [&lt;topic>]</font> -- get help on a particular topic<br>
-&emsp;<font face="courier new" color=#000080 size=2>  helphtml [&lt;filename>]</font> -- print all debugger help to an html file<br>
+&emsp;<font face="courier new" color=#000080 size=2>  helphtml &lt;filename></font> -- print all debugger help to an html file<br>
 &emsp;<font face="courier new" color=#000080 size=2>  do &lt;expression></font> -- evaluates the given expression<br>
 &emsp;<font face="courier new" color=#000080 size=2>  symlist [&lt;cpu>]</font> -- lists registered symbols<br>
 &emsp;<font face="courier new" color=#000080 size=2>  softreset</font> -- executes a soft reset<br>
@@ -470,9 +470,9 @@ Print which PC wrote this CPU's memory location 0x400000.<br>
 <a href="#Top">Up</a>
 <a name="helphtml"><h3>helphtml</h3></a>
 
-&emsp;<font face="courier new" color=#000080 size=2>  helphtml [&lt;filename>]</font><br>
+&emsp;<font face="courier new" color=#000080 size=2>  helphtml &lt;filename></font><br>
 <br>
-The helphtml command prints all the contents of debugger help to an html file.  If no &lt;filename> is provided, the default filename 'debughelp' is used.  No extension is necessary, as it gets automatically appended.<br>
+The helphtml command prints all the contents of debugger help to an html file.  The .html extension is not necessary, as it gets automatically appended if it's not present in the provided filename.<br>
 
 <br>
 <a href="#Top">Up</a>
