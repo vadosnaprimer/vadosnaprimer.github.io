@@ -1,0 +1,49 @@
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Name: Diamond Rush
+MIDlet-Icon: /icon.png
+MIDlet-Vendor: Nokia
+MIDlet-1: Diamond Rush, /icon.png, GloftDIRU
+MIDlet-Data-Size: 1200
+MIDlet-Version: 1.1.7
+Nokia-MIDlet-Category: Game
+MicroEdition-Profile: MIDP-2.0
+APP-RUNNING-ON-PLATFORMREQUEST: 0
+Nokia-Platform: *
+Nokia-MIDlet-Name-en: Diamond Rush
+Nokia-MIDlet-1-en: Diamond Rush
+Nokia-MIDlet-Name-de: Diamond Rush
+Nokia-MIDlet-1-de: Diamond Rush
+Nokia-MIDlet-Name-nl-NL: Diamond Rush
+Nokia-MIDlet-1-nl-NL: Diamond Rush
+Nokia-MIDlet-Name-ru-RU: Diamond Rush
+Nokia-MIDlet-1-ru-RU: Diamond Rush
+Nokia-MIDlet-Name-bg-BG: Diamond Rush
+Nokia-MIDlet-1-bg-BG: Diamond Rush
+Nokia-MIDlet-Name-ro-RO: Diamond Rush
+Nokia-MIDlet-1-ro-RO: Diamond Rush
+Nokia-MIDlet-Name-uk-UA: Diamond Rush
+Nokia-MIDlet-1-uk-UA: Diamond Rush
+Nokia-MIDlet-Name-be: Diamond Rush
+Nokia-MIDlet-1-be: Diamond Rush
+Nokia-MIDlet-Name-kk-KZ: Diamond Rush
+Nokia-MIDlet-1-kk-KZ: Diamond Rush
+Nokia-MIDlet-Name-ky-KG: Diamond Rush
+Nokia-MIDlet-1-ky-KG: Diamond Rush
+Nokia-MIDlet-Name-mn-MN: Diamond Rush
+Nokia-MIDlet-1-mn-MN: Diamond Rush
+Nokia-MIDlet-Name-tg-TJ: Diamond Rush
+Nokia-MIDlet-1-tg-TJ: Diamond Rush
+Nokia-MIDlet-Name-tk: Diamond Rush
+Nokia-MIDlet-1-tk: Diamond Rush
+Nokia-MIDlet-Name-uz-UZ: Diamond Rush
+Nokia-MIDlet-1-uz-UZ: Diamond Rush
+Nokia-MIDlet-Name-hy: Diamond Rush
+Nokia-MIDlet-1-hy: Diamond Rush
+Nokia-MIDlet-Name-az-AZ: Diamond Rush
+Nokia-MIDlet-1-az-AZ: Diamond Rush
+Nokia-MIDlet-Name-ka-GE: Diamond Rush
+Nokia-MIDlet-1-ka-GE: Diamond Rush
+more_games_status: on
+more_games_url: http://more.store.ovi.mobi/games_arcade?cid=ovistore-mc-ger-diamon-acq-na-device-g0-na-1
+MIDlet-Jar-Size: 336213
+MIDlet-Jar-URL: diamond_EUI.jar
