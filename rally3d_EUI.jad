@@ -1,0 +1,49 @@
+MIDlet-1: Rally 3D, /icon.png, com.nokia.mid.appl.rally3d.TheMidlet
+MIDlet-Name: Rally 3D
+MIDlet-Vendor: Nokia
+Nokia-MIDlet-Category: Game
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Version: 1.24
+MIDlet-Permissions: javax.microedition.io.Connector.bluetooth.client,javax.microedition.io.Connector.bluetooth.server
+MIDlet-Data-Size: 8192
+MIDlet-Permissions-Opt: 
+Nokia-Platform: *
+Nokia-MIDlet-Name-en: Rally 3D
+Nokia-MIDlet-1-en: Rally 3D
+Nokia-MIDlet-Name-de: Rally 3D
+Nokia-MIDlet-1-de: Rally 3D
+Nokia-MIDlet-Name-nl-NL: Rally 3D
+Nokia-MIDlet-1-nl-NL: Rally 3D
+Nokia-MIDlet-Name-ru-RU: Rally 3D
+Nokia-MIDlet-1-ru-RU: Rally 3D
+Nokia-MIDlet-Name-bg-BG: Rally 3D
+Nokia-MIDlet-1-bg-BG: Rally 3D
+Nokia-MIDlet-Name-ro-RO: Rally 3D
+Nokia-MIDlet-1-ro-RO: Rally 3D
+Nokia-MIDlet-Name-uk-UA: Rally 3D
+Nokia-MIDlet-1-uk-UA: Rally 3D
+Nokia-MIDlet-Name-be: Rally 3D
+Nokia-MIDlet-1-be: Rally 3D
+Nokia-MIDlet-Name-kk-KZ: Rally 3D
+Nokia-MIDlet-1-kk-KZ: Rally 3D
+Nokia-MIDlet-Name-ky-KG: Rally 3D
+Nokia-MIDlet-1-ky-KG: Rally 3D
+Nokia-MIDlet-Name-mn-MN: Rally 3D
+Nokia-MIDlet-1-mn-MN: Rally 3D
+Nokia-MIDlet-Name-tg-TJ: Rally 3D
+Nokia-MIDlet-1-tg-TJ: Rally 3D
+Nokia-MIDlet-Name-tk: Rally 3D
+Nokia-MIDlet-1-tk: Rally 3D
+Nokia-MIDlet-Name-uz-UZ: Rally 3D
+Nokia-MIDlet-1-uz-UZ: Rally 3D
+Nokia-MIDlet-Name-hy: Rally 3D
+Nokia-MIDlet-1-hy: Rally 3D
+Nokia-MIDlet-Name-az-AZ: Rally 3D
+Nokia-MIDlet-1-az-AZ: Rally 3D
+Nokia-MIDlet-Name-ka-GE: Rally 3D
+Nokia-MIDlet-1-ka-GE: Rally 3D
+MIDlet-Jar-Size: 248284
+MIDlet-Jar-URL: rally3d_EUI.jar
+MIDlet-Jar-RSA-SHA1: Jlr8if2zzUxeJ5E+vbHlh6B8Z7oSzlOxxDnJFCPDWHAbybH2EKW4JzK5q2lxVBZDsCx7B+4jJfDSA3WCUAnFjm471nU6KwKFc1wBLP9HxhVyNe54DNpHCLMDvOofn3ncUpX+qoqCVVGqtLVhAAHrB/Un3gbTcsyrk6XtRbQTgPA=
+MIDlet-Certificate-1-1: MIIEFjCCAv6gAwIBAgICMbkwDQYJKoZIhvcNAQEFBQAwKjEOMAwGA1UEChMFTm9raWExGDAWBgNVBAMTD05va2lhIE9ubGluZSBDQTAeFw0xMDAzMjQwNzI2NDdaFw0xNTAzMjQwNzI2NDFaMCgxDjAMBgNVBAoMBU5va2lhMRYwFAYDVQQDDA1Ob2tpYSBDb250ZW50MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6qJw1GebigbugM1m8ID1ELxk7GUDvsNsl8R1ihil0vGnXOR/GOll927YnDoPTpigoOqCrhIEa08JLuQ4DcUI1fChsuNI3r6CNbCBJ5eUUtanJmk6uZbpw5MeRl5TuPelpCKTq1jL+jcOurcdgz1O7wta+dMAHV64FnJ5TDFQuFwIDAQABo4IByjCCAcYwgfgGA1UdIASB8DCB7TCB6gYMKwYBBAFeATEBAQMEMIHZMIHWBggrBgEFBQcCAjCByQyBxlJlbGlhbmNlIG9uIHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0ZXJtcyBhbmQgY29uZGl0aW9ucyBhbmQgbGltaXRhdGlvbnMgb2YgdXNlLCBhcyBkZXRhaWxlZCBpbiB0aGUgTm9raWEgT25saW5lIENlcnRpZmljYXRpb24gQXV0aG9yaXR5IENlcnRpZmljYXRpb24gUHJhY3RpY2UgU3RhdGVtZW50LjBWBggrBgEFBQcBAQRKMEgwIgYIKwYBBQUHMAGGFmh0dHA6Ly9vY3NwMC5ub2tpYS5jb20wIgYIKwYBBQUHMAGGFmh0dHA6Ly9vY3NwMS5ub2tpYS5jb20wDgYDVR0PAQH/BAQDAgeAMCEGA1UdJQQaMBgGCCsGAQUFBwMDBgwrBgEEAV4BMQECAgMwHwYDVR0jBBgwFoAUbj0m079naLEa8jJyn9EJKtRv0tMwHQYDVR0OBBYEFGwqaARoNEZuKT9I+Jbtckm0gmfVMA0GCSqGSIb3DQEBBQUAA4IBAQBPEKbQrX3OEszdHmxeVL9ieVtluuBatQKmX5Yno0+fYGYXsZbpZeHghOdccYrxpRO8e6wVfFuPJ1LCgHlqupLvoXSYfpxYQH+dNR3vnI6rMJoEX/DM4BIfMQK1tlOcw1AxXgD2KXiPQoulEd2IZheWtmbM7C9fvnY3S6+wOIel1XtHS33Yj6EzeClHMbj5dYMVDoLL+UfPjDmQ22Gqpe9ehFX0H8gVUvVLNOW9syWEcHOKduzoBEM0n8p+A5MqL7I/mM1TaZWhPn5rVZdC16aSje1TNxUwE4hlLaVtEJntWzeBdcFHlTrKkmud1F0IJlI1Se+gS2ZxAx8T0t/8MZ4x
