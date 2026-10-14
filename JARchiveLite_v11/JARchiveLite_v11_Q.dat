@@ -1,0 +1,2837 @@
+clrmamepro (
+	name J2ME
+	description "The New J2ME Software Archive Lite"
+	category Mobile
+	version 3
+	date 2026.02
+	author 2s
+	email "-insert email-"
+	homepage "-insert homepage-"
+	url "-insert url-"
+	comment "-insert comment-"
+)
+
+game (
+	name "Q Brick (funmobile) (1.0) (CLDC-1.0, MIDP-1.0) (E7668E08).jar"
+	rom ( name "Q Brick (funmobile) (1.0) (CLDC-1.0, MIDP-1.0) (E7668E08).jar" size 33702 crc e7668e08 md5 74739df8d8f985ede65f35e286fc3bc0 sha1 67ca3136faa71c92f4702a531500a385457648d6 )
+)
+
+game (
+	name "Q-Bubbles (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (643D1A87).jar"
+	rom ( name "Q-Bubbles (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (643D1A87).jar" size 85426 crc 643d1a87 md5 b8abf1fcbb3d0c6ac75651f6519a6940 sha1 e6fcfb6ab6bd2d6001b7dfffdf5fb9f04574d5a4 )
+)
+
+game (
+	name "Q-CS-ENG-S40v1-N6230 (N6230) (1.2) (CLDC-1.0, MIDP-1.0) (2B2F8466).jar"
+	rom ( name "Q-CS-ENG-S40v1-N6230 (N6230) (1.2) (CLDC-1.0, MIDP-1.0) (2B2F8466).jar" size 55221 crc 2b2f8466 md5 ceb9eef642d65f3d615663c1ab35571a sha1 43685b699b849a21ec50b0a67fcac93baae47955 )
+)
+
+game (
+	name "Q-CurrencyConverter (Q-Stuff.com) (2.0) (CLDC-1.0, MIDP-2.0) (6D38817A).jar"
+	rom ( name "Q-CurrencyConverter (Q-Stuff.com) (2.0) (CLDC-1.0, MIDP-2.0) (6D38817A).jar" size 30785 crc 6d38817a md5 f120f5944c909b390d639b36b7f61e87 sha1 2b848967919a8fa7be027149363aca3afcd40eee )
+)
+
+game (
+	name "Q-days (美峰数码) (1.0) (CLDC-1.1, MIDP-2.0) (2AF77BFD).jar"
+	rom ( name "Q-days (美峰数码) (1.0) (CLDC-1.1, MIDP-2.0) (2AF77BFD).jar" size 1264496 crc 2af77bfd md5 1602c86159b26364d270b6867b0fff2c sha1 049330f85dc23b3e53cb5206d0ad933a1f720477 )
+)
+
+game (
+	name "Q-Magic 8-Ball (Anthony Quattrone) (1.0) (CLDC-1.0, MIDP-2.0) (BD9D553B).jar"
+	rom ( name "Q-Magic 8-Ball (Anthony Quattrone) (1.0) (CLDC-1.0, MIDP-2.0) (BD9D553B).jar" size 107068 crc bd9d553b md5 e3c90311e0febbe61a820fe41af26695 sha1 82b26e2ad5c6ebe0e6c8d5015bec0070995b1162 )
+)
+
+game (
+	name "Q-SlotMachine (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (4765FB6E).jar"
+	rom ( name "Q-SlotMachine (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (4765FB6E).jar" size 56271 crc 4765fb6e md5 1193be5c0df0b40755260a3bc0e4c584 sha1 e8a7062c2cae4727b8992db342c2c5ab9bcb6942 )
+)
+
+game (
+	name "Q-SpaceInvaders (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (4FEF3932).jar"
+	rom ( name "Q-SpaceInvaders (Q-Stuff.com) (1.0) (CLDC-1.0, MIDP-2.0) (4FEF3932).jar" size 58927 crc 4fef3932 md5 fa2526bb56ac85081a28c54049430cd0 sha1 b6638d03c6a330d157f9fbd626f8f72ac453f726 )
+)
+
+game (
+	name "QBert (Sony Pictures Mobile) (2.0.7) (CLDC-1.0, MIDP-2.0) (C4157C72).jar"
+	rom ( name "QBert (Sony Pictures Mobile) (2.0.7) (CLDC-1.0, MIDP-2.0) (C4157C72).jar" size 84590 crc c4157c72 md5 4e4a4a95c07353a3a20621c6ecc51ea7 sha1 c561c91113e57f0363f4cc5763359e919f072a21 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.0) (CLDC-1.1, MIDP-2.0) (8BF2AE36).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.0) (CLDC-1.1, MIDP-2.0) (8BF2AE36).jar" size 126097 crc 8bf2ae36 md5 3e87880899d704508e9dda9e5b1f46dd sha1 842170898777d8c28a71425ef3824e62702cefaf )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.0) (CLDC-1.1, MIDP-2.0) (DD38EE38).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.0) (CLDC-1.1, MIDP-2.0) (DD38EE38).jar" size 151980 crc dd38ee38 md5 c09ef81042f5bc6ba01fe2bd8a643c17 sha1 ec67ae000269eb3ca8a9c11d59a524b50e477fa8 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.1) (CLDC-1.1, MIDP-2.0) (6DDFFE94).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.1) (CLDC-1.1, MIDP-2.0) (6DDFFE94).jar" size 90025 crc 6ddffe94 md5 532772bb082121fa0b3c058bbd8bbc65 sha1 c46c4ed8978eda82fbff16e92a66b9430947303b )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.10) (CLDC-1.1, MIDP-2.0) (5E4858F5).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.10) (CLDC-1.1, MIDP-2.0) (5E4858F5).jar" size 117657 crc 5e4858f5 md5 adb3175549538c5076983315e9030f8a sha1 b92c5964045ae28ccb137d6ad4618384f3dc892c )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.10) (CLDC-1.1, MIDP-2.0) (89944022).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.10) (CLDC-1.1, MIDP-2.0) (89944022).jar" size 73681 crc 89944022 md5 c13d02363bc0edd1a573d294849b6c29 sha1 3e4fc59dc9ec44b6304438e2b04c21359f5bd03c )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.12) (CLDC-1.1, MIDP-2.0) (5AD724AC).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.12) (CLDC-1.1, MIDP-2.0) (5AD724AC).jar" size 143206 crc 5ad724ac md5 a584ae04b39df787b6210afa87e5f04d sha1 c1b28b7c2b760ad14c451ea14260004d288a2008 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.16) (CLDC-1.0, MIDP-2.0) (3B7E0616).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.16) (CLDC-1.0, MIDP-2.0) (3B7E0616).jar" size 139981 crc 3b7e0616 md5 1f3233b343685c4dd1bed8de036ffb5b sha1 49413d89757173624e89160ee28a2e3b67581c90 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.2) (CLDC-1.0, MIDP-1.0) (51575FDD).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.2) (CLDC-1.0, MIDP-1.0) (51575FDD).jar" size 64574 crc 51575fdd md5 1f2af33e23de9f7da045834b62d976de sha1 8ea8c548e5f38a731c2d4076c1ab28371d022580 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.2) (CLDC-1.1, MIDP-2.0) (015DE442).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.2) (CLDC-1.1, MIDP-2.0) (015DE442).jar" size 66261 crc 015de442 md5 6a98f4c6b7b04542ede6764519aa9bdf sha1 d358468ccbf4eb14af03923a6ad7318d493f3f7f )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.2) (CLDC-1.1, MIDP-2.0) (5F961958).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.2) (CLDC-1.1, MIDP-2.0) (5F961958).jar" size 81087 crc 5f961958 md5 1cbc2af5f2649fa944433c070dd1e9f6 sha1 9d68a06dba6de456dd9b0645511ea9271f095979 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.4) (CLDC-1.1, MIDP-2.0) (A84D8410).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.4) (CLDC-1.1, MIDP-2.0) (A84D8410).jar" size 94732 crc a84d8410 md5 d74512f5089ab3b40f1f7292b9f5aecc sha1 6b952b2103ea16dd717955c9d0b0d57a849bd572 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.4) (CLDC-1.1, MIDP-2.0) (A92C59DF).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.4) (CLDC-1.1, MIDP-2.0) (A92C59DF).jar" size 132823 crc a92c59df md5 c2963a9b7b6d6d4f359c4829f25f4878 sha1 73479a9794ea74215907cb0d340dadfada6cdc24 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.5) (CLDC-1.1, MIDP-2.0) (43C2A5E8).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.5) (CLDC-1.1, MIDP-2.0) (43C2A5E8).jar" size 104773 crc 43c2a5e8 md5 a3f8fbb1f16797c11436898bef1d1d65 sha1 5f9582f7c3e8de9c6ba696d4279bd41b3960215a )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.6) (CLDC-1.0, MIDP-2.0) (E1EFDD5A).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.6) (CLDC-1.0, MIDP-2.0) (E1EFDD5A).jar" size 80931 crc e1efdd5a md5 6bdd57876e0f672ba752aade170123df sha1 518a878e6bca8bfff7fee18ff0ba51cf47b81dde )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.8) (CLDC-1.0, MIDP-1.0) (CE642EC6).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.8) (CLDC-1.0, MIDP-1.0) (CE642EC6).jar" size 95101 crc ce642ec6 md5 6d79162f6fbe7c9c66bc795381eac9f4 sha1 1b8f719eff3c72755925236270c2f31d5c52d8b4 )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.8) (CLDC-1.1, MIDP-2.0) (CC02E29F).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.8) (CLDC-1.1, MIDP-2.0) (CC02E29F).jar" size 109993 crc cc02e29f md5 63bb2ed308ef3ba08835856235d42100 sha1 790dc81c1d4c1e67f7e351058407162988024ecb )
+)
+
+game (
+	name "QBert (Sony Pictures) (1.0.9) (CLDC-1.1, MIDP-2.0) (842C1FB4).jar"
+	rom ( name "QBert (Sony Pictures) (1.0.9) (CLDC-1.1, MIDP-2.0) (842C1FB4).jar" size 103635 crc 842c1fb4 md5 0d4316c632b7d289fd68ec38ab3cc523 sha1 af1331a056fd7bde6836cd5868ef764d5a025c01 )
+)
+
+game (
+	name "QBert (Sony PicturesBiNPDA) (1.0.0) (CLDC-1.1, MIDP-2.0) (47626C90).jar"
+	rom ( name "QBert (Sony PicturesBiNPDA) (1.0.0) (CLDC-1.1, MIDP-2.0) (47626C90).jar" size 126837 crc 47626c90 md5 88d0cc3fc63f4f92aff478a42c241a08 sha1 ea08b484f1a95d6ff6e36eee5dad72d789be271d )
+)
+
+game (
+	name "QBert (Sony PicturesBiNPDA) (1.0.5) (CLDC-1.1, MIDP-2.0) (102157EE).jar"
+	rom ( name "QBert (Sony PicturesBiNPDA) (1.0.5) (CLDC-1.1, MIDP-2.0) (102157EE).jar" size 105341 crc 102157ee md5 133c8fcf60f51cf9a69d6c58b2aed3e8 sha1 619a750bffe2114a41648e3e3dbad7c2566a50d7 )
+)
+
+game (
+	name "Qbert (Sony) (1.0) (CLDC-1.0, MIDP-1.0) (9BF00F94).jar"
+	rom ( name "Qbert (Sony) (1.0) (CLDC-1.0, MIDP-1.0) (9BF00F94).jar" size 55239 crc 9bf00f94 md5 b1a57922633e9d05dffe15cbdac53640 sha1 5991f42eb41b746f35df6be70b0cd53604a51f23 )
+)
+
+game (
+	name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (37F0E1BB).jar"
+	rom ( name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (37F0E1BB).jar" size 63207 crc 37f0e1bb md5 de4bfd62aeb8897d3d423eeb0b566029 sha1 6a6646f424e00465b50ed5fd4ddf55d1d6ac08c5 )
+)
+
+game (
+	name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (75D5E91E).jar"
+	rom ( name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (75D5E91E).jar" size 71566 crc 75d5e91e md5 d274832b21ad4e3e389428a86222f36c sha1 003df6cc9feb187514a8afddcae92e08a31b107a )
+)
+
+game (
+	name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (EB5DFDC4).jar"
+	rom ( name "QBlast (Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (EB5DFDC4).jar" size 69617 crc eb5dfdc4 md5 f136ae719c719421dc9960354c1b40ff sha1 56033086e9b4e41ec103f8b5dcde0d744170daa7 )
+)
+
+game (
+	name "Qblast (moto.justmine.org) (1.0.0) (CLDC-1.0, MIDP-1.0) (7F65C58F).jar"
+	rom ( name "Qblast (moto.justmine.org) (1.0.0) (CLDC-1.0, MIDP-1.0) (7F65C58F).jar" size 108226 crc 7f65c58f md5 72643d3cb624d0486734655d092ce7ea sha1 c0695aafbf067cb9c23cf258bb7792a3c33d3705 )
+)
+
+game (
+	name "QBlast [terjef] ([terjef]  Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (AF9A7E7D).jar"
+	rom ( name "QBlast [terjef] ([terjef]  Microjocs) (1.0.0) (CLDC-1.0, MIDP-1.0) (AF9A7E7D).jar" size 90987 crc af9a7e7d md5 acf9eab6447a21e230642310c23f4e31 sha1 204fb9d45dec4b2dafd2c2169d1754d873f1093b )
+)
+
+game (
+	name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.0, MIDP-2.0) (5EE232A6).jar"
+	rom ( name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.0, MIDP-2.0) (5EE232A6).jar" size 278328 crc 5ee232a6 md5 13a57da8b04c7c61183ae198b53f1f70 sha1 1e55a4d7e921e5b8c648aee351a06efea1ff898b )
+)
+
+game (
+	name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.0, MIDP-2.0) (FED663EE).jar"
+	rom ( name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.0, MIDP-2.0) (FED663EE).jar" size 117969 crc fed663ee md5 a89d635d666da7e5233686ac5b510c01 sha1 e06f25a8cd588481c888365499c46d89c210868b )
+)
+
+game (
+	name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (411DFA0F).jar"
+	rom ( name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (411DFA0F).jar" size 222268 crc 411dfa0f md5 5312b1185302900dce9860913548de5a sha1 2e9a9bb3b3a6100236e2d49751db43701980d664 )
+)
+
+game (
+	name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (713CCB02).jar"
+	rom ( name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (713CCB02).jar" size 89825 crc 713ccb02 md5 22ee6296ffd49899e8d219063ea69cf0 sha1 b661770e9b1627b02099f9ce75433726240370a8 )
+)
+
+game (
+	name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (7FBC0DD8).jar"
+	rom ( name "QBlox (Cocoasoft) (1.0.8) (CLDC-1.1, MIDP-2.0) (7FBC0DD8).jar" size 380336 crc 7fbc0dd8 md5 b939498591889c2cd879809a89c82944 sha1 ab08f144e57743112ae16f6f9a6be83a61273c7c )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (0B33CE06).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (0B33CE06).jar" size 272617 crc 0b33ce06 md5 0e18965eb52d855af38a4fb49ed25b6e sha1 7069b8e991a842df3fe67c35a4967b79b4507de8 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (CE901F70).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (CE901F70).jar" size 278321 crc ce901f70 md5 5289cb28b9fcbe3fa1ca87260ba60250 sha1 6895a98c2b935b00db32301f2e28e30449b9a97f )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (D39008E4).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.0, MIDP-2.0) (D39008E4).jar" size 117962 crc d39008e4 md5 42ec8b0ad1b2256fd2f74b0455ffd92a sha1 6660657366899420585a0d2b0abfc132694259e6 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (0BD486EF).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (0BD486EF).jar" size 380327 crc 0bd486ef md5 597223fd17e9c4c2e650da7de088d9c6 sha1 c78dd497fead8bbd0a6f885c892d904373ba5795 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (40A842F4).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (40A842F4).jar" size 495666 crc 40a842f4 md5 fee905a16444535e7bab2d21bed74ad2 sha1 4fdef14f5c0638b3f4d1f8be842179d74cc5b7b7 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (7D4403C5).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (7D4403C5).jar" size 223545 crc 7d4403c5 md5 a0c7c4d0aaf60ba47e8e0d236ff4739c sha1 4157d28cd8bd6e4e925aa125e26de5fd546a226b )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (7F15865D).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (7F15865D).jar" size 280023 crc 7f15865d md5 b9bcd5b481a40291db3af2c351d54bb0 sha1 4be443d3e0384e345d76baef9cd4a77900846a9d )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (8D95B617).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (8D95B617).jar" size 393855 crc 8d95b617 md5 1ba134d17935f1e09f99cbff515fd76f sha1 bb18a492aa2bc4cf538cfcbfa30930a884704bed )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (8E62AB7F).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (8E62AB7F).jar" size 384348 crc 8e62ab7f md5 af57718fabdb05cff7130df86996c2aa sha1 f2e4725dac52816d816cb25b51555e8371bbfa13 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (D5C24AD5).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (D5C24AD5).jar" size 387274 crc d5c24ad5 md5 b6ed6a308041bc2f718a2b24a217b16e sha1 54dd1f65d94cbb3ef8e36a43d16c0de51cefc878 )
+)
+
+game (
+	name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (E75CDAC1).jar"
+	rom ( name "QBlox serviak (Cocoasoft serviak) (1.0.8) (CLDC-1.1, MIDP-2.0) (E75CDAC1).jar" size 129858 crc e75cdac1 md5 37f11972bcd7bf546dab697c3b449231 sha1 a68cd15c293a17182155410f2e857a09872093bf )
+)
+
+game (
+	name "qCalc (cHeRsAnYa) (1.0) (CLDC-1.1, MIDP-2.0) (333F9DF6).jar"
+	rom ( name "qCalc (cHeRsAnYa) (1.0) (CLDC-1.1, MIDP-2.0) (333F9DF6).jar" size 6537 crc 333f9df6 md5 b879e00fee689a95ffb8e70f0a6fd518 sha1 57a40b938071cf2925f6f082f8414fdbfa2a1f13 )
+)
+
+game (
+	name "Qcs (华娱无线) (1.0) (CLDC-1.0, MIDP-1.0) (92E784D0).jar"
+	rom ( name "Qcs (华娱无线) (1.0) (CLDC-1.0, MIDP-1.0) (92E784D0).jar" size 51374 crc 92e784d0 md5 820058d3b8a1f177eef55cc550d6f388 sha1 db466e48aa2c0985eff3cc3a0ae410d69718e5dc )
+)
+
+game (
+	name "QianLong (sqage) (2.02) (CLDC-1.0, MIDP-2.0) (CC5AF3B3).jar"
+	rom ( name "QianLong (sqage) (2.02) (CLDC-1.0, MIDP-2.0) (CC5AF3B3).jar" size 1402876 crc cc5af3b3 md5 9105e280990c730995c9d27528a8738f sha1 acd045769e9e3b78a4f9ddf3448839c4bc06dc84 )
+)
+
+game (
+	name "Qibla Compass Basic (www.GuidedWays.com) (1.00) (CLDC-1.0, MIDP-2.0) (3717064E).jar"
+	rom ( name "Qibla Compass Basic (www.GuidedWays.com) (1.00) (CLDC-1.0, MIDP-2.0) (3717064E).jar" size 97026 crc 3717064e md5 8627186d079fa9e1f6685a404c9de79a sha1 2a66d6d6e8cfabb8cf1b6cb21fe0b571fde27c49 )
+)
+
+game (
+	name "Qibla Compass Basic (www.GuidedWays.com) (1.00) (CLDC-1.1, MIDP-2.0) (D7537A56).jar"
+	rom ( name "Qibla Compass Basic (www.GuidedWays.com) (1.00) (CLDC-1.1, MIDP-2.0) (D7537A56).jar" size 97030 crc d7537a56 md5 7b8dab1cf1c9651bebccc8f779b1e5ef sha1 ecb20c0ecda661e91c4b59d0f795ee0885e4e09d )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (571BC741).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (571BC741).jar" size 64376 crc 571bc741 md5 c8ae8e976aa94fd2d1561e8c3392e9a5 sha1 1678af68537bb88a78aac15686a22d283cf4c76d )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (8FD7049A).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (8FD7049A).jar" size 57539 crc 8fd7049a md5 d280d72e00d9461bcf698f4fc9891179 sha1 abb43d0aa1f2660590289258d1bc05d2bdf5989c )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (C1DB65B0).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (C1DB65B0).jar" size 61833 crc c1db65b0 md5 373d2ed08f7a94eb0120c493ee34a97d sha1 b5a2ddea3e3846e5a876f293c483179c8831371f )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (E12F2815).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-1.0) (E12F2815).jar" size 59226 crc e12f2815 md5 305dbf367b38237d26a903c697d4c898 sha1 1afa67c4ee38fdb286c36663dd4594bbaf7bbeef )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (69742623).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (69742623).jar" size 127733 crc 69742623 md5 8f68ad600efc97d6c2327476fc9fbaf4 sha1 09099433cc2958ca683a113b88f5baccb1a409a8 )
+)
+
+game (
+	name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (F275BC16).jar"
+	rom ( name "Qibla-Compass (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (F275BC16).jar" size 86176 crc f275bc16 md5 b2e717c4fca9550c4bfdc1ad954d79f4 sha1 d83a834a056088122691786cdab8c5a12103e718 )
+)
+
+game (
+	name "qiongren (weed) (1.1) (CLDC-1.0, MIDP-1.0) (B40C930F).jar"
+	rom ( name "qiongren (weed) (1.1) (CLDC-1.0, MIDP-1.0) (B40C930F).jar" size 19223 crc b40c930f md5 399999c584e4022050bce9f7c22c436b sha1 eafb9065d375d854c91345599e514dc1005ae60c )
+)
+
+game (
+	name "QIP Mobile (rbk) (1.3.85) (CLDC-1.0, MIDP-2.0) (D2A86939).jar"
+	rom ( name "QIP Mobile (rbk) (1.3.85) (CLDC-1.0, MIDP-2.0) (D2A86939).jar" size 473375 crc d2a86939 md5 11c26f39be1e95273b88687fdcd5a862 sha1 e8938adc1ab33615190bbe9d0feb4107c7b76a03 )
+)
+
+game (
+	name "QIP Mobile (rbk) (1.3.85) (CLDC-1.0, MIDP-2.0) (F5DFA06B).jar"
+	rom ( name "QIP Mobile (rbk) (1.3.85) (CLDC-1.0, MIDP-2.0) (F5DFA06B).jar" size 434299 crc f5dfa06b md5 725c04f8c63453bba11e7052c3700ca0 sha1 888fd5aadd317a8ace02c56d6320ca0fac70cfc0 )
+)
+
+game (
+	name "QIWI (QIWI) (6.16) (CLDC-1.0, MIDP-2.0) (59AE94D4).jar"
+	rom ( name "QIWI (QIWI) (6.16) (CLDC-1.0, MIDP-2.0) (59AE94D4).jar" size 98155 crc 59ae94d4 md5 3dc69a971afe942604545055d88bef2d sha1 023aa9adf60166a854726e9fe9114f75c964d426 )
+)
+
+game (
+	name "QIWI (QIWI) (6.16) (CLDC-1.0, MIDP-2.0) (DFFF4521).jar"
+	rom ( name "QIWI (QIWI) (6.16) (CLDC-1.0, MIDP-2.0) (DFFF4521).jar" size 222832 crc dfff4521 md5 a0ef2da0b3c137c06d4fd7f143a8ec8a sha1 57c0aad8ef5cc081f6df78d02d990665114468a9 )
+)
+
+game (
+	name "QIWI (QIWI) (6.30.1) (CLDC-1.0, MIDP-2.0) (F4B1F079).jar"
+	rom ( name "QIWI (QIWI) (6.30.1) (CLDC-1.0, MIDP-2.0) (F4B1F079).jar" size 437469 crc f4b1f079 md5 46e869c1ea000c93931ccd31862df1c4 sha1 2d8f2c65dc8e23f9560db520a1a6b5b8904286ba )
+)
+
+game (
+	name "QIWI (QIWI) (6.30.4) (CLDC-1.0, MIDP-2.0) (F3D26054).jar"
+	rom ( name "QIWI (QIWI) (6.30.4) (CLDC-1.0, MIDP-2.0) (F3D26054).jar" size 435121 crc f3d26054 md5 663c521d62a5c6013f4c391b5dde17d4 sha1 723b4ef4a989623999215990eae98c4604652c77 )
+)
+
+game (
+	name "QIWI (QIWI) (6.32.1) (CLDC-1.0, MIDP-2.0) (AD96FB72).jar"
+	rom ( name "QIWI (QIWI) (6.32.1) (CLDC-1.0, MIDP-2.0) (AD96FB72).jar" size 472854 crc ad96fb72 md5 9519fe201acc7acab0b1768c831c6d38 sha1 3f8d5d88d198d71f219d5bf03ff7cde169278cd2 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.5) (CLDC-1.0, MIDP-1.0) (74266585).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.5) (CLDC-1.0, MIDP-1.0) (74266585).jar" size 45638 crc 74266585 md5 0f09dd9ef9e5c01cb15cdb76863601f2 sha1 a38e80bc36e6ccde0ad3e1701e59da866678efa7 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.5) (CLDC-1.0, MIDP-2.0) (E64825CB).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.5) (CLDC-1.0, MIDP-2.0) (E64825CB).jar" size 54616 crc e64825cb md5 59d67a652e6d0adba0dc5e86b41e5cf1 sha1 d57c2726fe2394cf7593da3b86bd34b7ca88777b )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (0287F817).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (0287F817).jar" size 65477 crc 0287f817 md5 5924da8142f33ee6aa5f91d2d2e0d97e sha1 d7677ebf6c1009dfe41fa267474697401480c8b0 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (148E3742).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (148E3742).jar" size 55613 crc 148e3742 md5 48299c9b371f1b52aa63eb8ed1ab989c sha1 cfda139bcd073802a4e4944c8d5bbe85f23c2683 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (5EB9CB84).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (5EB9CB84).jar" size 53896 crc 5eb9cb84 md5 9c0059aa9325dd975aa94642c386e041 sha1 9ce503bb1f6368da79737ed662d5d503d81081bd )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (76C9F79B).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (76C9F79B).jar" size 53920 crc 76c9f79b md5 63155856baac712aaedeb15dc0536623 sha1 75ebd312a6311266e08b5d2070dcb2c0400993b0 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (855C61ED).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (855C61ED).jar" size 54905 crc 855c61ed md5 67001cfe06ca19bb5f3237e91659f2f3 sha1 21b10c44fa3dd620764101591436ffbfea51a94a )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (9B0B56C7).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (9B0B56C7).jar" size 56192 crc 9b0b56c7 md5 05d3a25564828f10955d598638a3c11b sha1 e0982f3f51cb22fd38f256fc33c29f2742f3d983 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (9ED136C3).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (9ED136C3).jar" size 109180 crc 9ed136c3 md5 c1160c39eceb1f396dfb2b7323a77af4 sha1 64328bf1f8ec620e504fabce809437b9ebcbdd14 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (B2E7E15A).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (B2E7E15A).jar" size 55576 crc b2e7e15a md5 a9d45ddff7f6617679601aae15ac9a06 sha1 3082c2a3d5e55d9b17849bbb648dd8046e49bce1 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (C5BE7C15).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (C5BE7C15).jar" size 108593 crc c5be7c15 md5 b0e6762f997688e0295791deebbd5271 sha1 876bb103524da9cfe77dfe60d98e8b24f0d96d92 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (DD93FC78).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (DD93FC78).jar" size 54436 crc dd93fc78 md5 8bb5e044d8a02ee546ac30f08735e856 sha1 35836a110b0a8ee214389160dabf7e0fa3fc0804 )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (E15B4D1B).jar"
+	rom ( name "Qix (Electronic Arts) (1.6.6) (CLDC-1.0, MIDP-2.0) (E15B4D1B).jar" size 54500 crc e15b4d1b md5 2359b501052ac01de27330001d699d6f sha1 ba685c5241404def4907a415a19769a072f9de5f )
+)
+
+game (
+	name "Qix (Electronic Arts) (1.8.7) (CLDC-1.0, MIDP-2.0) (763771D5).jar"
+	rom ( name "Qix (Electronic Arts) (1.8.7) (CLDC-1.0, MIDP-2.0) (763771D5).jar" size 113985 crc 763771d5 md5 a6eaa1c6b25057e55cdcb61311571732 sha1 fd5fc7763615984c31d408788517661e14102ee2 )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-1.0) (D4403E0D).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-1.0) (D4403E0D).jar" size 64133 crc d4403e0d md5 aa80c9e395746507a834a89ed89b731a sha1 cf4405bc935f96fb88ae75ae37c0febb343ac4c4 )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (133F52E7).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (133F52E7).jar" size 52963 crc 133f52e7 md5 c260553cbd158cfad7c3d9480735ada5 sha1 350bb9bd487e11de4fbf7e0f57667f739887a85c )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (27AD230E).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (27AD230E).jar" size 111231 crc 27ad230e md5 3212814eadc92fd3b9e89024224dd2dc sha1 3e09f14c0cdcd7619215de5406822b41cf2b8572 )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (6AE90F65).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (6AE90F65).jar" size 54201 crc 6ae90f65 md5 cf8f8f249e094bd9000a7659978fd733 sha1 b26ec7c6f6ebee6407b83eb90cfa3bf5c4bcb517 )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (917E554D).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (917E554D).jar" size 52392 crc 917e554d md5 d9779bb6ebecddf07ea2ecbd4896721a sha1 64ee6cdaabe500b32871daf9e5951470b29c1a95 )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (D584BCD4).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (D584BCD4).jar" size 54304 crc d584bcd4 md5 d1983d8994dda258fef2606b60e3ef77 sha1 6a8ad8414601487c64052b80f1d9b14f32041baf )
+)
+
+game (
+	name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (FC108861).jar"
+	rom ( name "Qix (TaitoBiNPDA) (1.4.0) (CLDC-1.0, MIDP-2.0) (FC108861).jar" size 53542 crc fc108861 md5 4f97b23a4e86c538af2d75a7e0c3c10f sha1 3c767658f2ecde1bd635ec8c1ae54b2e2c1ba284 )
+)
+
+game (
+	name "Qix Spain (TodoT610yZ600) (1.0) (CLDC-1.0, MIDP-1.0) (7F5E90A2).jar"
+	rom ( name "Qix Spain (TodoT610yZ600) (1.0) (CLDC-1.0, MIDP-1.0) (7F5E90A2).jar" size 68374 crc 7f5e90a2 md5 2dde760ae5cc58c4a8a711dc9e1ee1ec sha1 d7dabe803e81245c4402b9df38576c345b928581 )
+)
+
+game (
+	name "Qixxx (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (76BC1859).jar"
+	rom ( name "Qixxx (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (76BC1859).jar" size 166065 crc 76bc1859 md5 b3bca6f310f9886ef48d98d98bf80036 sha1 1458d313c7e5f87234d04f4e99a47781c2814f81 )
+)
+
+game (
+	name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (54512FDA).jar"
+	rom ( name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (54512FDA).jar" size 45122 crc 54512fda md5 c1c59a040e318de4fc24987fd91f9b5b sha1 7dad3676cd819c272b8cdb099647e73f14f11571 )
+)
+
+game (
+	name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (93BFDD6F).jar"
+	rom ( name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (93BFDD6F).jar" size 49734 crc 93bfdd6f md5 8cfad95006eb52adb64609e5fb241c7c sha1 2eb4f24c10b4b95574b6ef91ce3c5ea44e6a2f06 )
+)
+
+game (
+	name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (C7F88515).jar"
+	rom ( name "Qlife (Breakpoint) (1.0) (CLDC-1.0, MIDP-1.0) (C7F88515).jar" size 76975 crc c7f88515 md5 a6e5c87139b80536a0b50c35d912a8fe sha1 faa0282bb373c788159078516374c7071909ddc3 )
+)
+
+game (
+	name "qm_Nokia_176x208_ct (WooWorld) (1.0) (CLDC-1.0, MIDP-2.0) (A52963B6).jar"
+	rom ( name "qm_Nokia_176x208_ct (WooWorld) (1.0) (CLDC-1.0, MIDP-2.0) (A52963B6).jar" size 670177 crc a52963b6 md5 15def203a76759350a55f2d5def7f542 sha1 df20c774639c00a8d3d1333a8dd11f16ff51fd63 )
+)
+
+game (
+	name "qm_Nokia_240x320_ct (WooWorld) (1.0) (CLDC-1.0, MIDP-2.0) (8791AD61).jar"
+	rom ( name "qm_Nokia_240x320_ct (WooWorld) (1.0) (CLDC-1.0, MIDP-2.0) (8791AD61).jar" size 612116 crc 8791ad61 md5 49a106553debc7e82ddd180da4e5e99d sha1 3cac5058a9eb0d0864d1efcb695887b31182b0af )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.5) (CLDC-1.0, MIDP-2.0) (CA4FB608).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.5) (CLDC-1.0, MIDP-2.0) (CA4FB608).jar" size 101736 crc ca4fb608 md5 35fa99069a87253cf73d07b0a2d97afe sha1 a46e8e0e537739f52e07d1d3fec789dff689a796 )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.6) (CLDC-1.0, MIDP-2.0) (15F6D837).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.6) (CLDC-1.0, MIDP-2.0) (15F6D837).jar" size 298301 crc 15f6d837 md5 2784cc8c06f0bf36693bca0a16f56142 sha1 b893075017ad179d10d3571d46f5b29e08bd6dbb )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.7) (CLDC-1.0, MIDP-2.0) (0D52CDEF).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.7) (CLDC-1.0, MIDP-2.0) (0D52CDEF).jar" size 298299 crc 0d52cdef md5 dc46d90e2ab73f0909a559a8adebaf7c sha1 fb93656e4ce1a7f70e97603b3fece4ea945e596b )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-1.0) (A0B7F289).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-1.0) (A0B7F289).jar" size 64996 crc a0b7f289 md5 9c8ecfa1326042e597bcb27a3e863c82 sha1 45f7f5f16d0e1b1abb5ef98268451f36b5c94ea1 )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (024B8200).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (024B8200).jar" size 309871 crc 024b8200 md5 5e6ff6da7d0a36d8976ccf90590fb24f sha1 f76d2c00e2c4eaa08665ebf79fc76b1f41a45410 )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (7BB984D1).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (7BB984D1).jar" size 282747 crc 7bb984d1 md5 7e1cdb7845442824be132f7664bf54d0 sha1 be226e8cb5a9e755c960024c653b001d50a35599 )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (CCA6EB3D).jar"
+	rom ( name "QP1C (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (CCA6EB3D).jar" size 297283 crc cca6eb3d md5 2cdaca03b80c01c50c2af86332e23958 sha1 9a0d5d3783adaf5cd2ed5eb53ea21613e0a8783a )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.2.0) (CLDC-1.0, MIDP-2.0) (5C6E204A).jar"
+	rom ( name "QP1C (Gameloft SA) (1.2.0) (CLDC-1.0, MIDP-2.0) (5C6E204A).jar" size 99003 crc 5c6e204a md5 b2c351608d4a8fbc67f7a1e7a29d5b2f sha1 81cc0dadf63a9ec9f52bf2fe015bcb86f9e27fab )
+)
+
+game (
+	name "QP1C (Gameloft SA) (1.2.0) (CLDC-1.0, MIDP-2.0) (71496B42).jar"
+	rom ( name "QP1C (Gameloft SA) (1.2.0) (CLDC-1.0, MIDP-2.0) (71496B42).jar" size 202738 crc 71496b42 md5 2a509372892cb61e81895cf64e0f3f9c sha1 dcbf099768560a4c174d185019ffc5de442fc1c7 )
+)
+
+game (
+	name "QP1C (Gameloft SA_freemobilejavagames.blogspot.com) (1.1.6) (CLDC-1.0, MIDP-2.0) (165C688C).jar"
+	rom ( name "QP1C (Gameloft SA_freemobilejavagames.blogspot.com) (1.1.6) (CLDC-1.0, MIDP-2.0) (165C688C).jar" size 288260 crc 165c688c md5 03376b7b4c67b238fd8dd4e173644513 sha1 9ab698d725d8d4462ec2f909b49a973b259cf3fa )
+)
+
+game (
+	name "QPUC (Gameloft SA) (1.0.0) (CLDC-1.0, MIDP-2.0) (2EEA4096).jar"
+	rom ( name "QPUC (Gameloft SA) (1.0.0) (CLDC-1.0, MIDP-2.0) (2EEA4096).jar" size 144579 crc 2eea4096 md5 708f4537eba50a14b3acd1c346a8386e sha1 8d3b887f92bf69c86adc32b2074753f8ea20d59e )
+)
+
+game (
+	name "QQ (jia) (1.3.0) (CLDC-1.0, MIDP-1.0) (B52440D0).jar"
+	rom ( name "QQ (jia) (1.3.0) (CLDC-1.0, MIDP-1.0) (B52440D0).jar" size 98071 crc b52440d0 md5 1d9add743c761eeef4ac77a51a913643 sha1 d40c81425d0163d0a9b5fc9ab2c1f66ae0ce2db7 )
+)
+
+game (
+	name "QQ (JJ) (1.3.0) (CLDC-1.0, MIDP-1.0) (23C78FA8).jar"
+	rom ( name "QQ (JJ) (1.3.0) (CLDC-1.0, MIDP-1.0) (23C78FA8).jar" size 98513 crc 23c78fa8 md5 9ecaf677ef9ae8f615385d645914a35a sha1 44a78fa538468479b0241fc0f1cc212d87bc84c2 )
+)
+
+game (
+	name "QQ (JJ) (1.3.0) (CLDC-1.0, MIDP-1.0) (63C5E943).jar"
+	rom ( name "QQ (JJ) (1.3.0) (CLDC-1.0, MIDP-1.0) (63C5E943).jar" size 98899 crc 63c5e943 md5 436112fe99f633ec6dd6622d00298f13 sha1 b0e932ba9bafead70b0b31bb0f8300dfdf9148d3 )
+)
+
+game (
+	name "QQ (jj) (1.3.0) (CLDC-1.0, MIDP-1.0) (A3CBF1C3).jar"
+	rom ( name "QQ (jj) (1.3.0) (CLDC-1.0, MIDP-1.0) (A3CBF1C3).jar" size 98110 crc a3cbf1c3 md5 afe30d33378bbbe774184531fd674a61 sha1 37bbd7ebd3eab29d775ae4599c86280b58f3feed )
+)
+
+game (
+	name "QQ (Joeson) (1.3.0) (CLDC-1.0, MIDP-1.0) (C0E72B2F).jar"
+	rom ( name "QQ (Joeson) (1.3.0) (CLDC-1.0, MIDP-1.0) (C0E72B2F).jar" size 95921 crc c0e72b2f md5 48e64f8317796a2fc5bb8d78180de019 sha1 26e5d06fc0a118856a5be0cd6d83c64eb989d68d )
+)
+
+game (
+	name "QQ (Nokia) (2.10) (CLDC-1.1, MIDP-2.0) (F504D4D1).jar"
+	rom ( name "QQ (Nokia) (2.10) (CLDC-1.1, MIDP-2.0) (F504D4D1).jar" size 128308 crc f504d4d1 md5 7524907525c32ebf15536e0b66a02d18 sha1 aecc75be275728c5977f2dbd5168a72250134f4e )
+)
+
+game (
+	name "QQ (Nokia) (2.11) (CLDC-1.1, MIDP-2.0) (44411E22).jar"
+	rom ( name "QQ (Nokia) (2.11) (CLDC-1.1, MIDP-2.0) (44411E22).jar" size 129659 crc 44411e22 md5 e7158001b8a2d48f833f48b05ff89239 sha1 0e4dc565fafb6c67d5c0bb040288fb145769a677 )
+)
+
+game (
+	name "QQ (Nokia) (2.2) (CLDC-1.0, MIDP-1.0) (8588FB87).jar"
+	rom ( name "QQ (Nokia) (2.2) (CLDC-1.0, MIDP-1.0) (8588FB87).jar" size 68550 crc 8588fb87 md5 97503d75c1eccc412ad23ff51fa23bb6 sha1 87dd7a3a9dc4103ca7e8097e81e4e6baeb139cad )
+)
+
+game (
+	name "QQ (Nokia) (3.5) (CLDC-1.1, MIDP-2.0) (5510CA40).jar"
+	rom ( name "QQ (Nokia) (3.5) (CLDC-1.1, MIDP-2.0) (5510CA40).jar" size 163914 crc 5510ca40 md5 3eedb139d1b3a0a0dd383a3ede318829 sha1 6a336a34f80f0f316f87c2496108addc350970ff )
+)
+
+game (
+	name "QQ (Nokia) (4.0.5) (CLDC-1.1, MIDP-2.0) (BA20FAB1).jar"
+	rom ( name "QQ (Nokia) (4.0.5) (CLDC-1.1, MIDP-2.0) (BA20FAB1).jar" size 259574 crc ba20fab1 md5 af4460426e6535f2e15ec6ac252da91e sha1 2fd2750414d2aaf82a2674545471d37d6665949a )
+)
+
+game (
+	name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (132C517F).jar"
+	rom ( name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (132C517F).jar" size 280268 crc 132c517f md5 d050701293527ccf3b49d3556d8674ce sha1 d5b38ea8a59e6366e96762fa77df2de01dc2c5b7 )
+)
+
+game (
+	name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (AE36E93E).jar"
+	rom ( name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (AE36E93E).jar" size 280263 crc ae36e93e md5 3199e3e1df7614ae565e41306cb66fe8 sha1 4931d0a1de07b18476e34e5ef98bce3687c35fc6 )
+)
+
+game (
+	name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (C6C998A3).jar"
+	rom ( name "QQ (Nokia) (4.2) (CLDC-1.1, MIDP-2.0) (C6C998A3).jar" size 280263 crc c6c998a3 md5 b7913e3bc3c4bdf74465e5024ada7df7 sha1 a6c583e763b94f2d9df67fc302d4c96f30a7c76d )
+)
+
+game (
+	name "QQ (Nokia) (4.5.2) (CLDC-1.1, MIDP-2.0) (81F89A72).jar"
+	rom ( name "QQ (Nokia) (4.5.2) (CLDC-1.1, MIDP-2.0) (81F89A72).jar" size 279087 crc 81f89a72 md5 ea0de3112e1aaa8612492950bd551bcd sha1 4308d2c8324f9b6e5782a891d0f81df34b0467d8 )
+)
+
+game (
+	name "QQ (Nokia) (4.5.4) (CLDC-1.1, MIDP-2.0) (EA3C9087).jar"
+	rom ( name "QQ (Nokia) (4.5.4) (CLDC-1.1, MIDP-2.0) (EA3C9087).jar" size 279185 crc ea3c9087 md5 ea7905078bd4cebdda47f27b9b9453e6 sha1 ffde9b4922d54e6b41c214abbfc350b46cb72256 )
+)
+
+game (
+	name "QQ (Nokia) (4.5.5) (CLDC-1.1, MIDP-2.0) (29DE5AED).jar"
+	rom ( name "QQ (Nokia) (4.5.5) (CLDC-1.1, MIDP-2.0) (29DE5AED).jar" size 269258 crc 29de5aed md5 8c42fd578dd84a66ae15a601bb98827c sha1 5b2fec74dff5265c41c3a15bbd2c3d4d4515970b )
+)
+
+game (
+	name "QQ (Nokia) (4.5.5) (CLDC-1.1, MIDP-2.0) (9CA7AE98).jar"
+	rom ( name "QQ (Nokia) (4.5.5) (CLDC-1.1, MIDP-2.0) (9CA7AE98).jar" size 269259 crc 9ca7ae98 md5 c1cc6f2e5906acb45fb4e9844cfcd05c sha1 cb3fdc17c4267a63ced0edfba025d4fc92728c1c )
+)
+
+game (
+	name "QQ (Nokia) (4.5.6) (CLDC-1.1, MIDP-2.0) (3114CA39).jar"
+	rom ( name "QQ (Nokia) (4.5.6) (CLDC-1.1, MIDP-2.0) (3114CA39).jar" size 269259 crc 3114ca39 md5 8c1932e998ddd7e052448df991b5a09f sha1 6190f0baef4f6d3ad1aa503f3ed2e1c8615e00f7 )
+)
+
+game (
+	name "QQ (Nokia) (4.5.7) (CLDC-1.1, MIDP-2.0) (CEC90FE2).jar"
+	rom ( name "QQ (Nokia) (4.5.7) (CLDC-1.1, MIDP-2.0) (CEC90FE2).jar" size 269249 crc cec90fe2 md5 7b9d0f4b05dac238ba256120f4b646c8 sha1 89d2e3a08c84b9f4456f20b04d9e8ddf36cee79e )
+)
+
+game (
+	name "QQ (Nokia) (4.5.8) (CLDC-1.1, MIDP-2.0) (6673DF4B).jar"
+	rom ( name "QQ (Nokia) (4.5.8) (CLDC-1.1, MIDP-2.0) (6673DF4B).jar" size 269318 crc 6673df4b md5 8d6da2be53a99cfc288a3f2d7e5cbb41 sha1 edbc7f7cf7251a17dd146a85731082b7ee9e4cfb )
+)
+
+game (
+	name "QQ (Nokia) (4.5.8) (CLDC-1.1, MIDP-2.0) (741A8529).jar"
+	rom ( name "QQ (Nokia) (4.5.8) (CLDC-1.1, MIDP-2.0) (741A8529).jar" size 269319 crc 741a8529 md5 faa70d3a700cffafc6359aa5862650ee sha1 aaec5862bdc1e0beb64951bb006acfe5bdc5d563 )
+)
+
+game (
+	name "QQ (Nokia) (5.4.0) (CLDC-1.1, MIDP-2.0) (B7DA2EB0).jar"
+	rom ( name "QQ (Nokia) (5.4.0) (CLDC-1.1, MIDP-2.0) (B7DA2EB0).jar" size 371767 crc b7da2eb0 md5 196d8397edc92f22e49ab771f41bb9cd sha1 90ca6d7b977de44d9a0c0c636238db0dcd4afb59 )
+)
+
+game (
+	name "QQ (Nokia) (5.5.0) (CLDC-1.1, MIDP-2.0) (716FF5B6).jar"
+	rom ( name "QQ (Nokia) (5.5.0) (CLDC-1.1, MIDP-2.0) (716FF5B6).jar" size 371907 crc 716ff5b6 md5 29d88d5cce8115a973d566b1f505c5e0 sha1 237193c75cd7404dc8b48eaa843bd74c82d8f72b )
+)
+
+game (
+	name "QQ (Pinkteacher) (1.3.0) (CLDC-1.0, MIDP-1.0) (C988F3C0).jar"
+	rom ( name "QQ (Pinkteacher) (1.3.0) (CLDC-1.0, MIDP-1.0) (C988F3C0).jar" size 80813 crc c988f3c0 md5 f8f4917b05ade78e6a660c452b4cfb10 sha1 70f773667f49fa59f7b60eabd143549242bd4827 )
+)
+
+game (
+	name "QQ (shanky) (1.2.1) (CLDC-1.0, MIDP-1.0) (0C0659EF).jar"
+	rom ( name "QQ (shanky) (1.2.1) (CLDC-1.0, MIDP-1.0) (0C0659EF).jar" size 67035 crc 0c0659ef md5 7c8184a31d31c3bbc1470917a9d8fd43 sha1 f02f8358e81bdd972be62e3bfa01bfacd739f4fa )
+)
+
+game (
+	name "QQ (Tencent) (05.28.03) (CLDC-1.0, MIDP-1.0) (8D86DEB9).jar"
+	rom ( name "QQ (Tencent) (05.28.03) (CLDC-1.0, MIDP-1.0) (8D86DEB9).jar" size 70081 crc 8d86deb9 md5 0f9e94bfba98563d6f4999a1951b7053 sha1 9dd6ca45a39e7ef838eb0bfe4834594f5dcbd771 )
+)
+
+game (
+	name "QQ (Tencent) (1.0.0) (CLDC-1.0, MIDP-1.0) (D2BE2DEE).jar"
+	rom ( name "QQ (Tencent) (1.0.0) (CLDC-1.0, MIDP-1.0) (D2BE2DEE).jar" size 50622 crc d2be2dee md5 4525de92fabd265fe16023df363a1083 sha1 e5b194bed1dba5474d1f259fd3481c37d2eb75e6 )
+)
+
+game (
+	name "QQ (Tencent) (1.1.0) (CLDC-1.0, MIDP-1.0) (6440070C).jar"
+	rom ( name "QQ (Tencent) (1.1.0) (CLDC-1.0, MIDP-1.0) (6440070C).jar" size 57405 crc 6440070c md5 3c63e4a32e7f87c3d4eb202d69cd1b9b sha1 f7484a9890287b6ba773f93fabf8507c6cc337e2 )
+)
+
+game (
+	name "QQ (Tencent) (1.2.0) (CLDC-1.0, MIDP-1.0) (772C0339).jar"
+	rom ( name "QQ (Tencent) (1.2.0) (CLDC-1.0, MIDP-1.0) (772C0339).jar" size 56957 crc 772c0339 md5 430b224f9c8e5733fcb5c832a8bf67ad sha1 9de2f9acffa4eba7e61e8eeecba8ca64d8c69960 )
+)
+
+game (
+	name "QQ (Tencent) (1.2.1) (CLDC-1.0, MIDP-1.0) (EBE19D12).jar"
+	rom ( name "QQ (Tencent) (1.2.1) (CLDC-1.0, MIDP-1.0) (EBE19D12).jar" size 63140 crc ebe19d12 md5 0f7d705dbd105fbc4a8c0c8bc12a734f sha1 48bc83aa0b817d1dc383f5ded8007a378b3681a7 )
+)
+
+game (
+	name "QQ (Tencent) (1.3.0) (CLDC-1.0, MIDP-1.0) (8A5E5F7C).jar"
+	rom ( name "QQ (Tencent) (1.3.0) (CLDC-1.0, MIDP-1.0) (8A5E5F7C).jar" size 63981 crc 8a5e5f7c md5 e62b77f69e29373fbaebcd56dc5f56d9 sha1 3041da0679b041ec693303e0e1079da150dbd6af )
+)
+
+game (
+	name "QQ (Tencent) (2.0.0) (CLDC-1.0, MIDP-2.0) (6EF1D11D).jar"
+	rom ( name "QQ (Tencent) (2.0.0) (CLDC-1.0, MIDP-2.0) (6EF1D11D).jar" size 122580 crc 6ef1d11d md5 c6485e2510432fa3dd347227c293c610 sha1 253c8de9664ab6ec8f30dadd276482e560821653 )
+)
+
+game (
+	name "QQ (Tencent) (2.0.0) (CLDC-1.0, MIDP-2.0) (D23ABF1E).jar"
+	rom ( name "QQ (Tencent) (2.0.0) (CLDC-1.0, MIDP-2.0) (D23ABF1E).jar" size 110299 crc d23abf1e md5 900265dd57fadd7a447b1fd39375cbb0 sha1 94035259140253a5d6dee96011dc36a67d948665 )
+)
+
+game (
+	name "QQ Browser (Tencent) (1.0.29) (CLDC-1.1, MIDP-2.0) (5328E3CE).jar"
+	rom ( name "QQ Browser (Tencent) (1.0.29) (CLDC-1.1, MIDP-2.0) (5328E3CE).jar" size 290213 crc 5328e3ce md5 757e6b0a82d0ea2a81e8da3fcd064a85 sha1 8a3db0621d26f48bcb0ecf79b50cf345e777abb6 )
+)
+
+game (
+	name "QQ Browser Mini (Tencent) (2.2.5) (CLDC-1.0, MIDP-2.0) (9C077992).jar"
+	rom ( name "QQ Browser Mini (Tencent) (2.2.5) (CLDC-1.0, MIDP-2.0) (9C077992).jar" size 277490 crc 9c077992 md5 1099ab72d7ef9d424b0c7556e282ee41 sha1 5aa2ee9981c0525582d07572c171b8bc753961e7 )
+)
+
+game (
+	name "QQ2009 (Tencent) (09.0.67) (CLDC-1.0, MIDP-2.0) (BEF365C8).jar"
+	rom ( name "QQ2009 (Tencent) (09.0.67) (CLDC-1.0, MIDP-2.0) (BEF365C8).jar" size 394357 crc bef365c8 md5 0173e7a932fc182cdcaafcc0dd0e4946 sha1 e3a2a38f3c8f1c9f84ce94938d24345a1d9a534b )
+)
+
+game (
+	name "QQ2009 (Tencent) (09.00.47) (CLDC-1.0, MIDP-2.0) (B5111567).jar"
+	rom ( name "QQ2009 (Tencent) (09.00.47) (CLDC-1.0, MIDP-2.0) (B5111567).jar" size 555101 crc b5111567 md5 a2d27f3a5a44111b8d29980c58f2dfd9 sha1 6ac1092f0f41792328132443999c1dd1fcbbc1b5 )
+)
+
+game (
+	name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (00AC5204).jar"
+	rom ( name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (00AC5204).jar" size 457402 crc 00ac5204 md5 317e199839ecac838d12b4f17740986d sha1 1aa8dbf77b3189f919f37a282ed5da41a6d0f27f )
+)
+
+game (
+	name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (6D27D6E4).jar"
+	rom ( name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (6D27D6E4).jar" size 457489 crc 6d27d6e4 md5 76d32a16900434e13c370f5c5e34cc27 sha1 77fe36021dacbdb5b12d07e24e01fc531b2756fb )
+)
+
+game (
+	name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (76C605FE).jar"
+	rom ( name "QQ2009S (Tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (76C605FE).jar" size 364947 crc 76c605fe md5 31067fc3e08262383de30b66393566cb sha1 385623dc136d6039d3059f52264758eab0fdcd91 )
+)
+
+game (
+	name "QQ2009S (tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (89F68532).jar"
+	rom ( name "QQ2009S (tencent) (09.0.60) (CLDC-1.0, MIDP-2.0) (89F68532).jar" size 457403 crc 89f68532 md5 8a8c73a270b121416aea35444e161ccc sha1 4135159277cec569a633a0b1815ada5a4c880b54 )
+)
+
+game (
+	name "QQ2011 (Tencent) (11.00.12) (CLDC-1.0, MIDP-2.0) (5CEBC97B).jar"
+	rom ( name "QQ2011 (Tencent) (11.00.12) (CLDC-1.0, MIDP-2.0) (5CEBC97B).jar" size 822802 crc 5cebc97b md5 28d0bf647d35a3b2e34c20cfe6c4b67d sha1 39d2a21b6dcbb09bc3349f9c88f92076c94cf0fc )
+)
+
+game (
+	name "QQBrowserMini (Tencent) (2.4.08) (CLDC-1.0, MIDP-2.0) (1D261A94).jar"
+	rom ( name "QQBrowserMini (Tencent) (2.4.08) (CLDC-1.0, MIDP-2.0) (1D261A94).jar" size 347100 crc 1d261a94 md5 44fc65a6ccaefd7831fa4252878f42c5 sha1 bc84e306ff0ef6b10eecbd57c4d6488dfba950df )
+)
+
+game (
+	name "QQMini 2.5.72 (Tencent) (2.5.72) (CLDC-1.0, MIDP-2.0) (E77C600A).jar"
+	rom ( name "QQMini 2.5.72 (Tencent) (2.5.72) (CLDC-1.0, MIDP-2.0) (E77C600A).jar" size 328182 crc e77c600a md5 10aa509996889e24bf336c5e40d9e5fb sha1 a7ce2376d854e159bd057e9077ef53a5c8bb8a8e )
+)
+
+game (
+	name "QQ浏览器 (Tencent) (1.1.68) (CLDC-1.1, MIDP-2.0) (D2632DA4).jar"
+	rom ( name "QQ浏览器 (Tencent) (1.1.68) (CLDC-1.1, MIDP-2.0) (D2632DA4).jar" size 403002 crc d2632da4 md5 ebf3b20021298590e6ac7e1963aad569 sha1 c1e79e3f866275520842648918067a9ca0226c39 )
+)
+
+game (
+	name "QQ浏览器 (Tencent) (1.4.92) (CLDC-1.1, MIDP-2.0) (A76514BD).jar"
+	rom ( name "QQ浏览器 (Tencent) (1.4.92) (CLDC-1.1, MIDP-2.0) (A76514BD).jar" size 454716 crc a76514bd md5 200d496f82b8a68162f5e937d894ac18 sha1 97786026ea3cfa58daaa42d9f9bacd5ff14e2303 )
+)
+
+game (
+	name "QQ浏览器 (Tencent) (1.4.92) (CLDC-1.1, MIDP-2.0) (B605E9FB).jar"
+	rom ( name "QQ浏览器 (Tencent) (1.4.92) (CLDC-1.1, MIDP-2.0) (B605E9FB).jar" size 442585 crc b605e9fb md5 8c8787e6a6980e87acc1a7e750a77105 sha1 6f84dd1700432635f83c7757c5b1bde1ed911e70 )
+)
+
+game (
+	name "QSM (Softex-India Pvt. Ltd.) (1.0.0) (CLDC-1.0, MIDP-1.0) (A353A2B7).jar"
+	rom ( name "QSM (Softex-India Pvt. Ltd.) (1.0.0) (CLDC-1.0, MIDP-1.0) (A353A2B7).jar" size 41887 crc a353a2b7 md5 2024f3f1a1e96d40b8e4cd427cb0cb5d sha1 312268ca89d304ec03cba75f58880b5b6d351a98 )
+)
+
+game (
+	name "QSM (Softex-India Pvt. Ltd.) (1.0.0) (CLDC-1.0, MIDP-1.0) (DC4CE67D).jar"
+	rom ( name "QSM (Softex-India Pvt. Ltd.) (1.0.0) (CLDC-1.0, MIDP-1.0) (DC4CE67D).jar" size 41985 crc dc4ce67d md5 f0635dd63e20e95469c9f4a826b83ef3 sha1 042ec23b3eae32573b39f354ccc521ebdaa76773 )
+)
+
+game (
+	name "QUAD (www.4T2.co.uk) (1.1) (CLDC-1.0, MIDP-1.0) (4948B9E7).jar"
+	rom ( name "QUAD (www.4T2.co.uk) (1.1) (CLDC-1.0, MIDP-1.0) (4948B9E7).jar" size 55203 crc 4948b9e7 md5 61650751596c307c86483e9a1813980f sha1 d2bf0e0e58d9ef63c29c033e4b49929f91608bcd )
+)
+
+game (
+	name "Quad 3D (GlobalFun) (1.0.0) (CLDC-1.1, MIDP-2.0) (D00607C9).jar"
+	rom ( name "Quad 3D (GlobalFun) (1.0.0) (CLDC-1.1, MIDP-2.0) (D00607C9).jar" size 67239 crc d00607c9 md5 ea70f2acfe115e5cccf4d1cbc8bbb48c sha1 29c628970c5a77211e0f05e88ca4d55ae2144c7a )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0) (CLDC-1.1, MIDP-2.0) (87033760).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0) (CLDC-1.1, MIDP-2.0) (87033760).jar" size 639414 crc 87033760 md5 c64c5a217066334c1926196304f48c20 sha1 f16b37d2231ea98676ff9d98503133377ee71a9b )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0.0) (CLDC-1.1, MIDP-2.0) (7705F2EF).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0.0) (CLDC-1.1, MIDP-2.0) (7705F2EF).jar" size 260400 crc 7705f2ef md5 8a38da3214d84be33f6264f787141efc sha1 4678d7854faf4620aa1a2c4b8d76652c8267a3d6 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0.0) (CLDC-1.1, MIDP-2.0) (E52CF674).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames by dedomil.net) (1.0.0) (CLDC-1.1, MIDP-2.0) (E52CF674).jar" size 428833 crc e52cf674 md5 e467778e3cb8af73eb46daada16490f2 sha1 25e34e11701868f402fb5fcf1973d0be7b19ae0f )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (4E969A07).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (4E969A07).jar" size 414136 crc 4e969a07 md5 89f9d43a7b24560a19619e7ed020bc1d sha1 3633191d66ee6b0676a57bcadf0d44e4fbb989d7 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (559680A6).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (559680A6).jar" size 407766 crc 559680a6 md5 d04615eadf0d71ab0328c75b8986ebff sha1 102aa830ca74b3bd9ff580d9b861dd15c2933b06 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (5A6AECCA).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (5A6AECCA).jar" size 558643 crc 5a6aecca md5 0eb6f2395a3536cd7d6e0d95b1f277c1 sha1 431f5161f259c13feb4f06d0ae199dc2e2557003 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (7D8FD602).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0) (CLDC-1.1, MIDP-2.0) (7D8FD602).jar" size 643939 crc 7d8fd602 md5 50525f438bf7b9abd1b7a99e76c376eb sha1 609cc908a097ddee57ca81c40494cd170bb223b6 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (08AA9785).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (08AA9785).jar" size 312347 crc 08aa9785 md5 fb60c033aa7e07bb16f29305ebde3ac8 sha1 904c7c635f14e646d112b1a8d5ef7154cad013d9 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (13B69F1C).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (13B69F1C).jar" size 788053 crc 13b69f1c md5 1f296699c20a5e7131f59556ea7eb473 sha1 eef2e40db7ffcaec50c75b17b7817b886b364524 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (2167C6CB).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (2167C6CB).jar" size 783990 crc 2167c6cb md5 0a5e3e4ea7bdfb3c05b8f6e640db0746 sha1 d1cf056e4d2e840eba1af4310b9ef1424913811f )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (263FED77).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (263FED77).jar" size 695281 crc 263fed77 md5 fddae0a4bee957ad037dbc69f9732c5c sha1 b32f6ac2f91e58c044aad5b28d4bcff121b70bcc )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (268C9351).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (268C9351).jar" size 830850 crc 268c9351 md5 ca6986b941ba7e26c6bc1ab2aaf8b3db sha1 91ac152f53fdb3d1c65d188e26dd62d89c7154b7 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (3267E188).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (3267E188).jar" size 826340 crc 3267e188 md5 4f25ef2d9e523fbd0cc45165902c85af sha1 7a9a0097de220ef42416c29bd2a3d58adf9e6d09 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (4CC15432).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (4CC15432).jar" size 481559 crc 4cc15432 md5 de772672f4c37fd129b1868f4a65d137 sha1 83e9f305df2f35a1668dad6e83c1bfc34dccba2f )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (4E1E389D).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (4E1E389D).jar" size 433328 crc 4e1e389d md5 a6ea3701b325975674db837328d5c85d sha1 9c6b08ce64532df0609d1ab7804459096fd5600a )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (572638CA).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (572638CA).jar" size 476124 crc 572638ca md5 7fe0b4a5b024dfe358fe4cd5926d930f sha1 bc552cc395da65ea70123b6f777640a0d6d094d5 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (59B8F54A).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (59B8F54A).jar" size 428850 crc 59b8f54a md5 0254adbf24b783d26005b142e30e914c sha1 190b3e420b0f65bb3778c6ff59640957e5818cc2 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (6896463D).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (6896463D).jar" size 984696 crc 6896463d md5 f691aa573e206d97dfb71b93f883db07 sha1 366a74110ae28518ba9a453b94690fbd84e1a382 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (69DEB888).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (69DEB888).jar" size 264735 crc 69deb888 md5 0d1be7ecd15c5597d9ee9c5a9bc78619 sha1 92a11444ea8e169b090cb48d27d52eed0970416b )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (70CA6442).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (70CA6442).jar" size 433328 crc 70ca6442 md5 96b1c8eacb6644e8483733362a189c1c sha1 dc503a3b0776e4b599c075f400979107a2cac0de )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (74403706).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (74403706).jar" size 826340 crc 74403706 md5 5c15fc6c896c80f5e2ee3f4de9debbb3 sha1 0f840466c3f3fcaeac01be8839a762eb0a06909a )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (794CFF2C).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (794CFF2C).jar" size 428850 crc 794cff2c md5 280a137923920405f3fb6fb233cdcb94 sha1 70da3d0766d0f32701b32400cf7d5da19298e816 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (7F4E19FB).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (7F4E19FB).jar" size 404949 crc 7f4e19fb md5 daafd7a1c5b093e9237a1e03ee45c9b7 sha1 dbc196900231a9d6dbf7b7cb5bcec654671a2689 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (86ED9CF9).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (86ED9CF9).jar" size 294943 crc 86ed9cf9 md5 ca1ef77c7a02e5aad7e8503eaa6718ad sha1 5e773a6efb4c13587d7e1b843aab994240b21464 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (88B8EDC8).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (88B8EDC8).jar" size 699791 crc 88b8edc8 md5 3c9218184374163e86ea6115bed6ac20 sha1 17202c7a8f6f4d921b9b8d058e1f98625d7e7f28 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8A902F54).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8A902F54).jar" size 788964 crc 8a902f54 md5 b30801d798073a93a040301078837795 sha1 9857d7008a3a7c821b3c6166f9b2ee952bec43e6 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8D6E416F).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8D6E416F).jar" size 428850 crc 8d6e416f md5 b6d0218c4489578e14edda5ec3d28394 sha1 3a14fdb59ad4d799ff5a872f58e35caeef04c606 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8F49425C).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8F49425C).jar" size 486264 crc 8f49425c md5 9b92b34918cec23e8237c109d4251751 sha1 5d71fa4309c216c00da8aac926d70f7ba2ef1e14 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8FEECFF6).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (8FEECFF6).jar" size 481673 crc 8feecff6 md5 142f61fedd76b0ec87b90984de26b6a8 sha1 3b38c08bcfb2bd84f04814dcebdd6b6a88130d84 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (921C915D).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (921C915D).jar" size 264735 crc 921c915d md5 4f52c7ea09601424900f0b03def5c6cf sha1 d67ec438b04cd022a29de6c71f83aa82d0f7260f )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (927B7306).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (927B7306).jar" size 404668 crc 927b7306 md5 06724061c34adfdf602c9efca4b3f84a sha1 98599cf2b2285f4e1993bfbbf4cf22030ac31c08 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (9A132DCB).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (9A132DCB).jar" size 988243 crc 9a132dcb md5 9b4ef7ba3f71ea232447adb32cd4f01d sha1 388cbd9a074cbd72e6c0e287e74eaa39f4f00530 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B035E6A9).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B035E6A9).jar" size 433328 crc b035e6a9 md5 dde8bb712d8d8bc1d02be4dfad37dce6 sha1 ee17875edc6498aed2d0fd9d8cb914d85d5bcaf9 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B1219BE8).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B1219BE8).jar" size 480602 crc b1219be8 md5 2042eeb74bbc4bdf0252f86d5d98fb0a sha1 260a4ba3b767cb1b8fe5547054c48a23386d7536 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B542C693).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (B542C693).jar" size 433328 crc b542c693 md5 c814207683b44fbbabf1b1c741dcca43 sha1 ba57c9602ae41925c5bc8187f509734fd1feabd0 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (BF1DB231).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (BF1DB231).jar" size 783990 crc bf1db231 md5 990e84b9f23c1267e6ace0445efc09a4 sha1 46b9baae25d68235f21b2b341e02788f92b43700 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (C0F7ED4A).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (C0F7ED4A).jar" size 829935 crc c0f7ed4a md5 1f80d59f320cb3187833f2cbd43e825b sha1 e6ebd32a350e97a4e76df359bd5403b5bc1ad1cf )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (D504FB4A).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (D504FB4A).jar" size 294943 crc d504fb4a md5 9007fc2776ff7dfc273241c6c7f3d7cf sha1 742f41ab76e25c1cbbcc38d0118613773aa564ac )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (D8A78034).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (D8A78034).jar" size 407767 crc d8a78034 md5 d9795cf75a105a71b42b0bcaa2a55a47 sha1 e2f1f2869b3d755ae26ca3c0cac561086d6a366a )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (EDD87948).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (EDD87948).jar" size 312310 crc edd87948 md5 8b8f4a53865514b9571fce31d55ffafc sha1 a67f1be56a4cbb5bdca434c20bac224871a6b1b8 )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (FAC39D30).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (FAC39D30).jar" size 830850 crc fac39d30 md5 652bb79a8f3b0df005b4763c5d22500e sha1 02e4dff9ea158f97bc25e6a5770611033c7356de )
+)
+
+game (
+	name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (FB58F3F1).jar"
+	rom ( name "QuadBikesPRO (BaltoroGames) (1.0.0) (CLDC-1.1, MIDP-2.0) (FB58F3F1).jar" size 312347 crc fb58f3f1 md5 72add069a79f211f134799cbcb120a98 sha1 b642593c976a16780c4a050d96568ad3897e9f31 )
+)
+
+game (
+	name "QuadGame (www.4T2.co.uk) (1.1) (CLDC-1.0, MIDP-1.0) (6DA8997B).jar"
+	rom ( name "QuadGame (www.4T2.co.uk) (1.1) (CLDC-1.0, MIDP-1.0) (6DA8997B).jar" size 55077 crc 6da8997b md5 ec999aed22f51fb4ac60cda51b7143e2 sha1 7dd19fdafb3b367e3e6e1f33de96f5028b54b087 )
+)
+
+game (
+	name "Quadra Pop MASYAKA (Sony Ericsson) (1.4.2) (CLDC-1.0, MIDP-2.0) (02EDCB48).jar"
+	rom ( name "Quadra Pop MASYAKA (Sony Ericsson) (1.4.2) (CLDC-1.0, MIDP-2.0) (02EDCB48).jar" size 167432 crc 02edcb48 md5 3f4a688f77995171f5f205b85ded471d sha1 f573c12ed2aecc795dc689edfd68b50fa9fddac5 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (382CB2B3).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (382CB2B3).jar" size 121012 crc 382cb2b3 md5 16ef6566e1d05a8dfd2715460e6747e2 sha1 edda70151dbba2d5262737faa49ec2f36c8482ef )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (44A4AC55).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (44A4AC55).jar" size 122951 crc 44a4ac55 md5 7387bd7efe5b1a8c36f0cceed2721bd3 sha1 d3028fa838d48ab6e63f6273ad26120df70c8982 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (79094CBF).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (79094CBF).jar" size 121000 crc 79094cbf md5 210022d44ea2b128dca46ec10c3d3915 sha1 d1ab90a8d16c9b0a13916461e1381c1a5abf5ab1 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (BE7E36C9).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (BE7E36C9).jar" size 168092 crc be7e36c9 md5 bab0c947e48de553f429f2fa33ecc2ee sha1 a9ea689e9910de6247591848105651059d4020a7 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (E5A1D364).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (E5A1D364).jar" size 170030 crc e5a1d364 md5 57dce313ccf1e97298123b3869d93965 sha1 9e281e2b170c8c078b8cb6c5e8633bac7118470a )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (FCB9C010).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.7.2) (CLDC-1.0, MIDP-2.0) (FCB9C010).jar" size 121013 crc fcb9c010 md5 6d3214a3c55bc386800653c026ad9953 sha1 47fa29dce4fd715d095a85e516e88b08042723ae )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (07248E09).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (07248E09).jar" size 118807 crc 07248e09 md5 d65dba52862943fc631eadf835a8dcda sha1 443949c75e6fe3f80d8388ad6671f3a0aef18e47 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (46A27F82).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (46A27F82).jar" size 120311 crc 46a27f82 md5 c190e0c128368d013a6daabd3f457d89 sha1 2746bdb10e62b34deb1e9725ae79718bc1ee5dbb )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (65BDBBB5).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (65BDBBB5).jar" size 118810 crc 65bdbbb5 md5 49df1ce0e059e29dae2cdd0f26a63ab4 sha1 924a30fd483cea8fc096f27d47896229827eb217 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (6B239868).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (6B239868).jar" size 158587 crc 6b239868 md5 e8878f51cb3b25590957c13a4c2d7220 sha1 55d244f1e9c4fb82f2f956629f9ba18c74f3b8e1 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (83EAE530).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (83EAE530).jar" size 120704 crc 83eae530 md5 89cacd3b5f3e4b1800aeaf13393f7c23 sha1 dda881e257c30e6fbb5e7478ff12a1cd4b3d307c )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (8E6B727E).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (8E6B727E).jar" size 120901 crc 8e6b727e md5 9086729ccef83e8fafac3d3a6a76949d sha1 bf6cebd133b3fdd448ee4d7a9f9aec40153f9f59 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (B7CBDDA6).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (B7CBDDA6).jar" size 93807 crc b7cbdda6 md5 8f85c1eb74b68fbe105ca893a1632f95 sha1 336848962dd537cedcf82038931e7953d9e12970 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (C612A8A0).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (C612A8A0).jar" size 110768 crc c612a8a0 md5 547fcff5f70d0c8e861d15686cc499e5 sha1 a5cb343416a92221d592d2c02f41193aac628678 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (D19CF51A).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (D19CF51A).jar" size 120308 crc d19cf51a md5 1cbbf1737f8d56be6d5da760caf0c5e1 sha1 23f8a924a60ca70e186b39b8b264c6e958f41fbb )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (D3374327).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (D3374327).jar" size 122204 crc d3374327 md5 d4a746d205cc26b74eeb0e1d69e410a8 sha1 810abe885c59d71cb4a2fed564b39bef88be9f74 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (0D642532).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (0D642532).jar" size 120041 crc 0d642532 md5 2aa23d0506641bc4069961e1b990a456 sha1 80391b7af0e3c4f9ce4c27d31710b7e07a065842 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (17195E3D).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (17195E3D).jar" size 91448 crc 17195e3d md5 4230580e7fd53039bbdab75e2581a319 sha1 e8354cf380ef5f455fe6dfc952dc2cdb22d01080 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (21A42605).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (21A42605).jar" size 124349 crc 21a42605 md5 7db89b29646ec489e6e2b63910e0edc3 sha1 39cbad3c2abab3b4903cfb59489b2370ad988550 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (3A01A979).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (3A01A979).jar" size 169012 crc 3a01a979 md5 b71bc6fc18159ea134429f77aed322dc sha1 079985b14c8fc7eed39d2676bd6f67a596b2288b )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (42C0E816).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (42C0E816).jar" size 126247 crc 42c0e816 md5 bf47f6ebdb69167deea9c1ade062a72c sha1 36cf8b810bb996750f3a73bdf0c56242341d5aa3 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (6385F30D).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (6385F30D).jar" size 118545 crc 6385f30d md5 f3b93f5ec5c86f64623531316ac08807 sha1 1d15023e8e2099cf5c2f91096ba9c82d055ae5b7 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (82E975AD).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (82E975AD).jar" size 167114 crc 82e975ad md5 31231daaee1e6a2866f707127dc93c41 sha1 699dac98489dec5a24e44ce0eb2bcdc4f39ddb2b )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (8826B333).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (8826B333).jar" size 124352 crc 8826b333 md5 81977537eb6cde83ca7a509a51161420 sha1 491596c211238311662800d99b8de107ac178b2f )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (96F4142A).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (96F4142A).jar" size 167118 crc 96f4142a md5 5576ce72990234fd9157d49affebdb95 sha1 d6210b1e6e7ae41bc31642e02861d399d69ffa08 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (98324A3F).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (98324A3F).jar" size 120045 crc 98324a3f md5 4bc8cd117c351d76ee4d4c524707d199 sha1 a068982a461e3fc3e2bbb975d9bd3a3b6891b168 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (DF7E201B).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (DF7E201B).jar" size 118541 crc df7e201b md5 ff4cc6879b8aac50c4ee26b453edcfb1 sha1 76c0e50383612246c591b3e05dbceec65fa08dd5 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (F4C6624C).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (F4C6624C).jar" size 121940 crc f4c6624c md5 c2f30ada0512fdf57d69eedf58cd7a44 sha1 49908b36a32760127d323f3df4c8a3f5cadc90d9 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (0E3683A0).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (0E3683A0).jar" size 120439 crc 0e3683a0 md5 dc62e60908edae0cac42e0153374d23a sha1 40afe562eb02d220e87c0a74ff481fcfbd9e7d6f )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (14954210).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (14954210).jar" size 169012 crc 14954210 md5 0ff91a3f504df7b0b6979060dd3d1500 sha1 38266d94f1a3b034068f440b9656a714fab53d5c )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (7F470492).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (7F470492).jar" size 126247 crc 7f470492 md5 a661c068c0d03504cc53bb48fa4cbbd7 sha1 fe99c689c09ced83594016f45cc8e95b22b6ae30 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (A006C8B3).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (A006C8B3).jar" size 93346 crc a006c8b3 md5 2e75dd05337be3915f0c6bd86b100fe0 sha1 47638e4a22d4519ca8e4213330243b8ea2fb1123 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (EE0E9DFA).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.3) (CLDC-1.0, MIDP-2.0) (EE0E9DFA).jar" size 121939 crc ee0e9dfa md5 b260b55e6031229cb8d7b98d10126f4e sha1 92548989ba25c64a47fc0e14c084ed523362f355 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (10288AE0).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (10288AE0).jar" size 169060 crc 10288ae0 md5 47a023d8d9277aa90411fb94db524ca3 sha1 fea2ca074b71522187ebefcfc7fa78bad3b8b66d )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (1F786D2B).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (1F786D2B).jar" size 120091 crc 1f786d2b md5 d48f77c8be52ac8b1f094308bd0f398f sha1 386527a2f2e9db74d9c4d11ada6f69f4b118775e )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (295515AF).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (295515AF).jar" size 118591 crc 295515af md5 eab52d5fbd2c9f75547e5f028590bf25 sha1 f0b5975821d2f16ec461b87dcf0eb351d32fd7f7 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (378A0F66).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (378A0F66).jar" size 91497 crc 378a0f66 md5 06a83505e63a07ea2663e0e14e0c5ecb sha1 f931d190e705e6b314d568381a72fd003b407741 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (5F5FBB77).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (5F5FBB77).jar" size 126295 crc 5f5fbb77 md5 6ba9274de02e6c27cf169751527e68ad sha1 442058d109d66f4b40139d4ba30582f63b5e6e55 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (73B758FA).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (73B758FA).jar" size 93394 crc 73b758fa md5 8d744327e50a314bcda9144f024797df sha1 80e72b43f0644fd16348cdbbebc280b3ed2aa18a )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (A98BCB11).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (A98BCB11).jar" size 124398 crc a98bcb11 md5 397103a0543cb6d4096785e4d15c7d96 sha1 e5bd2737c538a2853e4447c276c7a08123c006c0 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (AD59EF7D).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (AD59EF7D).jar" size 120487 crc ad59ef7d md5 c8494da35380d4fb16ca83e66e9a06d6 sha1 a2b63eeb8e80679f2a9d688836074349b88aa19d )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (BDEDE433).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (BDEDE433).jar" size 118594 crc bdede433 md5 6f56d5030dbf9b211d9241428e232745 sha1 3c6ff97ef42af4468b098c35d4d7a6da5526a92a )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (E4477FA0).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (E4477FA0).jar" size 167167 crc e4477fa0 md5 c4ef837bafe4a19024e0183b93a9e5f6 sha1 0392ac08eb29ca9ae4bee12977fac1bc4700e585 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (F546D4B1).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (F546D4B1).jar" size 167164 crc f546d4b1 md5 b39903e168775152e4ba844b70ecdcd0 sha1 a65bfb88c95f98898083698255e42061181ebe77 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (FD9629E1).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (FD9629E1).jar" size 121988 crc fd9629e1 md5 42347bf634b70cde7d8a3d85eb9e9fbb sha1 1f9897ff65b1dcb3be8a49f8cb0bb51bf2f83611 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (40FE1507).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (40FE1507).jar" size 91496 crc 40fe1507 md5 9553b9f274c0bc3a4155f4cf1c69f7b0 sha1 7273a6653585a87b35043f5393ecde39ac20f2c1 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (46FBAAF2).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (46FBAAF2).jar" size 120488 crc 46fbaaf2 md5 d5813883e996d4b8a259793acd329559 sha1 46fca4f876b86afce5787c473c6122ca17899b1f )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (5C75F5F1).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (5C75F5F1).jar" size 167167 crc 5c75f5f1 md5 37d881907c2a68efdedc4835436a8382 sha1 ccc6511d9bf817f4720b82cc12a175b0a18ba5ea )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (6807712A).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (6807712A).jar" size 118594 crc 6807712a md5 3fe00d0762e56365991010f08618d494 sha1 5e15184c528061bbe282554210a1bffa1ca3cacb )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (80DAC06A).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (80DAC06A).jar" size 93393 crc 80dac06a md5 d3ef2172d0e173994380276258d1252a sha1 1a3c8af5f5517c63a0b49aba5d8bba1638c088a0 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (8F1F78B5).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (8F1F78B5).jar" size 167164 crc 8f1f78b5 md5 c41c2d9dd9bf56811c840d6f2e887d19 sha1 fb87f9cd3c18352b4345e7f7660f7e244e0a0c34 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (AA0B6661).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (AA0B6661).jar" size 169061 crc aa0b6661 md5 62fcf451841ea16760d5acb1b131e892 sha1 46edc8a74df435b33455ba90011bdaf592d2e119 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (B3CB547D).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (B3CB547D).jar" size 118591 crc b3cb547d md5 619b6034f0d16d50f4d02450a0d09b8b sha1 f1f6331537421614c4b5d69642db96e2ddd7f545 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (BE58D3C4).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (BE58D3C4).jar" size 126296 crc be58d3c4 md5 40125651123a44e61aaaf817cf637e98 sha1 b4544159495284c01e5d1afdd80d3adb624176b8 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (113DD626).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (113DD626).jar" size 120094 crc 113dd626 md5 2631a8684434587f94618f65f7b8eed1 sha1 063b3cf01438c1524f58ff82f9b6bfb8949f3c08 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (2FE287F6).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (2FE287F6).jar" size 169059 crc 2fe287f6 md5 a4680354c78a135ca959d671f6e748d4 sha1 4372264eda8aca8b7bb4f2bce9d3a2f066cd7e3b )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (49FD4123).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (49FD4123).jar" size 120091 crc 49fd4123 md5 52b812f913609012cefaf5688747dc53 sha1 a15d3caa37f45c18a4670dd50cf6d658dbc33185 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (4A43124E).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (4A43124E).jar" size 120486 crc 4a43124e md5 c714f2840a7413725177284ce7c243ea sha1 8be16dd07e89861e0c67e890633a193c0b1d03dd )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (7AF91238).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (7AF91238).jar" size 167164 crc 7af91238 md5 c0821a326954f5a53b4c0c7acf03899d sha1 298ec76de6cbcda90eb0f7099fd2cb6f6110794a )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (BB9ACAD5).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (BB9ACAD5).jar" size 167167 crc bb9acad5 md5 4bfb7965b13a23525e7ce9288e451d24 sha1 31250f05905d64b5ca8c224f97c3a6b995778286 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (C703D6F7).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (C703D6F7).jar" size 118594 crc c703d6f7 md5 5052700d3d0487c19ef3e0cd7aa6ba4a sha1 393e25dc859ba49b37e5f2738eb065e8a3e886b3 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (CE3DE617).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (CE3DE617).jar" size 93392 crc ce3de617 md5 7b65563782d956b3fa92ffde07335b77 sha1 879f54cbb771213abaee637ee6865fc341a5b213 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (E6DA124C).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (E6DA124C).jar" size 121987 crc e6da124c md5 10b73fa0524c10baf5591d9fbca11da1 sha1 7c32d6759bfc3ff6bc909bcd2863c211f69e8394 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (EB9D8A28).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (EB9D8A28).jar" size 91496 crc eb9d8a28 md5 9fbea0cf93c96fd87a263efc18193bb2 sha1 824054a4be7ac8693d34e7e24c26e4e11f077c7b )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.6) (CLDC-1.0, MIDP-2.0) (60E245DC).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.6) (CLDC-1.0, MIDP-2.0) (60E245DC).jar" size 174127 crc 60e245dc md5 5a6bcf7dcaba360ff8f6bd816fe18c58 sha1 210fbbeb4a0ee5c6845f19627af10f5ffd125945 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.6) (CLDC-1.0, MIDP-2.0) (F71D0F9C).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.6) (CLDC-1.0, MIDP-2.0) (F71D0F9C).jar" size 146561 crc f71d0f9c md5 dbf4089138f0c6e42af62d0b9f311ce2 sha1 ae30be4dacdce4216007de5f7a3525eaf6d4f1d0 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.7) (CLDC-1.0, MIDP-2.0) (93E6553F).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.7) (CLDC-1.0, MIDP-2.0) (93E6553F).jar" size 170622 crc 93e6553f md5 a99a1778087b27ee6da40c1b250d74bb sha1 a2525ee0d48fe31609d1023d5f9da8afe2911600 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.9) (CLDC-1.0, MIDP-2.0) (2F02150D).jar"
+	rom ( name "QuadraPop (Sony Ericsson Mobile Communications AB) (1.9.9) (CLDC-1.0, MIDP-2.0) (2F02150D).jar" size 170818 crc 2f02150d md5 fba6cf89ec6ed3f355ad09bba1e2344a sha1 28d086a0ea29109f4059fd3899df5c3d7fa2be22 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.0) (CLDC-1.0, MIDP-2.0) (8DD3ADC6).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.0) (CLDC-1.0, MIDP-2.0) (8DD3ADC6).jar" size 116737 crc 8dd3adc6 md5 c1b07c4837a3decd0963a8eeae619655 sha1 996adff6a97e9a4e650b9ee3044fe68b58da3624 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.0) (CLDC-1.0, MIDP-2.0) (B27A89F8).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.0) (CLDC-1.0, MIDP-2.0) (B27A89F8).jar" size 79825 crc b27a89f8 md5 a6c885191191b920f76d5a6057eb84ef sha1 15a8a57e11d29d356a492de63ed7bbcb883de305 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.10.4) (CLDC-1.0, MIDP-2.0) (C7721C15).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.10.4) (CLDC-1.0, MIDP-2.0) (C7721C15).jar" size 177937 crc c7721c15 md5 985f4ce26e581a61bb3927756ea24229 sha1 37f5fe7bbb946be54ad8af650ae7657fcb50cf6d )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.4.2) (CLDC-1.0, MIDP-2.0) (8930A1D5).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.4.2) (CLDC-1.0, MIDP-2.0) (8930A1D5).jar" size 167432 crc 8930a1d5 md5 9178b634a985f4a76cac93b51c22a09e sha1 f741efba8fb540edf9a58ea91303ce72216ad4c1 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (03388511).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (03388511).jar" size 123343 crc 03388511 md5 de95c230742e7f8bff550c55e23ea6c3 sha1 2535070f0e219858f586b0b025eb814ad93ebb03 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (04766385).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (04766385).jar" size 94750 crc 04766385 md5 8a82006ce6bf9ab45434f94b2f23c0a3 sha1 689c3722de6c16140424a89be048aecaf9934ec0 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (078214C1).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (078214C1).jar" size 119666 crc 078214c1 md5 08824017dd61d6c1920973bb3ad2c322 sha1 67d70d552d524919b5fdbbfc84c41b51d4b6cb1e )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (19EECA62).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (19EECA62).jar" size 90446 crc 19eeca62 md5 c191c4b2d84c5407952a18dcefdab110 sha1 895746a5869c6f6760a1b4fe1d8d6a2a1e345785 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (3B70EE07).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (3B70EE07).jar" size 96701 crc 3b70ee07 md5 b4e75254c7868e2573d621099bff3511 sha1 ccf79c9f8512f9dcc0a4e9ff08afeda76356cfd3 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (534294CC).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (534294CC).jar" size 123528 crc 534294cc md5 f9160eb1ba8686177360ced1b7de84bd sha1 a624a4269451b8642fa40f7afdedbc84a771cab7 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (5917C095).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (5917C095).jar" size 140732 crc 5917c095 md5 53d00c559b589c3000b5e84fac297315 sha1 c13045e81b54d1ed221b8348e62478b97149d718 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (5AC17EB0).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (5AC17EB0).jar" size 92575 crc 5ac17eb0 md5 8babfa5f8e9f44342b77e753b3fa8888 sha1 66e14ffe84ba4c493d3895f96a1d7173c9d4a02b )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (640D0E87).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (640D0E87).jar" size 94753 crc 640d0e87 md5 ee666b764929c4651caf5498198fdfd7 sha1 f0821c5e627e18c2611261e1bfc44267bfbf4f04 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (68CD9646).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (68CD9646).jar" size 119485 crc 68cd9646 md5 514efe9289d9de09b79a8b61dac87383 sha1 591b39bf8646d3130dfa6fcf55ed42349bf021d6 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (864F8920).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (864F8920).jar" size 117534 crc 864f8920 md5 5ba0e78e3ef3d5e93de52bdf6451105b sha1 1c224d9c82fa29c3c860f59ec5de5aee1a0261e4 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8A0E769C).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8A0E769C).jar" size 90442 crc 8a0e769c md5 ed7a751627bd983dfb9e5ecb894d1bd3 sha1 c8352ce5ce0f8e66f00a4cec49957de06be02eb5 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8B5B46DA).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8B5B46DA).jar" size 119030 crc 8b5b46da md5 b7f0dc3a534389d269b50efd5948d8f1 sha1 00cfacf302c6e25bebd387bcbe495115cbe1fceb )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8DA9C9B5).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (8DA9C9B5).jar" size 117537 crc 8da9c9b5 md5 0f76761ae89f270b455b5bfe14da54fb sha1 b8d7a0ab0748afae5729e3f6fc716d0da1594ae7 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (983DD677).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (983DD677).jar" size 119034 crc 983dd677 md5 0d61b63ab748a2b55d1c4d519cd0de82 sha1 192eff1f70c8255b930da45e9ef0cc5533d8a14d )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (C9BC775A).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (C9BC775A).jar" size 125295 crc c9bc775a md5 e2698a8240de0ee913d51a004188591c sha1 df84197d656d72444ae261027c709e8c13f157cd )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (D3F5F660).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (D3F5F660).jar" size 92394 crc d3f5f660 md5 2edf1704000ac9621cdeef666c9e4eb0 sha1 1219f54d368c01340436612500a574d9e5af0228 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (E6F3F4C6).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (E6F3F4C6).jar" size 120982 crc e6f3f4c6 md5 0a12df7e04a708b60da1f5b4659df8e7 sha1 9056c0676874ca7c7a7c492ca18ccf85ab54db45 )
+)
+
+game (
+	name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (FFE393B5).jar"
+	rom ( name "QuadraPop (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (FFE393B5).jar" size 123347 crc ffe393b5 md5 84b741fe61b42bad556b176b0fb73a03 sha1 78cb67a5eda970f8ae53042517413294d475c12e )
+)
+
+game (
+	name "Quadriga (Xendex) (4.0.8) (CLDC-1.0, MIDP-1.0) (D2E1186E).jar"
+	rom ( name "Quadriga (Xendex) (4.0.8) (CLDC-1.0, MIDP-1.0) (D2E1186E).jar" size 62124 crc d2e1186e md5 2d8943ec11953b3da74a0969506ee42b sha1 3a85955741ff2ff612a0cbf606501b22881315ea )
+)
+
+game (
+	name "Quadriki (www.mobile-mir.com) (1.0) (CLDC-1.0, MIDP-2.0) (C7EEE19A).jar"
+	rom ( name "Quadriki (www.mobile-mir.com) (1.0) (CLDC-1.0, MIDP-2.0) (C7EEE19A).jar" size 29591 crc c7eee19a md5 061f3d82dc89194280c04b2637a05055 sha1 004b0bc78b03b8102bff8830f19f7737d910fb4e )
+)
+
+game (
+	name "Quake (oskovran) (1.0) (CLDC-1.0, MIDP-1.0) (5D610CBD).jar"
+	rom ( name "Quake (oskovran) (1.0) (CLDC-1.0, MIDP-1.0) (5D610CBD).jar" size 7207 crc 5d610cbd md5 f0743033ca68acebfbe968443b198014 sha1 e2ab385fd9ed2b8467a382ce75209573bcd74183 )
+)
+
+game (
+	name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (28227E5C).jar"
+	rom ( name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (28227E5C).jar" size 466593 crc 28227e5c md5 c8963d40f3c3b2267406677ca32471c3 sha1 b27bed249733f48d3f0b2e411958a10b21b3926e )
+)
+
+game (
+	name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (64E100AF).jar"
+	rom ( name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (64E100AF).jar" size 487557 crc 64e100af md5 8d709752de8927fbc72bb47f43f6cdac sha1 8fa7add7489d3284d57485cb8a87bc3db16130eb )
+)
+
+game (
+	name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (767D16BF).jar"
+	rom ( name "Quake Plus 3D (M3GWORKS) (1.0.0) (CLDC-1.1, MIDP-2.0) (767D16BF).jar" size 441189 crc 767d16bf md5 f93b3defe17aca6372c4586b3b56a968 sha1 50b1304b5c8b392ad2b1e5b0d8829ea7309537e9 )
+)
+
+game (
+	name "Quake4 (Vendor) (1.1) (CLDC-1.1, MIDP-2.0) (38602206).jar"
+	rom ( name "Quake4 (Vendor) (1.1) (CLDC-1.1, MIDP-2.0) (38602206).jar" size 1611401 crc 38602206 md5 2431f402d8752ace37ca97ce67e9f29f sha1 77702af3f4e4bd0fe25662b0966a82fd584cc287 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (005D7E9A).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (005D7E9A).jar" size 109234 crc 005d7e9a md5 97997500da0b8ab1ac2ad05105bfdf33 sha1 0b5d577f5e0790791011395b7a83be7c71f75cd1 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (2DAE663A).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (2DAE663A).jar" size 172056 crc 2dae663a md5 610e0b3b582463b9234e149fc536446a sha1 b27b7a81a707504a6f7bd42a3c9c32e6de6d6a5a )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (434C03A8).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (434C03A8).jar" size 114061 crc 434c03a8 md5 e132de538b40fe069502692868d6f413 sha1 a33e6728fd223bf85f0b4d4f531d0db108c3963f )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (4621838D).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (4621838D).jar" size 265753 crc 4621838d md5 4299bedbe5f951c39213dd9ef8750dc9 sha1 ca5e1308efd9994b5f811ab51eb3ecf219acaa62 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (5305003A).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (5305003A).jar" size 172159 crc 5305003a md5 eb0b6b543efb0c48883b4e2e5a71f7fd sha1 bac58a6613b179b0db795fae4ac88dd4a6b896bc )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (5E521EAF).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (5E521EAF).jar" size 240076 crc 5e521eaf md5 6fb2c6ddf392c6749b5758cb3ea36921 sha1 7b71dc7230abc2a4a423c9e726a350b882975c78 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (6C70CE3B).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (6C70CE3B).jar" size 830032 crc 6c70ce3b md5 162f8fae5a1c77c7661b04328969b1de sha1 863312da37751c379554e9aa78dce2a48d457141 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (70CF6016).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (70CF6016).jar" size 109337 crc 70cf6016 md5 1436db8fe570710af4a83ab286c09d1a sha1 50814be473f7d362bb27c4be75b2086e21efdd0d )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (81B787D7).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (81B787D7).jar" size 268431 crc 81b787d7 md5 881e2e26e5b34935f33390d8caf7ae42 sha1 31f331d565a546e3286bb7855c0dd6b804a52a09 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (A2DFF4A2).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (A2DFF4A2).jar" size 460272 crc a2dff4a2 md5 e00d29322a61a03d74a285a032de1632 sha1 49a1da0fc9edc2553f00f6baeb26139a2d460ee2 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (AE4261A9).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (AE4261A9).jar" size 174039 crc ae4261a9 md5 065a3ef7bfc8c3680354558042fa2901 sha1 c4403deb2fe4e1b9a9361cb6413501c2c1fafaeb )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (BF1ACF02).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (BF1ACF02).jar" size 113958 crc bf1acf02 md5 44bedf683f8f49b321c69bb35792f2ff sha1 8f1f43c037a21f05971061dcef6b40340fc6bb65 )
+)
+
+game (
+	name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (E1F73258).jar"
+	rom ( name "QuakeTsunami (GameNeeti) (1.0) (CLDC-1.1, MIDP-2.0) (E1F73258).jar" size 614231 crc e1f73258 md5 f4b5af880ec068ec1f0d3f0cd5d4e586 sha1 402346df56244b4e50e468f25db40e97d17e3697 )
+)
+
+game (
+	name "Quan 8 (MicroGame Corp.) (1.0) (CLDC-1.0, MIDP-2.0) (BC7D81F4).jar"
+	rom ( name "Quan 8 (MicroGame Corp.) (1.0) (CLDC-1.0, MIDP-2.0) (BC7D81F4).jar" size 836167 crc bc7d81f4 md5 602bdf8bd0a7e719d60c3c2cf35dbc09 sha1 5448db082544136fb181b6045184385a7f3bb75c )
+)
+
+game (
+	name "Quantum Blast (Blue Sphere Games Ltd.) (1.0) (CLDC-1.0, MIDP-1.0) (27284094).jar"
+	rom ( name "Quantum Blast (Blue Sphere Games Ltd.) (1.0) (CLDC-1.0, MIDP-1.0) (27284094).jar" size 52952 crc 27284094 md5 80b2e8dd24e2e83c275a1dc35f9dce2d sha1 1e2d8dd51d8637a0ed68bc2bddd2835438a4145f )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (056CE21E).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (056CE21E).jar" size 480010 crc 056ce21e md5 987abb7f7728a0296b27826501f9f2ff sha1 1f7c3ecbf223a6fdcfad758eedbf970782b8ffdf )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (061362B9).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (061362B9).jar" size 187194 crc 061362b9 md5 0e15b9298df34bc8b94a8fe2694e8e1c sha1 6b6e892b104476806e4b0b9217620bedf09266bc )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (384D6481).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (384D6481).jar" size 181004 crc 384d6481 md5 9e2d8d7bb64aba827af0ca60078cd318 sha1 62854ee7aa15eb2b1e2791bc4125b53350fa25f7 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (3C3D0376).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (3C3D0376).jar" size 332059 crc 3c3d0376 md5 2a9b3ff471de3a4ec63f31d09e68f858 sha1 33131c359ddceb58e2f788c22f435d8486e36bf3 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (7DCD3058).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (7DCD3058).jar" size 192897 crc 7dcd3058 md5 a0d8fa2d0fcac2160514e7c66317c0c6 sha1 6255f53220d1c9e9aca80a1e0db1afd4a137cc48 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (89D0C8E4).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (89D0C8E4).jar" size 181420 crc 89d0c8e4 md5 9bfc4d0ec390283ba8256b596100f074 sha1 a958dec49fe19134cc31d8fefef0da0c5509b0c3 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (8BA50CE4).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (8BA50CE4).jar" size 110103 crc 8ba50ce4 md5 73bcadd5a7dd39e3e8a6068e12fddd32 sha1 dc94645a9df0ff042cea6ede19763961e6706fcb )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (98F0DB23).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (98F0DB23).jar" size 88459 crc 98f0db23 md5 82986a0b00843afdb86b1d5a352cf66f sha1 a789c6517d996e8134d2de18c490aa862fc605f5 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (BF5F8EBD).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (BF5F8EBD).jar" size 326504 crc bf5f8ebd md5 4adfbad3efca578ab83a63d1e8915e96 sha1 cb0dd1debf27fd1828af892a7545ea9cd0bba884 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (D30FF778).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (D30FF778).jar" size 326027 crc d30ff778 md5 17ea22a3052ae69e6579901b87be998c sha1 60c4a04968da7b440147f7cfbb8620464c6441d2 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (D71B811A).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (D71B811A).jar" size 89215 crc d71b811a md5 245e6a8cbe87dac6fe001f616118de5f sha1 6bd86c6022e8497592565d1e31682d21e44247d7 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (E64E63C8).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (E64E63C8).jar" size 109958 crc e64e63c8 md5 99eedb4fdca52102f8c14855f9363009 sha1 e4a970739178421cd02bf1b042dd103073a6bb1e )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (E8EB392B).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.3) (CLDC-1.0, MIDP-1.0) (E8EB392B).jar" size 186903 crc e8eb392b md5 01618745e0c83ce1f81fbfee7b66167f sha1 edb8642cf5c477d2585d0ba123b2d978c2c64d83 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (14F6E657).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (14F6E657).jar" size 479667 crc 14f6e657 md5 c6933e1ec3c6888054d260a118ca3248 sha1 b7220b7688251f2d801c2883d48db8a608f6aad8 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (1968DCC0).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (1968DCC0).jar" size 479689 crc 1968dcc0 md5 b481cdbc3782def14d8572735fc27c3c sha1 05e8c7686f3844f6681dd85b39da503ee923abfd )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (2B5B5C9B).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (2B5B5C9B).jar" size 479993 crc 2b5b5c9b md5 c23e526b5f38c075ad521b319232d8d1 sha1 d0662ae804cca5e5ee9cabed50a01f5eae0722cc )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (4A4CDEAE).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (4A4CDEAE).jar" size 479667 crc 4a4cdeae md5 134e2ff0bcf03d57ae59bd46aff63a3f sha1 f0f0d37533d73cb1f022d7f6dc8ed3d9fa3607d8 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (8256A203).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (8256A203).jar" size 313053 crc 8256a203 md5 1895d89ac72fb2854e6d35b6c2307c49 sha1 c49299e94fa8b27dd6c638e75c827b9a1049b845 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (95A7CAC4).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (95A7CAC4).jar" size 201495 crc 95a7cac4 md5 571d7d03b9c42274c12125e87a6daa6a sha1 08225989ce711abde99a12da2639492eee3fab9c )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (C23C7938).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (C23C7938).jar" size 304442 crc c23c7938 md5 66813d9c1bc6e8ec5ae8f7a16ccc46f5 sha1 befab2a873b7a747f94ebda71677db52086e659c )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (CDDE45C9).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (CDDE45C9).jar" size 303945 crc cdde45c9 md5 e762359874eb6d56e4571be9845f585d sha1 2457daf6aa233507d5d5e094d2a7927a297f544d )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (E895032F).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (E895032F).jar" size 196501 crc e895032f md5 46e2398746247cc26946d98eb39d8252 sha1 e8fa7384325acaa199654cf0fe0698132134b7c7 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (EC3E0D11).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (EC3E0D11).jar" size 479167 crc ec3e0d11 md5 2510995153ce294edcbd79082ae10385 sha1 4b4c0344f1434684aae9b4dd20cbbf2ef406a19c )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (FCC33D0C).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.4) (CLDC-1.0, MIDP-1.0) (FCC33D0C).jar" size 304420 crc fcc33d0c md5 10391da58acfa6b801ca0ca040f0bf0c sha1 a87f77ab5dba6b5853d717cef4f1b900a07e273e )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (22828751).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (22828751).jar" size 478759 crc 22828751 md5 20d66cfbc6d0688b5be12e1c8bb0b910 sha1 cdb22380ab4195e0002662622aa4793884c4ca8a )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (2657368C).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (2657368C).jar" size 84856 crc 2657368c md5 a3de02fab6555cc62271bed3f307a16f sha1 346ec29a9ec3e2714c2d78fa94a936a3b1a494e8 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (27321619).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (27321619).jar" size 103846 crc 27321619 md5 015f9dbf881f447b57ddd93cabb4caee sha1 ba12ce72f93afdcd7f305c379973ac43e3841830 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (457CBFA6).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (457CBFA6).jar" size 89316 crc 457cbfa6 md5 634ae739011645bf8d48434cb1212905 sha1 506148f6a2a58395ab1cb0d6a6969688f5b69c2a )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (45853021).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (45853021).jar" size 89032 crc 45853021 md5 6c0f92f2c4093cd6503ceda5c33222a0 sha1 f6d42b503f8bd96bf484bd0d0418876b5d8626e4 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (4D537062).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (4D537062).jar" size 84901 crc 4d537062 md5 eadf51e75da60470902fff9c6d83c2a7 sha1 b72c3bcb3fe4260732a94660541d2e2bc6bf849d )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (6330DA31).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (6330DA31).jar" size 479257 crc 6330da31 md5 a6c4733e07e1c24981f19bd1c5cad2c8 sha1 00ff09277e880ba73ec91faf9a4ca16c0d104547 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (649801D4).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (649801D4).jar" size 85929 crc 649801d4 md5 392c3e4189324add3d9eca100c9f497f sha1 bdd3fa6b03b603725e7542f3239a10e27f3f8c7e )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (663122C9).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (663122C9).jar" size 84901 crc 663122c9 md5 768a9657ac0d2ebd970de4c12d50eee2 sha1 14e8cbee850d598b7c8741cb29c5b0c0b8edf49d )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (6756B2D3).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (6756B2D3).jar" size 85862 crc 6756b2d3 md5 dafdbd130e4b478ba9229ad4242dedb6 sha1 b2d9902071ca3701b74def09a3f659866fa6b79d )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (97A7C52F).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (97A7C52F).jar" size 306397 crc 97a7c52f md5 e8bef950b4b37d27c2313979485d912d sha1 996d6427c09785c46a2bc2e121257606a47eaa86 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (A833B255).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (A833B255).jar" size 89338 crc a833b255 md5 43162547ebb23acbb545d3903b5cae8f sha1 2a5920c01e7bafc733828ab6e3059c46312d257a )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (E3C0EB33).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (E3C0EB33).jar" size 84923 crc e3c0eb33 md5 766e2ac2d56011e61d05a74dbd12209f sha1 599502fc912720484a41028964a1977f2e198eb6 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (F00FE3FD).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (F00FE3FD).jar" size 479235 crc f00fe3fd md5 cd655e1c8138dc3855080d814056ccba sha1 d38abf09b2c4fb8cca09139dc5bcc2801901288f )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (F3856F94).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (F3856F94).jar" size 84834 crc f3856f94 md5 f31e1b085ca30de1df49284167e12e9a sha1 c18976c59acc687febd161acfcb7aea37fa51a80 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (FBCAF6A9).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.5) (CLDC-1.0, MIDP-1.0) (FBCAF6A9).jar" size 305899 crc fbcaf6a9 md5 a742943e76b2187fba4b3134b938931d sha1 da0db0ec76a54d6f5b2b5d08da81ce564d289559 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (01B433CC).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (01B433CC).jar" size 195988 crc 01b433cc md5 1d3a77cf120723a6fd7b4d40080285e8 sha1 2fa9ee2985d9720e951893568d366a98fee40679 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (186C3B5B).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (186C3B5B).jar" size 598863 crc 186c3b5b md5 1544217158e2a9b1ef690dca8e533c62 sha1 baca05dd5475964d325e6b1a544d5dd46ea43123 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (25286DDC).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (25286DDC).jar" size 599920 crc 25286ddc md5 151943fd44d2bbd606cdd5537eed5d06 sha1 e3074f4ef9beaef4c4900758689f1b3668ad1563 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (E07A5E5E).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (E07A5E5E).jar" size 305569 crc e07a5e5e md5 91aca1bec2d1d5ce089923b919f93415 sha1 2a32e6cd224080415bd39e25009f921ddff2e604 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (EE20F9E0).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.6) (CLDC-1.0, MIDP-1.0) (EE20F9E0).jar" size 109655 crc ee20f9e0 md5 96fb034532ba4cb059b8bf42b9bd758e sha1 97bfc41efd94fb69a9140e01b62b06dbbfa494e1 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (04F6577B).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (04F6577B).jar" size 306266 crc 04f6577b md5 2fd36c0d57d3ad54689304e4939a519f sha1 89472220b5c4c3f6ae90b720a692a009e14becbb )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (52254E7D).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (52254E7D).jar" size 598482 crc 52254e7d md5 331e24f61802ba4b321707870b6040ae sha1 fd6ce2509a0f5f52230b2e309e528bb17c3ed8f9 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (64D77D22).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (64D77D22).jar" size 306231 crc 64d77d22 md5 c6b542e1d922298db4da1eadf7593bae sha1 beaa3a72c3702c589b665793515be06a292e3ef3 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (7216E9F4).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (7216E9F4).jar" size 598006 crc 7216e9f4 md5 6555ec4a47b5cec84aac6573ec1ea5dd sha1 ac6c1142d9c0bc2bd2f81f01f63c834755fda49e )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (814F1F3D).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (814F1F3D).jar" size 311786 crc 814f1f3d md5 2fcf4ef10a133f9081b9110c6ee619a0 sha1 c485bdbc3e8bce58407a199e035c9d1d1dfbb9b4 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (88822C8E).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (88822C8E).jar" size 305768 crc 88822c8e md5 c2e0af0d8097c17ebc5bb2da59e2f8c1 sha1 8ca4f2fe14c7f211afaf77c189752b2e62ab2c05 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (95CF5D0C).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (95CF5D0C).jar" size 307836 crc 95cf5d0c md5 d9ef5427f1c035747c027c3bb5d97943 sha1 71e1e4f835b40ae2c832c32c678ebebf600b8dae )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (D0851CA1).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (D0851CA1).jar" size 598504 crc d0851ca1 md5 12ae3810e26945038b59bea88e77f756 sha1 9f3c2f115cb3eb0a383de46d2d722d57e98cb217 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (ED00217C).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (ED00217C).jar" size 306724 crc ed00217c md5 3af67c807fd64c407f7dccc3ef49b354 sha1 a94042195bdd5a68c2f04dff433dc0c1c021b023 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (F755C0D0).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.7) (CLDC-1.0, MIDP-1.0) (F755C0D0).jar" size 306746 crc f755c0d0 md5 c599f86c128edf1f4c4196f9097aa611 sha1 0c33003ae956316b4308e6e6ab78f700654f85cb )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.8) (CLDC-1.0, MIDP-1.0) (33628C95).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.8) (CLDC-1.0, MIDP-1.0) (33628C95).jar" size 478643 crc 33628c95 md5 cf984a2751136deabe2f9b6858b7384d sha1 928bd50664baf597ddf324e5927456fed0b2f99c )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.8) (CLDC-1.0, MIDP-1.0) (89CF46D1).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.8) (CLDC-1.0, MIDP-1.0) (89CF46D1).jar" size 599203 crc 89cf46d1 md5 dc0c980700aa2ea4c6bdc530763abda0 sha1 cd58b90e6299c709daeee96f08858d4bb77f4ff3 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.0.9) (CLDC-1.0, MIDP-1.0) (2E6EA73F).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.0.9) (CLDC-1.0, MIDP-1.0) (2E6EA73F).jar" size 598058 crc 2e6ea73f md5 790214868cbd63b70e712176ec4ad23a sha1 37740895be7aac944fcedbea2b98cebbdae4ebcd )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (08DCD03D).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (08DCD03D).jar" size 456364 crc 08dcd03d md5 cd9009ac5b0a1875cd5e062915962372 sha1 0d36f4c9cfc5b013c6e233b160093431d086c5f5 )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (51D044E5).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (51D044E5).jar" size 455868 crc 51d044e5 md5 9524013a2bec78d86060aade85591c31 sha1 8ce50f9c0526c50ab5ef5eccba0cd526057a50ac )
+)
+
+game (
+	name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (AAA2AA46).jar"
+	rom ( name "Quantum Of Solace (Glu Mobile) (1.1.3) (CLDC-1.0, MIDP-1.0) (AAA2AA46).jar" size 456342 crc aaa2aa46 md5 c9e0fba43c99673c7393711534c9513f sha1 0fb72c986f670b2fb11496982dfac478987d3895 )
+)
+
+game (
+	name "Quantum Of Solace (SPT) (0.6.4) (CLDC-1.1, MIDP-2.0) (E098739E).jar"
+	rom ( name "Quantum Of Solace (SPT) (0.6.4) (CLDC-1.1, MIDP-2.0) (E098739E).jar" size 412754 crc e098739e md5 f51d8e9b3e234292baa5a12d4ce234c3 sha1 f3fece77de1736c40849704405a93d754c4b0771 )
+)
+
+game (
+	name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (375F81CF).jar"
+	rom ( name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (375F81CF).jar" size 584903 crc 375f81cf md5 55a32f9a5121157115e53fe0532f9597 sha1 968917c18b3c00dd6f04afbd5382808287a59baa )
+)
+
+game (
+	name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (68991B6B).jar"
+	rom ( name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (68991B6B).jar" size 562941 crc 68991b6b md5 b3d85d172663676f546bc0304414702b sha1 ca0754a8f32e64e327879e7f0d75a3176f417036 )
+)
+
+game (
+	name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (98546EA1).jar"
+	rom ( name "Quantum of Solace supplied by luan17 (Glu Mobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (98546EA1).jar" size 562795 crc 98546ea1 md5 1e4cf93324eefca7fe7f0a759046faf1 sha1 a282bfafc7efd8433304431541f5936e842a8d51 )
+)
+
+game (
+	name "Quarantine (dbi) (2.0.0) (CLDC-1.0, MIDP-1.0) (0BF94029).jar"
+	rom ( name "Quarantine (dbi) (2.0.0) (CLDC-1.0, MIDP-1.0) (0BF94029).jar" size 52545 crc 0bf94029 md5 b8c3accd35c6a3feb4f74e406ad02207 sha1 06249b348b8dd91a2ead490250ed3c18d582dc5f )
+)
+
+game (
+	name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (0EC7C3E1).jar"
+	rom ( name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (0EC7C3E1).jar" size 57601 crc 0ec7c3e1 md5 a7d59340eb86860cb220079064640d30 sha1 a7b1378db3e356f8ce4a2187450e92d43892784f )
+)
+
+game (
+	name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (7CE90591).jar"
+	rom ( name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (7CE90591).jar" size 57169 crc 7ce90591 md5 a75547c1f9ab962145e827e3d3fe882d sha1 d40753e13fd19507751761e9243c32ff2600714c )
+)
+
+game (
+	name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (E90BA25F).jar"
+	rom ( name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (E90BA25F).jar" size 58000 crc e90ba25f md5 f0e16cb1d63eae01e943db71ce3f201b sha1 cefb17b1f22926c11dcaf69d27b62eef7f7fc6e7 )
+)
+
+game (
+	name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (F3AD9807).jar"
+	rom ( name "Quarantine (dbi) (7.0.0) (CLDC-1.0, MIDP-1.0) (F3AD9807).jar" size 51702 crc f3ad9807 md5 1f1596ded6819b93ed7829b17b55f806 sha1 548d8c767c14392499dc438870560d056448eae5 )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.0) (CLDC-1.0, MIDP-1.0) (B0FB261C).jar"
+	rom ( name "Quarks (Cocoasoft) (1.0) (CLDC-1.0, MIDP-1.0) (B0FB261C).jar" size 34270 crc b0fb261c md5 813852349de70a885c202632da87278d sha1 c152ebccc27f55a87f47c77bdcebaaa1a5ace853 )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (10FBCD2D).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (10FBCD2D).jar" size 53879 crc 10fbcd2d md5 22b61d0a238e086e014369a8fa076d5d sha1 6ef4382c0ea62b9df8717556fa4fd1c81f9a0a27 )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (3E2562CC).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (3E2562CC).jar" size 54156 crc 3e2562cc md5 6ac7585ab833d29adab2b7ac0bc13394 sha1 a2149b1ddc8e423ef0fe09cff591420723a5a247 )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (AB70F9E4).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (AB70F9E4).jar" size 47173 crc ab70f9e4 md5 30aeb3aa5fce7202951272e979ecf4d8 sha1 c446e0fd9d7e33da8c4f65178ed90bcc897c439d )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (B59F6306).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (B59F6306).jar" size 63021 crc b59f6306 md5 caf5c6460eed1acedc3e0cc3aac690d6 sha1 254bcaf301d8af67c0823136bf22a833859f8153 )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (D1A666B1).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (D1A666B1).jar" size 53694 crc d1a666b1 md5 c9c76224dc18d4d163130e627ac63ad7 sha1 642c8526d948582c1d97c0399017b9921dc57a8e )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (DB96CCC8).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (DB96CCC8).jar" size 47125 crc db96ccc8 md5 8be4c8e9d5118080e7be476545d79980 sha1 a708a9cf7455718ef16f76d20c818a95d8aa19ae )
+)
+
+game (
+	name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (F6877730).jar"
+	rom ( name "Quarks (Cocoasoft) (1.10) (CLDC-1.0, MIDP-1.0) (F6877730).jar" size 42309 crc f6877730 md5 908bbefa2e2f2aa71e645e5418c33241 sha1 b0e506ebf9bec71afa7b25c5fdb24eb5e0b38de8 )
+)
+
+game (
+	name "Quarks (www.vstuff.co.uk) (1.1.0) (CLDC-1.0, MIDP-1.0) (2123EF36).jar"
+	rom ( name "Quarks (www.vstuff.co.uk) (1.1.0) (CLDC-1.0, MIDP-1.0) (2123EF36).jar" size 69973 crc 2123ef36 md5 58f20269577b99529e3b60d0b3323f7e sha1 bfe04a298372a3c7798b206e1c48bca09543ce59 )
+)
+
+game (
+	name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (0B64769F).jar"
+	rom ( name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (0B64769F).jar" size 57712 crc 0b64769f md5 06fd40a495c497ad901c77848b250d5e sha1 553a677cbdd3b6473ebe94eaa14058d04f8dea4b )
+)
+
+game (
+	name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (720445FF).jar"
+	rom ( name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (720445FF).jar" size 122839 crc 720445ff md5 ce1704abbda9564cc01bcbe68fc7a4d6 sha1 766a08b8df5c63e01b97f7e9bd194811a9e6851b )
+)
+
+game (
+	name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (898569A7).jar"
+	rom ( name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (898569A7).jar" size 122722 crc 898569a7 md5 927c6d93d1d4b4ded4cdb57f24b97631 sha1 40b41cbf2a13d5912e6466f0f1f9ad20c8d28c05 )
+)
+
+game (
+	name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (EAAA4F70).jar"
+	rom ( name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-1.0) (EAAA4F70).jar" size 122789 crc eaaa4f70 md5 5ba04233d031d5e970340ae8be4d1881 sha1 2d73db26c9300dc3996f17bca453216f39ec0883 )
+)
+
+game (
+	name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-2.0) (A5004F80).jar"
+	rom ( name "Quarks2 (Cocoasoft) (1.3.4) (CLDC-1.0, MIDP-2.0) (A5004F80).jar" size 90717 crc a5004f80 md5 4b051066c117fe8eee2a4a568df846b0 sha1 dc44b4c764f5ef9e8ef629b160bfd6cf26b6e6ef )
+)
+
+game (
+	name "Quarks2 [Ax] (Cocoasoft (by Ax)) (1.3.4) (CLDC-1.0, MIDP-1.0) (6EDCA577).jar"
+	rom ( name "Quarks2 [Ax] (Cocoasoft (by Ax)) (1.3.4) (CLDC-1.0, MIDP-1.0) (6EDCA577).jar" size 128144 crc 6edca577 md5 a3437b1497b89461ca813e302703d6bf sha1 521c01fb29ce7f94a2167c1928ca9663f0bf5a4e )
+)
+
+game (
+	name "Qubix (AIM Productions) (1.10) (CLDC-1.0, MIDP-1.0) (C4700E48).jar"
+	rom ( name "Qubix (AIM Productions) (1.10) (CLDC-1.0, MIDP-1.0) (C4700E48).jar" size 125947 crc c4700e48 md5 610f798c35fb1850a741a8639ce25046 sha1 af08e1f34109df4d9f8aff60d979c93a187badfb )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (1158EBFE).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (1158EBFE).jar" size 260476 crc 1158ebfe md5 3e09e87d5fbdddf74831b2df9d356520 sha1 b8b7abbdff6ea560d987367b07b4c6100908fb53 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (3741FDF0).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (3741FDF0).jar" size 294869 crc 3741fdf0 md5 5739d40c0fdb35a8a8fd55eb434a9e77 sha1 9785fa175fc291125dbed94a882c4334924042cb )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (37A91F1A).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (37A91F1A).jar" size 257487 crc 37a91f1a md5 846de8137e0fabafa2abce5039e16f28 sha1 bc22c8ac8ebeb30309f1b660aed94f7313991bd0 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (8751181A).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (8751181A).jar" size 256225 crc 8751181a md5 286fa4d345078771e10136772fc38af1 sha1 bfb20322c3a778a3e7d83047324209e5943d8550 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (D1E4C87C).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-1.0) (D1E4C87C).jar" size 267466 crc d1e4c87c md5 b5d6f871b0dea7240a5909f1998773d2 sha1 0541f526d525cd17d734c357e602c439c1a5e736 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (053BD20B).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (053BD20B).jar" size 301805 crc 053bd20b md5 ddcdc36446ec351b37ad6ab7b815d443 sha1 fd96dbb8e175a2c92492eb69dda50eccf3aa2a87 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (0BE0BFB8).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (0BE0BFB8).jar" size 218402 crc 0be0bfb8 md5 2ac761c618d953c0c6ab2b7fdea37533 sha1 2c3015745ce27502b970a22e7664a2addbbf5202 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (1B23F4E6).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (1B23F4E6).jar" size 218332 crc 1b23f4e6 md5 cb0f302959c6fea049310a254a14fc09 sha1 9cac0ea18cd5a33c406b300ddbae29f8410de505 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (5C6B7CD6).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (5C6B7CD6).jar" size 338489 crc 5c6b7cd6 md5 319f0ca10119dc438a9518e0375df9e8 sha1 08c6873e58a9fdbb84aebe86cbf0c39f35feec57 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (5E5D184D).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (5E5D184D).jar" size 331507 crc 5e5d184d md5 475e63faa0db93a21df5467d988441d0 sha1 388ceaed72019976f07559abccafe11b197adb2b )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (606F7FCC).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (606F7FCC).jar" size 257452 crc 606f7fcc md5 f61c603fc145aec041bdb51d8c632662 sha1 2f358d0b07cd20d23ce9c352f01a6a8bfd52c4db )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (75482EF9).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (75482EF9).jar" size 338177 crc 75482ef9 md5 823f386427b84c360547bfd6741aeb20 sha1 1e837fe411ba1b13b1d0a3c01f7fac35d319ef60 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (81F9BDA0).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (81F9BDA0).jar" size 329725 crc 81f9bda0 md5 5e77e3fa0ff7c9ac732e4cf0a73c47f5 sha1 fd77787d7f56da164b1edaaa97de41f8824f55e9 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (8BFC807F).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (8BFC807F).jar" size 267414 crc 8bfc807f md5 49a46cff90b0b8c5c08ee9bc91980422 sha1 359c77ebc068f4e496a8b947954745ca584beb7a )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (AE33FD56).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (AE33FD56).jar" size 329790 crc ae33fd56 md5 55587d12faa097456caadf632c636ce9 sha1 891f10252328ccecb06e543a298e239df2593690 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (BA3BBE81).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (BA3BBE81).jar" size 166945 crc ba3bbe81 md5 fbdc4001a5723c689b655f39a97ca3e1 sha1 935d4b711458e5610d209bf5d05ffc462a426db4 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (C13FC665).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (C13FC665).jar" size 260731 crc c13fc665 md5 a3084d6f8eb2f5f28a22d5d9336ab620 sha1 0f3209bbaea3fe421982b4e7fb679ed559c0f4c3 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (C313DCD8).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (C313DCD8).jar" size 336623 crc c313dcd8 md5 2473a217a1177a81e03e2347fae8d92a sha1 549a621fc9c8716027ccfb993cac96606354f1f6 )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (E6036A2A).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (E6036A2A).jar" size 164458 crc e6036a2a md5 578e2ed1b69fb651b913e3eda8ac32da sha1 cca039b16aa028c8b29da3ffa94c3f58516aff7d )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (E9DF88B0).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (E9DF88B0).jar" size 338125 crc e9df88b0 md5 eb37f7b44f9ab4fa36fd66ff827b0c03 sha1 e3612626989f21070dcedbf0e46c8ce75915c41e )
+)
+
+game (
+	name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (EDB65FD7).jar"
+	rom ( name "Queen Of Fables (Brainware ltd.) (1.0.23) (CLDC-1.0, MIDP-2.0) (EDB65FD7).jar" size 338072 crc edb65fd7 md5 6a95cf5c1ba7da7e57f0be87e51c5b6f sha1 35f574af21d5f7b80cbd1f8ed90a1a1aac51738b )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-1.0) (67FF87C3).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-1.0) (67FF87C3).jar" size 224946 crc 67ff87c3 md5 5fce4e36240f6bf1af820a38bcebed90 sha1 bf31fb2caa7de18fdf50854aa2affba8fe2a55e8 )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-1.0) (AE7B49D3).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-1.0) (AE7B49D3).jar" size 222027 crc ae7b49d3 md5 006150c314a21a8babd0daba52d46edf sha1 bd0027b019bd3b09f98eaf85de30a54f3c85f7a4 )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (1F37BAEB).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (1F37BAEB).jar" size 222024 crc 1f37baeb md5 be3de4db04888573dc8109c26507af2b sha1 0ba9f67e6c6b29cdea0191d85b1701e89bb8159a )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (67375D32).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (67375D32).jar" size 221992 crc 67375d32 md5 ad6bec1c7685ffdefed71ee44d2b4636 sha1 e8a02a14268d5e59dd7a9653c30e12be1fdda1cf )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (93F4A032).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (93F4A032).jar" size 301827 crc 93f4a032 md5 3f150f44175156f45f95498532e484f6 sha1 93adc53d6451be54a0b4b1ddc4f9f959e8fdbc0e )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (A222B640).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (A222B640).jar" size 295570 crc a222b640 md5 a3926949fa01f413ae38aa99b5e33f8a sha1 deb9b2c671d897e6714602f85a4892bdbf89c4e7 )
+)
+
+game (
+	name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (C230BBC8).jar"
+	rom ( name "Queen Of Fables by serviak (Brainware ltd., serviak) (1.0.23) (CLDC-1.0, MIDP-2.0) (C230BBC8).jar" size 295617 crc c230bbc8 md5 8899d22df87dc5213aadb733a15bbb75 sha1 f55b033ad2fc0f54f2abc824a2d4e27fc5f89ce8 )
+)
+
+game (
+	name "Queen Of Fables www.wapx.ws (Brainware ltd., www.wapx.ws) (1.0.23) (CLDC-1.0, MIDP-2.0) (3B987A8D).jar"
+	rom ( name "Queen Of Fables www.wapx.ws (Brainware ltd., www.wapx.ws) (1.0.23) (CLDC-1.0, MIDP-2.0) (3B987A8D).jar" size 295617 crc 3b987a8d md5 14ca5b2e507d8957ff8416b9b3cca68f sha1 17711301001c5b0dae3df99fcf473830902e16c6 )
+)
+
+game (
+	name "Queen Of Fables www.wapx.ws (Brainware ltd., www.wapx.ws) (1.0.23) (CLDC-1.0, MIDP-2.0) (C0399EEF).jar"
+	rom ( name "Queen Of Fables www.wapx.ws (Brainware ltd., www.wapx.ws) (1.0.23) (CLDC-1.0, MIDP-2.0) (C0399EEF).jar" size 301831 crc c0399eef md5 354a7dbccb5ae7fb5324ffe2975264fd sha1 0b6e6eb962bf4ce7da9e9176d2086002732b2ced )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (16DF9B76).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (16DF9B76).jar" size 467900 crc 16df9b76 md5 077482d1aabd23766a7af0b75d6e07fd sha1 5e515928da92a46eb0028e1f67c376c8ecfa3bb3 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (3AB77A18).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (3AB77A18).jar" size 253656 crc 3ab77a18 md5 7cadf2992cf152f8b12ce582be88cfe3 sha1 1177e0afcf90795d617cd8a11579627d4e025614 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (4ECDCD07).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (4ECDCD07).jar" size 255868 crc 4ecdcd07 md5 8d86e54e69bd755c691417b0f53c3159 sha1 2612fbd852c687c2863e40029f032ca7e851bd59 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (7A61F87F).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (7A61F87F).jar" size 232715 crc 7a61f87f md5 d04a0d020c4f08eca4e5cb4d6730130e sha1 6fec631799b5233788076702dd6fc1b3041da716 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (7A7CB02A).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (7A7CB02A).jar" size 332788 crc 7a7cb02a md5 00af3f16d8f0094c677bbf315a263081 sha1 79ea24488b02df14e96785c9bb745707abfc6d49 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (9DE953AD).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (9DE953AD).jar" size 517904 crc 9de953ad md5 6cbd48d1426d85f4ee6dc12a186b1657 sha1 9c609827d106f7d5ee095750760b251151c609d9 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-2.0) (9A30809E).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-2.0) (9A30809E).jar" size 415592 crc 9a30809e md5 cd6efadd4e09a359b1be255d1dbd84a3 sha1 389fc986e49b491c591f91b70b310d8071236024 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (064B867E).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (064B867E).jar" size 532794 crc 064b867e md5 e1f2393fa98d179a75c650fc69bb0c3c sha1 3bd271cde92d9e2105515e4673fa2676bad9e399 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (554F7084).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (554F7084).jar" size 464838 crc 554f7084 md5 e0360671f7ab7bbe75a92487a3a8c690 sha1 1ec9c06eb2d9b05c390dc2b32504534903fe3037 )
+)
+
+game (
+	name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (CD0EC785).jar"
+	rom ( name "Queen of Flirt (Witchcraft Studios) (1.0) (CLDC-1.1, MIDP-2.0) (CD0EC785).jar" size 196002 crc cd0ec785 md5 f4e5a4ca18e61490bb5e5812ae570979 sha1 3d7b8d9f162ab066e7e02ecd6c6c35f68f26ec69 )
+)
+
+game (
+	name "Queen of Porn (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (1AE1059F).jar"
+	rom ( name "Queen of Porn (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (1AE1059F).jar" size 472557 crc 1ae1059f md5 dded9c51e0afe5b9f997873e7117b6de sha1 f304a35ab2cbf1a86c0262640c6192cdbd430e18 )
+)
+
+game (
+	name "Queen of Porn (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (A81B4FA1).jar"
+	rom ( name "Queen of Porn (Witchcraft Studios) (1.0) (CLDC-1.0, MIDP-1.0) (A81B4FA1).jar" size 524559 crc a81b4fa1 md5 dc8c01d7eaea64581c32f08099fc6b1b sha1 ed63cd9ca4a733965900d6f6f6abb02e9aceeab2 )
+)
+
+game (
+	name "Queens (Lonely Cat Games - www.lonelycatgames.com) (1.1) (CLDC-1.0, MIDP-1.0) (BDCA4EE8).jar"
+	rom ( name "Queens (Lonely Cat Games - www.lonelycatgames.com) (1.1) (CLDC-1.0, MIDP-1.0) (BDCA4EE8).jar" size 80661 crc bdca4ee8 md5 05be84771f019489c5bd97275862db7c sha1 c8b95c9620b4e0e12cddb7188f9ff73dcc56ed9f )
+)
+
+game (
+	name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (21257460).jar"
+	rom ( name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (21257460).jar" size 71591 crc 21257460 md5 f493a2b8392e96d0437045e2fec83986 sha1 bc76a8d6d84b324ee19388ae645d6f44d5755348 )
+)
+
+game (
+	name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (239640A9).jar"
+	rom ( name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (239640A9).jar" size 64828 crc 239640a9 md5 aa7d46c971561ffe642ac97f71ac4536 sha1 11dd1b713aed97a6ecd0d1a8eefd9beaae1a9625 )
+)
+
+game (
+	name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (5AFDB32A).jar"
+	rom ( name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (5AFDB32A).jar" size 64051 crc 5afdb32a md5 d448baaffe514bb1a43729d97b5fe93b sha1 7d9adc7e7d28ec1335cd2d039dc4579f460de597 )
+)
+
+game (
+	name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (B137D2FB).jar"
+	rom ( name "Quest Craft (funmobile) (1.0.0) (CLDC-1.0, MIDP-1.0) (B137D2FB).jar" size 65945 crc b137d2fb md5 c6bb883abd63d4ff4ab5dfcf6e805d96 sha1 b80a697e31a1e335797e95314977dfad3086ca94 )
+)
+
+game (
+	name "Quest Craft [animegirl] (funmobile) (1.0.2) (CLDC-1.0, MIDP-1.0) (216E4FC3).jar"
+	rom ( name "Quest Craft [animegirl] (funmobile) (1.0.2) (CLDC-1.0, MIDP-1.0) (216E4FC3).jar" size 100094 crc 216e4fc3 md5 10395bd4b8bdf610196d8417e495b7c4 sha1 688b53319b4844a778c792603756768b61e9d38f )
+)
+
+game (
+	name "Quest Craft [animegirl] (funmobile) (1.0.2) (CLDC-1.0, MIDP-1.0) (62E4CE6E).jar"
+	rom ( name "Quest Craft [animegirl] (funmobile) (1.0.2) (CLDC-1.0, MIDP-1.0) (62E4CE6E).jar" size 95558 crc 62e4ce6e md5 47eca946fbb02eef380583e562370e1d sha1 21c41ab8a890280c197a08efaa26cd7f44ae6bda )
+)
+
+game (
+	name "Quest For Alliance 2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (148324E9).jar"
+	rom ( name "Quest For Alliance 2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (148324E9).jar" size 203160 crc 148324e9 md5 d92e93eceb27079aacf446dd95163b92 sha1 6372e4944dc7ea215402bdb277c85f12b773e805 )
+)
+
+game (
+	name "Quest of the Hero (TLM) (1.0) (CLDC-1.0, MIDP-1.0) (F3C5FA0D).jar"
+	rom ( name "Quest of the Hero (TLM) (1.0) (CLDC-1.0, MIDP-1.0) (F3C5FA0D).jar" size 160913 crc f3c5fa0d md5 724c0aa83adce607ac0d06291dcc83fe sha1 d88877ceef8ae958a86b40e748cb37107da0b3ca )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (34790DAD).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (34790DAD).jar" size 91810 crc 34790dad md5 f06433f82040d70ba818a1d1817d905c sha1 8039d643a7b0070e462b8237cf5bb584dc33ca07 )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (50085890).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (50085890).jar" size 68808 crc 50085890 md5 6fa0bd753c35967a6b669b1091d3700a sha1 743d9e22b96b6f9781b921ea1d6b2a74eb2d8e14 )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (79FA27F8).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (79FA27F8).jar" size 178036 crc 79fa27f8 md5 1439210027d47945350f227e1f7fe89a sha1 88c2eb90181018b1f8367439961c90a72e4ae42f )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (805B3FA4).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (805B3FA4).jar" size 221875 crc 805b3fa4 md5 a6857c2e91555855271459ceda7b9b0d sha1 af67ec2020c5786b70b90b7643eb523866f8adb3 )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (A3BF75EB).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (A3BF75EB).jar" size 199955 crc a3bf75eb md5 a65222c123344968ef601c8f020cc0f3 sha1 b70b7b2069cce09868dc678f1efe7bebe355c4c8 )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (AFBA1CCC).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (AFBA1CCC).jar" size 63156 crc afba1ccc md5 c90e45c17530ff7bbda95a63619a7a49 sha1 a11c99d0543da3b4826cd194165de3cfeb85e6b0 )
+)
+
+game (
+	name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (DF85E36B).jar"
+	rom ( name "QuestForAlliance (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (DF85E36B).jar" size 435927 crc df85e36b md5 5601d8a10b6899e92e5a88cad96e22b8 sha1 634cd536b9b0c751d1247dc4b97d69bcd48b9266 )
+)
+
+game (
+	name "QuestForAlliance (www.vstuff.co.uk) (1.0) (CLDC-1.0, MIDP-1.0) (A7C99E1E).jar"
+	rom ( name "QuestForAlliance (www.vstuff.co.uk) (1.0) (CLDC-1.0, MIDP-1.0) (A7C99E1E).jar" size 88888 crc a7c99e1e md5 662c8bd2c3e4ffb7f8272dbba6106332 sha1 d00b9fb20a99c38134b9b409f749598654717495 )
+)
+
+game (
+	name "QuestForAlliance2 (Bergi) (1.0) (CLDC-1.0, MIDP-1.0) (CA374411).jar"
+	rom ( name "QuestForAlliance2 (Bergi) (1.0) (CLDC-1.0, MIDP-1.0) (CA374411).jar" size 198470 crc ca374411 md5 1c613547f954abb63df1392a17f1e47d sha1 c91af2209199e13a5bc27b8ea74f49b436bd2761 )
+)
+
+game (
+	name "QuestForAlliance2 (Hereje) (1.0) (CLDC-1.0, MIDP-1.0) (A8BF08D4).jar"
+	rom ( name "QuestForAlliance2 (Hereje) (1.0) (CLDC-1.0, MIDP-1.0) (A8BF08D4).jar" size 59477 crc a8bf08d4 md5 3b06408119e62f01e7626e222ebee45d sha1 1c29b0ea66b4b6eeb13157f84f97ff5af355f306 )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza  mikhan) (1.0) (CLDC-1.0, MIDP-1.0) (F8EA25A4).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza  mikhan) (1.0) (CLDC-1.0, MIDP-1.0) (F8EA25A4).jar" size 202445 crc f8ea25a4 md5 5ef13627d04a70ee2ed763de056d5ff3 sha1 fcbdb7bbc70c65a3eeb8ccc6216273eb615e4715 )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (4465C045).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (4465C045).jar" size 191829 crc 4465c045 md5 9e0acf7cd85985309aa02acb7b514262 sha1 8e996a068057c0497a436a9fde2a1e76ef8dd941 )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (570F3469).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (570F3469).jar" size 126839 crc 570f3469 md5 b99ee11e7b62e536b0fc31ea593bcb02 sha1 8fd312c76610628fd2ca9dffb241b17f1d0a08bc )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (6F64B28D).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (6F64B28D).jar" size 191828 crc 6f64b28d md5 c05d2c78d1038564eb1bc6ced507bf92 sha1 a86f63f1523677008d1f153b6678406d5113fcbd )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (802C1351).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (802C1351).jar" size 126720 crc 802c1351 md5 abececababa429740bc49769f8677b55 sha1 eb4cc0fd642dd5047f165128e6a41c9515739ce4 )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (BDB04CF9).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (BDB04CF9).jar" size 192304 crc bdb04cf9 md5 d41375a228aa7b8d3565a6ee50758abb sha1 74fbed6c9c6a41f3993df35382f5ea7333bc8e73 )
+)
+
+game (
+	name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (F7790C39).jar"
+	rom ( name "QuestForAlliance2 (Mediaplazza) (1.0) (CLDC-1.0, MIDP-1.0) (F7790C39).jar" size 56850 crc f7790c39 md5 a866be021865a8662590a78bd373bbcc sha1 ecb7921a4d5322c2c5436da6dcf4a02f67e27b4f )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.0.0) (CLDC-1.1, MIDP-2.0) (3771AE3D).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.0.0) (CLDC-1.1, MIDP-2.0) (3771AE3D).jar" size 338695 crc 3771ae3d md5 0e7864b6976eb74a21eb6764c881c1c4 sha1 21ec70c327dfd6aa0867b595715491b1b7e98629 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.0.0) (CLDC-1.1, MIDP-2.0) (8169AF87).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.0.0) (CLDC-1.1, MIDP-2.0) (8169AF87).jar" size 589799 crc 8169af87 md5 86491e406cb444e3f516c83f6c99780e sha1 d80546d4311409b3e8b32729ac8321f14fbfe209 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (45E6E2A6).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (45E6E2A6).jar" size 599751 crc 45e6e2a6 md5 1044b04d5901cbcb83bad07a938d53be sha1 27e801528ed342d71ffc44c12418d75adf295ae4 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (99D04B3A).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (99D04B3A).jar" size 475071 crc 99d04b3a md5 f4029ff94a6f57eac54fdc3bea763b7e sha1 facdc90164759042f4d3167351ccc02fa4461033 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (C2F3D93A).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.6) (CLDC-1.1, MIDP-2.0) (C2F3D93A).jar" size 479354 crc c2f3d93a md5 b72e4b702a87283f3d1743f6517aa1ec sha1 0615bec9ef594a1369239e29aa2f6915468a4932 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (2E153B5F).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (2E153B5F).jar" size 546973 crc 2e153b5f md5 3831043d0bf5cfa396b74e11819592b4 sha1 b5576a2898f051a5661ad6494a169df2e526b372 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (5E4D94CE).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (5E4D94CE).jar" size 600405 crc 5e4d94ce md5 99034927f285a17509abf934018a6639 sha1 9e406de98d6ec6765fd4c4231ebb1cb7c963a2e5 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (8D2CBEF0).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (8D2CBEF0).jar" size 600465 crc 8d2cbef0 md5 42091c189bf6db2224908ccc71f5bf9b sha1 54bd445073f75b91a9b6d2a5d975c9d44ddcc33c )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (FD045E71).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.7) (CLDC-1.1, MIDP-2.0) (FD045E71).jar" size 514899 crc fd045e71 md5 06c80e2484bfd9fabd6ebd52a17b359b sha1 f14c5edfa2634cc8f4295557540d5f02acbee9f8 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (E73CEE8B).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.0, MIDP-2.0) (E73CEE8B).jar" size 323018 crc e73cee8b md5 183e4552a75bd99fcdd25a92b7131407 sha1 914bfbcd5d73690560a43af07e90ceaf3a662d7d )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (55A44F82).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (55A44F82).jar" size 584203 crc 55a44f82 md5 9799fad27c2c65778e179acdd353a96a sha1 a080713a95e66c51d452d07a5c0c2ff1d87ed6e5 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (A3ED21DA).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (A3ED21DA).jar" size 574648 crc a3ed21da md5 36dbc8c0b2760882f677ed31f956ad9f sha1 5ec74d0e7dbd566c375bfa68cae9499d40aa7fc7 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (CA4D909E).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (CA4D909E).jar" size 552972 crc ca4d909e md5 e5d04cc7bb897044fa82d894318b0188 sha1 ca8895d32753ac170a29c83eee7d638c33cf20b0 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (E674449F).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.8) (CLDC-1.1, MIDP-2.0) (E674449F).jar" size 581756 crc e674449f md5 7db17fda5c13916b960897c4cf007916 sha1 ab4f219b68edcf1ef98d7fdfbfcddcbfc7ba8653 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.0, MIDP-2.0) (527C9602).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.0, MIDP-2.0) (527C9602).jar" size 351670 crc 527c9602 md5 5c53ce2b20fbcc91d8c4dc9fbfc745e1 sha1 89750b83b2a0fcd95dfe2fdd760e5a91e3702a12 )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.1, MIDP-2.0) (597BFF7F).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.1, MIDP-2.0) (597BFF7F).jar" size 584923 crc 597bff7f md5 8480df01b8b28f7dd1ba4eac00a9b160 sha1 cb8b5d8548517b44ffc6675159a8f870562b7a0d )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.1, MIDP-2.0) (6DCDA0A2).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.1.9) (CLDC-1.1, MIDP-2.0) (6DCDA0A2).jar" size 459404 crc 6dcda0a2 md5 a12cde754cd54efc3ef1a6053e1dbbdd sha1 0e607b1549b27eaf9c9ae4206448f9358b48b32b )
+)
+
+game (
+	name "Questions pour un champion (Gameloft SA) (1.2.0) (CLDC-1.1, MIDP-2.0) (AAD2CEC8).jar"
+	rom ( name "Questions pour un champion (Gameloft SA) (1.2.0) (CLDC-1.1, MIDP-2.0) (AAD2CEC8).jar" size 553373 crc aad2cec8 md5 d2ab134b9eadf0ec01e3f57baa064bc1 sha1 691d37c4173e638c719dea682f98fe85bad14822 )
+)
+
+game (
+	name "Quetim (Tibo Software) (1.02) (CLDC-1.1, MIDP-2.0) (2220D328).jar"
+	rom ( name "Quetim (Tibo Software) (1.02) (CLDC-1.1, MIDP-2.0) (2220D328).jar" size 49793 crc 2220d328 md5 ad154fb267cfb7feabd11e260d3f250f sha1 856c7ae7d609c30ca7fb3bcfcd157e45d9ed621f )
+)
+
+game (
+	name "Qui Est-ceBY (LemonQuest) (1.0.2) (CLDC-1.0, MIDP-2.0) (144ACE93).jar"
+	rom ( name "Qui Est-ceBY (LemonQuest) (1.0.2) (CLDC-1.0, MIDP-2.0) (144ACE93).jar" size 140019 crc 144ace93 md5 73c1b25dc76796d6827fc947e196fe69 sha1 a1f3b54c265bc243368529393646a847a36926fe )
+)
+
+game (
+	name "Qui Est-ceBY POLICK11 (LemonQuestPOLICK11) (1.0.2) (CLDC-1.0, MIDP-2.0) (3B80D5B6).jar"
+	rom ( name "Qui Est-ceBY POLICK11 (LemonQuestPOLICK11) (1.0.2) (CLDC-1.0, MIDP-2.0) (3B80D5B6).jar" size 140027 crc 3b80d5b6 md5 7499c963f0b1d7a2c981aa53953291b7 sha1 29f8522d0b572395ef813b2838d7dba4a92c8278 )
+)
+
+game (
+	name "Quick (Unknown) (1.0) (CLDC-1.0, MIDP-2.0) (F2363A05).jar"
+	rom ( name "Quick (Unknown) (1.0) (CLDC-1.0, MIDP-2.0) (F2363A05).jar" size 41982 crc f2363a05 md5 c4abb0ef2209ad45b5e067cf90152dfb sha1 f0ac216fd35594c32a3808b238e888ef68b8fadc )
+)
+
+game (
+	name "Quick Currency Converter (Corpris) (1.1.0) (CLDC-1.1, MIDP-1.0) (65D81374).jar"
+	rom ( name "Quick Currency Converter (Corpris) (1.1.0) (CLDC-1.1, MIDP-1.0) (65D81374).jar" size 16523 crc 65d81374 md5 0dec8d554bb2860396a201adf92f1bb9 sha1 c38b36d0ee0863fa1d1ca1942d3f627add160529 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (0C242944).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (0C242944).jar" size 307296 crc 0c242944 md5 1f267a27f0d34164706a18f4d7bb53f1 sha1 7b2f5b62d4afe2c77d8cf0af894504c6439f54e1 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (2383E9F5).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (2383E9F5).jar" size 244799 crc 2383e9f5 md5 6716b943210904de3bbdd46035b859c4 sha1 7b3d3be5bae04534f92df1d22d2eef56825bcbde )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (306259A6).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (306259A6).jar" size 291858 crc 306259a6 md5 ae0f19d191d2778ba663b5745010d6c5 sha1 564bbe3f87b5a53caab478044ab1a000c8650157 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (47489CD0).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (47489CD0).jar" size 281187 crc 47489cd0 md5 4f6784541d51a671d0b2777efd91c957 sha1 36eb45c417e0d89808ee114b505e07784ba79293 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (4EB9E282).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (4EB9E282).jar" size 274130 crc 4eb9e282 md5 572e82fabec3eed726a6c6fe95518c4a sha1 0434ec9ab8d032e2db1853c651849b847e0c0300 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (5EF0B792).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (5EF0B792).jar" size 296383 crc 5ef0b792 md5 5a3966452e06b2aca5a1bcb424a84f0c sha1 2c0bed2120a605cd8cb40258b6157d25e75509e2 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (5F6F643D).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (5F6F643D).jar" size 223369 crc 5f6f643d md5 2c3ea9b30be8d603468c39151863dfff sha1 7c3a0e14d6a1431d9e7827dce30554167daed9e8 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (60684A69).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (60684A69).jar" size 291854 crc 60684a69 md5 a01865dba3c1d476aee93535b67c0852 sha1 9e6a679c73f7a2c97562e06463cd4449745202d3 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (8FAB5F7A).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (8FAB5F7A).jar" size 249324 crc 8fab5f7a md5 df9b46ec673ec28343a60955cc24bd48 sha1 ec5241af27501a7381cc9e2f764e22590e99416a )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (9BFB3EA9).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (9BFB3EA9).jar" size 436870 crc 9bfb3ea9 md5 0da4c48ad0bebd2bf534f29eea3e69c4 sha1 188239ae85d87b5a149bb16f5a775851ccd8128e )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (B5671FD2).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (B5671FD2).jar" size 307296 crc b5671fd2 md5 d257f05af8fcc136e2e1506a574e2ee7 sha1 c7c66c8ce1ac4a407d0dc2d9b300024f05a54ba6 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (C1008211).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (C1008211).jar" size 244799 crc c1008211 md5 f3cde3468ddf7f848be186b4e4bfc6c5 sha1 0d5443988075619d442463529fb3fef2c02bfeef )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (C4D36308).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (C4D36308).jar" size 274150 crc c4d36308 md5 6f34cc96d2cd19a1119fd5d4b5fafb7e sha1 fa3920ce609b0fa372b7a6dd99fc4a46fe103cd4 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (CE81C347).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (CE81C347).jar" size 274131 crc ce81c347 md5 16f082a78639be1e04d0fe59657caaa6 sha1 a04119e09498c9c1d5243ffe81487c675e1678a5 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (E020A219).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (E020A219).jar" size 223369 crc e020a219 md5 82cc3d8334890cb522f37f2dba934895 sha1 d8c3fb8905bd5a4305a4877604de186632639d81 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (F1699419).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (F1699419).jar" size 249324 crc f1699419 md5 333d99d805bfdeb7896791ed7a42a865 sha1 17af445c9d11e11ee22e4e2ea892175ac77c7b1e )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (F6CCB6D4).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (F6CCB6D4).jar" size 296383 crc f6ccb6d4 md5 bb318d31566767b5b5e2b7fe1d6a2a14 sha1 1ce3c16cf07ccf0808109ab5123a8d57647aa262 )
+)
+
+game (
+	name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (FDAE5ECE).jar"
+	rom ( name "Quick Golf (Baltoro Games) (1.0.5) (CLDC-1.1, MIDP-2.0) (FDAE5ECE).jar" size 291858 crc fdae5ece md5 4d5f08cc94558935117b26f214f65519 sha1 f414b5be5e2dc6abde71c6b966064da09efc2931 )
+)
+
+game (
+	name "Quick Gun Murugun (Fox Star Studio) (1.0.0) (CLDC-1.0, MIDP-1.0) (20649B03).jar"
+	rom ( name "Quick Gun Murugun (Fox Star Studio) (1.0.0) (CLDC-1.0, MIDP-1.0) (20649B03).jar" size 734025 crc 20649b03 md5 b32700ac3d03510e10077158d531f303 sha1 159deb4a743efbbed2d9ab9787a30e645eca2961 )
+)
+
+game (
+	name "QUICK GUN MURUGUN (Midlet Suite Vendor) (1.0.0) (CLDC-1.0, MIDP-1.0) (B48A733E).jar"
+	rom ( name "QUICK GUN MURUGUN (Midlet Suite Vendor) (1.0.0) (CLDC-1.0, MIDP-1.0) (B48A733E).jar" size 730382 crc b48a733e md5 277fe0433b84f23c92754655a601dd19 sha1 eaad72de93a46827cd662a4c57115bc46ea2b75f )
+)
+
+game (
+	name "Quick Pack (Nextwave Multimedia Pvt Ltd) (1.0) (CLDC-1.0, MIDP-2.0) (E120EAE9).jar"
+	rom ( name "Quick Pack (Nextwave Multimedia Pvt Ltd) (1.0) (CLDC-1.0, MIDP-2.0) (E120EAE9).jar" size 1320244 crc e120eae9 md5 4f8f83158fefd2c23ab4859c56524b64 sha1 ee9aa34ab7a123e0843b190b2d7a42b5d1c8e5cb )
+)
+
+game (
+	name "Quick Soccer (Game Neeti) (1.0) (CLDC-1.1, MIDP-2.0) (B36AADA0).jar"
+	rom ( name "Quick Soccer (Game Neeti) (1.0) (CLDC-1.1, MIDP-2.0) (B36AADA0).jar" size 136580 crc b36aada0 md5 8eb6ea23f1fb9a63938434e7afe238c6 sha1 3ed22bbe6642d799f73cc02cd7cfc368d0bce65d )
+)
+
+game (
+	name "Quick Soccer (Game Neeti) (1.0) (CLDC-1.1, MIDP-2.0) (E633B3D4).jar"
+	rom ( name "Quick Soccer (Game Neeti) (1.0) (CLDC-1.1, MIDP-2.0) (E633B3D4).jar" size 135702 crc e633b3d4 md5 a9960f7ae994ab47ab115f43cd1c6d0f sha1 5a5b65c4a05c984a98f56d7e5185a9c0793fcfd7 )
+)
+
+game (
+	name "QuickIM (QuickIM.com) (1.0) (CLDC-1.0, MIDP-2.0) (9C52764C).jar"
+	rom ( name "QuickIM (QuickIM.com) (1.0) (CLDC-1.0, MIDP-2.0) (9C52764C).jar" size 103797 crc 9c52764c md5 618222c1913519f6619e07430b459d57 sha1 b4c8f0dc91459c656dc89436d37fd54876bd4b48 )
+)
+
+game (
+	name "QuickIM (QuickIM.com) (1.0) (CLDC-1.0, MIDP-2.0) (C277CC14).jar"
+	rom ( name "QuickIM (QuickIM.com) (1.0) (CLDC-1.0, MIDP-2.0) (C277CC14).jar" size 99285 crc c277cc14 md5 e57a39c8ff00a96db2c0b6ce4e249b44 sha1 ae7fcf3baf9d5cb456d352bf6c074bd74cfb7d03 )
+)
+
+game (
+	name "QuickIM (QuickIM.com) (2.1) (CLDC-1.0, MIDP-2.0) (92A60015).jar"
+	rom ( name "QuickIM (QuickIM.com) (2.1) (CLDC-1.0, MIDP-2.0) (92A60015).jar" size 102031 crc 92a60015 md5 7e670eac1c3ce346c37917049ac30ad4 sha1 303c54905d006546d03925271a3806b2d29c92bc )
+)
+
+game (
+	name "QuickIM (QuickIM.com) (2.5) (CLDC-1.0, MIDP-2.0) (6FDB7A1C).jar"
+	rom ( name "QuickIM (QuickIM.com) (2.5) (CLDC-1.0, MIDP-2.0) (6FDB7A1C).jar" size 91661 crc 6fdb7a1c md5 ee49daff739d47a84cc5ddf8a896daa8 sha1 61b19f8a650973d575579aafa9f422b13344d2c3 )
+)
+
+game (
+	name "QuickIM (QuickIM.com) (2.5) (CLDC-1.0, MIDP-2.0) (C7BBDD67).jar"
+	rom ( name "QuickIM (QuickIM.com) (2.5) (CLDC-1.0, MIDP-2.0) (C7BBDD67).jar" size 91627 crc c7bbdd67 md5 53dbee3a3254909a2e19c3bce8bd4172 sha1 5a577b6504f48d9490e287be0b99112d3a6e2cce )
+)
+
+game (
+	name "QuickIM v2.1 (QuickIM.com) (2.1) (CLDC-1.0, MIDP-2.0) (D2466203).jar"
+	rom ( name "QuickIM v2.1 (QuickIM.com) (2.1) (CLDC-1.0, MIDP-2.0) (D2466203).jar" size 102010 crc d2466203 md5 47e5c5d8952e4a4cc1bd4dc2a81fe297 sha1 1335975a2c8da019e5b4963ab7f740cb1e0341ef )
+)
+
+game (
+	name "QuickLinks (beeweeb) (2.11) (CLDC-1.1, MIDP-2.0) (475C0EDC).jar"
+	rom ( name "QuickLinks (beeweeb) (2.11) (CLDC-1.1, MIDP-2.0) (475C0EDC).jar" size 126782 crc 475c0edc md5 6634156c7c11298b489e0d691fe5a39e sha1 2a1627fcf32d669e5db0df501a3570fcff76cef8 )
+)
+
+game (
+	name "QuickQuote (Sun Microsystems) (1.0) (CLDC-1.0, MIDP-1.0) (A96BF45E).jar"
+	rom ( name "QuickQuote (Sun Microsystems) (1.0) (CLDC-1.0, MIDP-1.0) (A96BF45E).jar" size 7079 crc a96bf45e md5 5809e3bd81860fe4458766cb9164802b sha1 810c028461c37742e22f8dc4a7fb210ba6e7e180 )
+)
+
+game (
+	name "QuickQuote (ZeroIndex) (1.0.2) (CLDC-1.0, MIDP-1.0) (56D4F5BF).jar"
+	rom ( name "QuickQuote (ZeroIndex) (1.0.2) (CLDC-1.0, MIDP-1.0) (56D4F5BF).jar" size 6846 crc 56d4f5bf md5 fc94cba0e8f3e2b2ac0afb4b38a5c133 sha1 a5a3aea22161436ca57acdb75e2b71507da880a5 )
+)
+
+game (
+	name "QuickStopwatch (SolveMyMath) (1.2) (CLDC-1.1, MIDP-2.0) (3CC1658A).jar"
+	rom ( name "QuickStopwatch (SolveMyMath) (1.2) (CLDC-1.1, MIDP-2.0) (3CC1658A).jar" size 175197 crc 3cc1658a md5 32ff2174adbad921be41d6880e4105f3 sha1 e2b931649ac411e6ce9fc50bb220a2a09d3a8d78 )
+)
+
+game (
+	name "Quicxo (Nokia 7650 King) (1.1.6) (CLDC-1.0, MIDP-1.0) (1852CDC7).jar"
+	rom ( name "Quicxo (Nokia 7650 King) (1.1.6) (CLDC-1.0, MIDP-1.0) (1852CDC7).jar" size 47348 crc 1852cdc7 md5 090db4e33a85c65d57c47958232fdd06 sha1 fdb463180588fd322ed407235de4649434b582b6 )
+)
+
+game (
+	name "Quicxo (Nokia 7650 King) (1.1.6) (CLDC-1.0, MIDP-1.0) (9CCD80F1).jar"
+	rom ( name "Quicxo (Nokia 7650 King) (1.1.6) (CLDC-1.0, MIDP-1.0) (9CCD80F1).jar" size 47678 crc 9ccd80f1 md5 44d082fb8955bf1ceab09b7f9ac0c8ea sha1 1796f5132f3f578db50d7630ddba4637b9e03c6c )
+)
+
+game (
+	name "Quicxo (Sumea Interactive Ltd.) (1.0.1) (CLDC-1.0, MIDP-1.0) (BDBE846E).jar"
+	rom ( name "Quicxo (Sumea Interactive Ltd.) (1.0.1) (CLDC-1.0, MIDP-1.0) (BDBE846E).jar" size 22041 crc bdbe846e md5 0399c7bc8b3c16f95514d86a87ce5408 sha1 aef470ec837eef1a137dfebb038d3c3d097f46f8 )
+)
+
+game (
+	name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (23525615).jar"
+	rom ( name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (23525615).jar" size 41039 crc 23525615 md5 b69b86ab6f50a3474d2a08c2320be79d sha1 5c8d39b3c80e86eb93e360370e298426a4c1d33a )
+)
+
+game (
+	name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (8E5B6B0F).jar"
+	rom ( name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (8E5B6B0F).jar" size 36345 crc 8e5b6b0f md5 2472129b395ef1b0e98b5067c06bc3fb sha1 cc33c70a00f2023137360b78f22dcaecfc4b63ea )
+)
+
+game (
+	name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (FECD1734).jar"
+	rom ( name "Quicxo (Sumea Interactive Ltd.) (1.1.6) (CLDC-1.0, MIDP-1.0) (FECD1734).jar" size 36391 crc fecd1734 md5 5839d1a0cc921543f5dfb915038bfda9 sha1 8c9ecb1967dc8e77d59697d65010c36f5adb9b8b )
+)
+
+game (
+	name "Quicxo (Sumea) (1.0.4) (CLDC-1.0, MIDP-1.0) (D7FD2606).jar"
+	rom ( name "Quicxo (Sumea) (1.0.4) (CLDC-1.0, MIDP-1.0) (D7FD2606).jar" size 21080 crc d7fd2606 md5 242d7d1dfea5e463b43db5aaefe5d3df sha1 375af7450a7bb10c83ad25e10b65a91038e55262 )
+)
+
+game (
+	name "Quicxo (Sumea) (1.2.6) (CLDC-1.0, MIDP-1.0) (AC138A94).jar"
+	rom ( name "Quicxo (Sumea) (1.2.6) (CLDC-1.0, MIDP-1.0) (AC138A94).jar" size 35012 crc ac138a94 md5 ca2b97ac440349497f2b864822997998 sha1 9bb2b22a9a59df3ca592072f3abbc84dca60227c )
+)
+
+game (
+	name "Quicxo (Sumea) (1.2.8) (CLDC-1.0, MIDP-1.0) (452F0AAE).jar"
+	rom ( name "Quicxo (Sumea) (1.2.8) (CLDC-1.0, MIDP-1.0) (452F0AAE).jar" size 43174 crc 452f0aae md5 3a668b5d0b24be4c6e65dab292730f47 sha1 547e2c1c4004dcce6ceb64048f7dccde9aacf117 )
+)
+
+game (
+	name "Quicxo (Sumea) (1.2.8) (CLDC-1.0, MIDP-1.0) (B99A9059).jar"
+	rom ( name "Quicxo (Sumea) (1.2.8) (CLDC-1.0, MIDP-1.0) (B99A9059).jar" size 30635 crc b99a9059 md5 eb1ef048aca1380c80b61de124dc3d6e sha1 434bd584a6fa67013fe5921cafe66deb773dc641 )
+)
+
+game (
+	name "Quicxo (www.vstuff.co.uk) (1.1.6) (CLDC-1.0, MIDP-1.0) (94517E7B).jar"
+	rom ( name "Quicxo (www.vstuff.co.uk) (1.1.6) (CLDC-1.0, MIDP-1.0) (94517E7B).jar" size 48161 crc 94517e7b md5 b67d40b41934cc78faae4d70957fd92d sha1 e429b90ec5f5f7a3afcc45df511362cf982f25c7 )
+)
+
+game (
+	name "Quien Es Quien (LemonQuest) (1.0.2) (CLDC-1.0, MIDP-2.0) (71C7DC59).jar"
+	rom ( name "Quien Es Quien (LemonQuest) (1.0.2) (CLDC-1.0, MIDP-2.0) (71C7DC59).jar" size 96778 crc 71c7dc59 md5 792ce3cf00b1347fae1b26ac4fb8e530 sha1 fdadc65769555637e8f3a0980ca7a056e2554c27 )
+)
+
+game (
+	name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-1.0) (EE163B8A).jar"
+	rom ( name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-1.0) (EE163B8A).jar" size 89545 crc ee163b8a md5 c2b99748e473b42782458fd3b6079dbb sha1 28734d20924ea50e9562407dd40e5db5bc8c0597 )
+)
+
+game (
+	name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (5FFB0D2A).jar"
+	rom ( name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (5FFB0D2A).jar" size 152145 crc 5ffb0d2a md5 e9bf43f530697751c6cc5799306b63c4 sha1 84e9c1bf17cf049aff0fa40634bcda89f9c6b258 )
+)
+
+game (
+	name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (62BBDD0E).jar"
+	rom ( name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (62BBDD0E).jar" size 152249 crc 62bbdd0e md5 da1da13ebe9f570c6d5148cb858c440b sha1 0b7a32f26082b9990b5bfa61c2c3fc1eaf59f76b )
+)
+
+game (
+	name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (751685B3).jar"
+	rom ( name "Quix (Midlex) (1.0.0) (CLDC-1.0, MIDP-2.0) (751685B3).jar" size 109639 crc 751685b3 md5 7bd2180991fb6300ac4dc6b4f8a5ed6d sha1 f9abb977d5a48aa14076e93ea90218dd32233b07 )
+)
+
+game (
+	name "Quiz Master (JSmart Technologies) (1.1) (CLDC-1.0, MIDP-1.0) (4A0D92F1).jar"
+	rom ( name "Quiz Master (JSmart Technologies) (1.1) (CLDC-1.0, MIDP-1.0) (4A0D92F1).jar" size 46106 crc 4a0d92f1 md5 46ff6a2d4e273bfc83ab431cc70fc705 sha1 bd75a409441b58bd6e56c649e305c4b4a7a76966 )
+)
+
+game (
+	name "Quiz World (Studio X) (1.0.1) (CLDC-1.0, MIDP-2.0) (C5531234).jar"
+	rom ( name "Quiz World (Studio X) (1.0.1) (CLDC-1.0, MIDP-2.0) (C5531234).jar" size 186262 crc c5531234 md5 f0ff46b885b7ed53dc6b11c063b16e8a sha1 e4df819e90dc6e12504ce073b6cf7e333a7bb7df )
+)
+
+game (
+	name "Quran (Amar) (1.0) (CLDC-1.1, MIDP-2.0) (3C463219).jar"
+	rom ( name "Quran (Amar) (1.0) (CLDC-1.1, MIDP-2.0) (3C463219).jar" size 330254 crc 3c463219 md5 b68dc499848521d5d76aa849e870a3a8 sha1 b08ca9617dbb4aca0cf4e5be66528cf176882153 )
+)
+
+game (
+	name "Quran Arabic (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (D2BE43FD).jar"
+	rom ( name "Quran Arabic (Pikomo) (1.0.0) (CLDC-1.0, MIDP-2.0) (D2BE43FD).jar" size 375728 crc d2be43fd md5 d5785ffcc8185ebcf3809be96309b753 sha1 c49e2f9e2b1a8214d93f39daf0935839201db299 )
+)
+
+game (
+	name "Quran Mobile (islamimobile.com) (1.0.0) (CLDC-1.0, MIDP-2.0) (CF16AF46).jar"
+	rom ( name "Quran Mobile (islamimobile.com) (1.0.0) (CLDC-1.0, MIDP-2.0) (CF16AF46).jar" size 314650 crc cf16af46 md5 0745185b366da880a1e4a6a0f3851525 sha1 aaaa49511d76cd26d4bcf45f9d3c02d205b25793 )
+)
+
+game (
+	name "QuranReader Basic Arabic [IN] (www.searchtruth.com) (2.1) (CLDC-1.0, MIDP-2.0) (7783674F).jar"
+	rom ( name "QuranReader Basic Arabic [IN] (www.searchtruth.com) (2.1) (CLDC-1.0, MIDP-2.0) (7783674F).jar" size 759522 crc 7783674f md5 241e613330db314c9998c38d400f69bd sha1 cc662229834841d4f367fe92748396542b47fd1f )
+)
+
+game (
+	name "Qwest Music Store (GrooveMobile) (1.56) (CLDC-1.1, MIDP-2.0) (46C5A120).jar"
+	rom ( name "Qwest Music Store (GrooveMobile) (1.56) (CLDC-1.1, MIDP-2.0) (46C5A120).jar" size 229767 crc 46c5a120 md5 a0507935205f558a1091c60575511220 sha1 f87e9778dc1d6b7ca405df9d3c0077e558884754 )
+)
+
+game (
+	name "Qwest Music Store (GrooveMobile) (1.59.1) (CLDC-1.1, MIDP-2.0) (579D28CF).jar"
+	rom ( name "Qwest Music Store (GrooveMobile) (1.59.1) (CLDC-1.1, MIDP-2.0) (579D28CF).jar" size 247611 crc 579d28cf md5 8c9c8511431a164075b1c3691ce02401 sha1 2169373f1047e0ec0c51412ea904bb02aec42620 )
+)
+
+game (
+	name "Qwest Music Store (GrooveMobile) (1.59.7) (CLDC-1.1, MIDP-2.0) (5DA488B7).jar"
+	rom ( name "Qwest Music Store (GrooveMobile) (1.59.7) (CLDC-1.1, MIDP-2.0) (5DA488B7).jar" size 249403 crc 5da488b7 md5 cb6cd3ae66de2c6abf4a91080fe94db1 sha1 6f3f7c2dd55f127beb1cb3a1c176f83b848b167c )
+)
+
+game (
+	name "QXCQ3 (TJ) (1.0) (CLDC-1.0, MIDP-2.0) (8A7BBEE4).jar"
+	rom ( name "QXCQ3 (TJ) (1.0) (CLDC-1.0, MIDP-2.0) (8A7BBEE4).jar" size 173129 crc 8a7bbee4 md5 d55e2d7d176c883e28c46525abfc1c07 sha1 e766553766d472f63c7208a6f95633e2f9479c34 )
+)
+
+game (
+	name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (7BACDBC7).jar"
+	rom ( name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.10) (CLDC-1.0, MIDP-2.0) (7BACDBC7).jar" size 118859 crc 7bacdbc7 md5 a4d7bc34a3204f3bf4085212616284b3 sha1 92b20a8931918ec2d9d0936c63fcec30180be34e )
+)
+
+game (
+	name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (4D2ED861).jar"
+	rom ( name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.7) (CLDC-1.0, MIDP-2.0) (4D2ED861).jar" size 118643 crc 4d2ed861 md5 515ddcc17d09dfde8407bf68d3c62392 sha1 4730b7b3f7bb891c546722c7f7beaf8a867e7e4a )
+)
+
+game (
+	name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (22C241A2).jar"
+	rom ( name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (22C241A2).jar" size 120143 crc 22c241a2 md5 fac92c464a1f268a2a5574117d7ad178 sha1 6590b185d3ecdcb085fc2a84f10be8159fd88656 )
+)
+
+game (
+	name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (A48115AB).jar"
+	rom ( name "Q版俄罗斯方块 (Sony Ericsson Mobile Communications AB) (1.8.8) (CLDC-1.0, MIDP-2.0) (A48115AB).jar" size 124450 crc a48115ab md5 1855a4de113840bb6c618d3eda967197 sha1 5a66632af8dbef138291dbcba5f5268aaddc7ffd )
+)
+
+game (
+	name "Q版冒险岛之拉登闯关 (my) (1.0.3) (CLDC-1.0, MIDP-1.0) (F23A8B14).jar"
+	rom ( name "Q版冒险岛之拉登闯关 (my) (1.0.3) (CLDC-1.0, MIDP-1.0) (F23A8B14).jar" size 248228 crc f23a8b14 md5 9fa80624708a06ef0a6746b3fa824f48 sha1 b450404c0bee9e1147320996abc106fee3a2fc80 )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (907203AD).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (907203AD).jar" size 167169 crc 907203ad md5 d920b89b61b9eff299b7e09e1e68a056 sha1 5846804a1797be197b9eadf268eb140f58708b71 )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (B3BA589D).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.2) (CLDC-1.0, MIDP-2.0) (B3BA589D).jar" size 118596 crc b3ba589d md5 ca8b7b5a37199bc7531cbcef05ecf947 sha1 fc93fd6bb28cab7349a461a1bec1dcb85bdfc29d )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (B04EC576).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (B04EC576).jar" size 118645 crc b04ec576 md5 418c748260c705befdc77dbbbbf617a0 sha1 e7634f8df59c957e6c257da4b2b20ef529731cfb )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (CC1223AA).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson Mobile Communications AB) (1.8.4) (CLDC-1.0, MIDP-2.0) (CC1223AA).jar" size 167218 crc cc1223aa md5 31d15ab5970b557d5d921ee859288eea sha1 3d0f5f9c4d624c80f3c3b3b582b339a9d545d1dd )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (1B96AE4D).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (1B96AE4D).jar" size 94805 crc 1b96ae4d md5 a67406a388eb79563564d683dcbd6557 sha1 6f470906b8c6ba4f2f81af429da2604dcf24c63c )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (245931B6).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (245931B6).jar" size 119087 crc 245931b6 md5 0ab3f2dbaf6368bf6fe11e3b0311b756 sha1 1cbda19ab2122ef733b7f09e411af783ef6d86e4 )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (256BFD24).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (256BFD24).jar" size 117589 crc 256bfd24 md5 c7b1df67f19f51eb207e7ac732ed776a sha1 84d1001a53ecfe3605568762a989a52dcd3bc19e )
+)
+
+game (
+	name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (A1A64A30).jar"
+	rom ( name "Q版海底俄罗斯 (Sony Ericsson) (1.7.1) (CLDC-1.0, MIDP-2.0) (A1A64A30).jar" size 90499 crc a1a64a30 md5 7e74fcf2f49ecf9c51ab2fcae4739168 sha1 2bc692136fa6a9f63d4577419ce8af00b357c5c6 )
+)
